@@ -39,7 +39,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 ## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (12/12 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (13/13 tareas Done).
 
 | Tarea | Estado |
 |---|---|
