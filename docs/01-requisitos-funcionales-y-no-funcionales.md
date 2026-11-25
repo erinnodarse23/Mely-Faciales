@@ -1,0 +1,74 @@
+# Extracción de requisitos funcionales y no funcionales
+
+## 1. Propósito
+Documentar qué debe hacer la web de Estética M&D (requisitos funcionales) y cómo debe comportarse (requisitos no funcionales), como entrada al Modelo de Casos de Uso del Sistema y al Modelo de Análisis del proyecto.
+
+## 2. Técnicas de extracción utilizadas
+- **Entrevistas** con Melissa y Dary (voz del negocio): servicios que ofrecen, estilo visual, forma de contacto.
+- **Observación** del flujo actual: las citas se gestionan manualmente por WhatsApp.
+- **Revisión documental:** prácticas de ingeniería de software (RUP/UML) y decisiones del Product Owner.
+- **Prototipado conceptual:** división en dos "mundos" visuales (Melissa / Dary).
+
+## 3. stakeholders e actores
+| Rol | Interés |
+|---|---|
+| Cliente | Ver servicios, opinar, contactar rápido |
+| Melissa | Publicidad de limpiezas faciales y tratamientos; borrar reseñas |
+| Dary | Publicidad de cejas, pestañas y depilaciones; borrar reseñas |
+| Erin Nodarse | Entregar, mantener y mostrar el proyecto en su portafolio |
+
+Actores del sistema: **Cliente** (primario), **Administradora** = Melissa/Dary (secundario), **WhatsApp** (sistema externo).
+
+## 4. Supuestos y datos pendientes
+- Teléfonos de WhatsApp: placeholders `[TEL_MELISSA]` y `[TEL_DARY]` hasta confirmación.
+- Logo y paleta exacta pendientes: pink para Melissa, negro "rock elegante" para Dary.
+- Lista definitiva de servicios y precios pendiente de confirmación.
+- Idioma: español neutro. Sin moneda definida todavía.
+
+## 5. Requisitos funcionales (RF)
+Prioridad: MoSCoW (Must / Should / Could).
+
+| ID | Requisito | Actor | Prioridad | Criterios de aceptación |
+|---|---|---|---|---|
+| RF-01 | Mostrar catálogo de servicios filtrable por estilista (Melissa, Dary, Ambas) | Cliente | Must | El listado cambia al elegir filtro; servicios inactivos no se muestran |
+| RF-02 | Mostrar detalle de servicio con micro-video de 5-10 s y descripción completa | Cliente | Must | Video en bucle y silenciado; si no hay video, se muestra imagen de portada |
+| RF-03 | Permitir publicar reseña con nombre, estilista, servicio, valoración 1-5, comentario y foto opcional | Cliente | Must | La reseña se publica de inmediato con estado PUBLICADA; datos inválidos muestran error |
+| RF-04 | Mostrar muro de reseñas filtrable por estilista | Cliente | Must | Se ven foto, valoración, comentario y estilista; si está vacío, mensaje "Sé la primera en opinar" |
+| RF-05 | Generar enlace de WhatsApp con mensaje contextual según servicio y estilista | Cliente | Must | wa.me/[telefono]?text=... con el nombre del servicio y la estilista |
+| RF-06 | Permitir a la administradora eliminar reseñas | Administradora | Must | Requiere sesión; la reseña desaparece del muro tras borrarla |
+| RF-07 | Autenticar a las administradoras | Administradora | Must | Usuario y clave válidos → rol ADMIN; inválidos → mensaje de error |
+| RF-08 | Permitir editar descripción y video de los servicios sin redeploy | Administradora | Should | El cambio se refleja en el catálogo sin volver a desplegar |
+| RF-09 | Mostrar galería de publicaciones (fotos y videos cortos con descripción) | Cliente | Should | Grid/mosaico filtrable por estilista |
+
+## 6. Requisitos no funcionales (RNF)
+| ID | Requisito | Medida / criterio |
+|---|---|---|
+| RNF-01 | Rendimiento | Carga inicial < 2 s en móvil con conexión normal |
+| RNF-02 | Responsive | Diseño mobile-first, usable en 320 px de ancho |
+| RNF-03 | Accesibilidad | Contraste AA, textos alternativos en imágenes, navegación por teclado |
+| RNF-04 | SEO local | Títulos, meta descripción y Open Graph; palabras clave por estilista y servicio |
+| RNF-05 | Seguridad | HTTPS, validación de entradas, anti-spam básico, endpoints de admin protegidos |
+| RNF-06 | Escalabilidad y cambio | El contenido vive en base de datos; cambiar texto/video no requiere redeploy |
+| RNF-07 | Disponibilidad | Sin cold starts visibles en la web (decisión de despliegue en ADR posterior) |
+| RNF-08 | Mantenibilidad | Arquitectura en capas y documentación oficial actualizada |
+| RNF-09 | Almacenamiento de medios | Interfaz abstracta de almacenamiento para fotos/videos, sustituible sin tocar el resto |
+| RNF-10 | Idioma | Español neutro en toda la interfaz y documentación |
+
+## 7. Trazabilidad RF → CU → Sprint
+| RF | Caso de uso | Sprint |
+|---|---|---|
+| RF-01 | CU-01 | 1 |
+| RF-02 | CU-02 | 1 |
+| RF-03 | CU-03 | 1 |
+| RF-04 | CU-04 | 1 |
+| RF-05 | CU-05 | 1 |
+| RF-06 | CU-06 | 1 |
+| RF-07 | CU-07 | 1 |
+| RF-08 | CU-08 | 2 |
+| RF-09 | CU-01 / CU-02 | 2 |
+
+## 8. Requisitos excluidos explícitamente
+- Sistema de agenda o reserva de citas (fuera de alcance en esta fase).
+- Pasarela de pagos.
+- Notificaciones por correo.
+- Aprobación previa de reseñas (se publican directo; solo borrado posterior).
