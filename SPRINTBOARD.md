@@ -41,6 +41,8 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 | DOC-12 | Reorganizar imágenes por documento | Media | 2 | 0 |
 | DOC-13 | Documentar el modelo de implementación | Alta | 5 | 0 |
 | DOC-14 | Planificar la integración del sistema | Alta | 3 | 0 |
+| DOC-15 | Documentar pruebas de caja negra | Alta | 5 | 0 |
+| DOC-16 | Documentar pruebas de caja blanca | Media | 5 | 0 |
 | RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
 | RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
 | CU-01 a CU-08 | Realizaciones documentadas para Mely Faciales (análisis y diseño) | Alta | 8 | 0 |
@@ -48,7 +50,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 ## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (22/22 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (24/24 tareas Done).
 
 | Tarea | Estado |
 |---|---|
@@ -60,10 +62,10 @@ Progreso del Sprint 0: `██████████ 100%` (22/22 tareas Done)
 | Modelo de análisis con referencias a diagramas | Done |
 | Exportar 18 diagramas de análisis | Done |
 | Documento del Modelo de Diseño | Done |
-| 31 diagramas exportados a PNG | Done |
+| 32 diagramas exportados a PNG | Done |
 | Actualización de README y CHANGELOG | Done |
 | Actualización del Sprintboard | Done |
-| Reorientación a Mely Faciales y regeneración de 49 diagramas | Done |
+| Reorientación a Mely Faciales y regeneración de 50 diagramas | Done |
 | Diagrama de paquetes y colaboraciones numeradas | Done |
 | Arquitectura en capas y flujos alternos del diseño | Done |
 | Modelo de despliegue y mecanismos de diseño | Done |
@@ -74,6 +76,8 @@ Progreso del Sprint 0: `██████████ 100%` (22/22 tareas Done)
 | Carpetas de imágenes organizadas por documento | Done |
 | Modelo de implementación estructurado | Done |
 | Plan de construcciones definido | Done |
+| Casos de caja negra del CU-03 | Done |
+| Camino básico y complejidad ciclomática | Done |
 
 ## Sprints futuros (por definir)
 - Sprint 1: implementación del backend Spring Boot y del frontend React.

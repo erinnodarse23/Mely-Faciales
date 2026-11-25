@@ -31,6 +31,8 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/08-diseno-de-la-base-de-datos.md` — mapeo objeto-relacional y modelo relacional.
 - `docs/09-modelo-de-implementacion.md` — modelo de implementación, subsistemas y componentes.
 - `docs/10-plan-de-integracion.md` — plan de construcciones de los ocho casos de uso.
+- `docs/11-pruebas-de-caja-negra.md` — casos de prueba de caja negra del CU-03.
+- `docs/12-pruebas-de-caja-blanca.md` — grafo de flujo, complejidad ciclomática y caminos independientes.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `docs/images/modelo-de-diseno/` — 5 diagramas del documento 03.
 - `docs/images/realizaciones-de-caso-de-uso/` — 16 diagramas del documento 04.
@@ -39,6 +41,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/images/patrones-de-diseno/` — 1 diagrama del documento 07.
 - `docs/images/base-de-datos/` — 2 diagramas del documento 08.
 - `docs/images/modelo-de-implementacion/` — 2 diagramas del documento 09.
+- `docs/images/pruebas-de-caja-blanca/` — 1 diagrama del documento 12.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 
