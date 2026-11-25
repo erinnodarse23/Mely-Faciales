@@ -1,5 +1,19 @@
 # Modelo de Análisis del Sistema
 
+> **Resumen ejecutivo.** 8 casos de uso, 17 clases del análisis y 17 diagramas exportados (1 global, 8 de clases y 8 de colaboración). Los diagramas no se incrustan: se referencian desde `images/diagramas de clases del analisis/`.
+
+| Campo | Valor |
+|---|---|
+| Versión | 1.0 |
+| Estado | Aprobado para Sprint 0 |
+| Actualizado | 2026-11-25 |
+| Autor | Erin Nodarse |
+| Gestión | Scrum |
+| Modelado | UML |
+| Sprint | 0 |
+
+**Índice de secciones:** 1. Contexto · 2. Modelo de Casos de Uso · 3. Paquetes y clases · 4. Realizaciones · 5. Trazabilidad · 6. Cobertura · 7. Conclusiones.
+
 ## 1. Contexto
 Este documento recoge el análisis del sistema del proyecto mediante modelado UML: Modelo de Casos de Uso del Sistema, clases del análisis (interfaz, control y entidad) y realizaciones de caso de uso con sus diagramas de clases y de colaboración. Estos artefactos se producen dentro del flujo de análisis planificado en SPRINTBOARD.md, bajo el marco de trabajo Scrum.
 
@@ -23,6 +37,12 @@ Actores: Cliente (primario), Administradora = Melissa/Dary (secundario), WhatsAp
 
 ## 3. Paquetes y clases del análisis
 Paquetes: `Paquete_Interfaz` (Boundary), `Paquete_Negocio` (Control), `Paquete_Dominio` (Entity).
+
+| Estereotipo | Significado |
+|---|---|
+| Interfaz (Boundary) | Frontera con el usuario o con un sistema externo |
+| Control | Coordina un caso de uso y a las entidades |
+| Entidad | Información del dominio del negocio |
 
 | Estereotipo | Clase | Paquete | Responsabilidad |
 |---|---|---|---|
@@ -124,3 +144,7 @@ Actor: Administradora. Postcondición: catálogo actualizado sin volver a desple
 - El Modelo de Análisis es un modelo de objetos conceptual que analiza los requisitos mediante su refinamiento y estructuración.
 - Las clases del análisis son una abstracción de una o varias clases y/o subsistemas del diseño del sistema y se identifican como clase interfaz, control o entidad.
 - Cada realización de caso de uso refleja cómo las clases de análisis colaboran entre sí para dar cobertura a TODOS los escenarios del caso de uso.
+
+---
+
+*Estética M&D · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*

@@ -37,6 +37,8 @@ Dar visibilidad al negocio de Melissa y Dary mediante una web rápida, móvil y 
 ## Sprint 0 — Fundamentos y documentación (2026-11-25 → 2026-12-01)
 **Objetivo:** dejar la base documental profesional del proyecto antes de escribir código.
 
+Progreso del Sprint 0: `██████████ 100%` (7/7 tareas Done).
+
 | Tarea | Estado |
 |---|---|
 | Crear repositorio y estructura de carpetas | Done |
@@ -56,3 +58,7 @@ Dar visibilidad al negocio de Melissa y Dary mediante una web rápida, móvil y 
 - **Daily:** asíncrono, registro breve de avances en este archivo.
 - **Sprint Review:** al cierre del sprint, revisar DoD y actualizar el CHANGELOG.
 - **Retrospectiva:** ajustar estimaciones y DoR para el sprint siguiente.
+
+---
+
+*Estética M&D · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*

@@ -1,5 +1,17 @@
 # Extracción de requisitos funcionales y no funcionales
 
+> **Resumen ejecutivo.** Se identifican 9 requisitos funcionales y 10 no funcionales para la web publicitaria de Estética M&D. Son la entrada al modelado UML del proyecto y se planifican en `SPRINTBOARD.md` bajo Scrum.
+
+| Campo | Valor |
+|---|---|
+| Versión | 1.0 |
+| Estado | Aprobado para Sprint 0 |
+| Actualizado | 2026-11-25 |
+| Autor | Erin Nodarse |
+| Gestión | Scrum |
+| Modelado | UML |
+| Sprint | 0 |
+
 ## 1. Propósito
 Documentar qué debe hacer la web de Estética M&D (requisitos funcionales) y cómo debe comportarse (requisitos no funcionales), como entrada al Modelo de Casos de Uso del Sistema y al Modelo de Análisis del proyecto.
 
@@ -27,6 +39,12 @@ Actores del sistema: **Cliente** (primario), **Administradora** = Melissa/Dary (
 
 ## 5. Requisitos funcionales (RF)
 Prioridad: MoSCoW (Must / Should / Could).
+
+| Prioridad | Significado |
+|---|---|
+| Must | Imprescindible para el MVP |
+| Should | Importante; puede planificarse en el Sprint 2 |
+| Could | Deseable si hay capacidad |
 
 | ID | Requisito | Actor | Prioridad | Criterios de aceptación |
 |---|---|---|---|---|
@@ -72,3 +90,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 - Pasarela de pagos.
 - Notificaciones por correo.
 - Aprobación previa de reseñas (se publican directo; solo borrado posterior).
+
+---
+
+*Estética M&D · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*

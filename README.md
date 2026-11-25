@@ -1,4 +1,8 @@
 # Estética M&D
+[![Repo](https://img.shields.io/badge/GitHub-Est--tica_M--D-181717?logo=github)](https://github.com/erinnodarse23/Est-tica_M-D)
+[![Portafolio](https://img.shields.io/badge/Portafolio-erinnodarse.vercel.app-3b82f6?logo=vercel)](https://erinnodarse.vercel.app)
+[![Estado](https://img.shields.io/badge/Estado-En%20an%C3%A1lisis-f59e0b)](#estado-del-proyecto)
+[![Stack](https://img.shields.io/badge/Stack-Java%20%2B%20React-0ea5e9)](#stack-previsto)
 
 Web publicitaria para el negocio de estética de **Melissa** y **Dary**: catálogo de servicios, galería con micro-videos, muro de reseñas de clientas y contacto directo por WhatsApp. Sin sistema de citas: las citas se gestionan manualmente por WhatsApp.
 
@@ -26,3 +30,7 @@ En fase de análisis y documentación (Sprint 0). Código pendiente.
 - Repositorio: https://github.com/erinnodarse23/Est-tica_M-D.git
 - Portafolio del autor: https://erinnodarse.vercel.app
 - GitHub del autor: https://github.com/erinnodarse23
+
+---
+
+*Estética M&D · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*
