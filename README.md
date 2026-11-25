@@ -25,7 +25,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/02-modelo-de-analisis.md` — modelo de análisis UML y referencia a diagramas.
 - `docs/03-modelo-de-diseno.md` — modelo de diseño UML y referencia a diagramas.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
-- `docs/images/modelo-de-diseno/` — imágenes del diseño (paquetes, subsistemas, interfaces, clases y colaboración).
+- `docs/images/modelo-de-diseno/` — imágenes del diseño (paquetes, subsistemas, interfaces, clases, capas y colaboración).
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 

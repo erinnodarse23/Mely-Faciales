@@ -32,6 +32,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 | DOC-03 | Crear README, CHANGELOG y Sprintboard | Media | 2 | 0 |
 | DOC-04 | Documentar modelo de diseño y generar diagramas | Alta | 8 | 0 |
 | DOC-05 | Reorientar la documentación a Mely Faciales y regenerar diagramas | Alta | 8 | 0 |
+| DOC-06 | Documentar arquitectura en capas y flujos alternos | Alta | 5 | 0 |
 | RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
 | RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
 | CU-01 a CU-08 | Realizaciones documentadas para Mely Faciales (análisis y diseño) | Alta | 8 | 0 |
@@ -39,7 +40,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 ## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (13/13 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (14/14 tareas Done).
 
 | Tarea | Estado |
 |---|---|
@@ -51,11 +52,12 @@ Progreso del Sprint 0: `██████████ 100%` (13/13 tareas Done)
 | Modelo de análisis con referencias a diagramas | Done |
 | Exportar 18 diagramas de análisis | Done |
 | Documento del Modelo de Diseño | Done |
-| 20 diagramas exportados a PNG | Done |
+| 21 diagramas exportados a PNG | Done |
 | Actualización de README y CHANGELOG | Done |
 | Actualización del Sprintboard | Done |
-| Reorientación a Mely Faciales y regeneración de 38 diagramas | Done |
+| Reorientación a Mely Faciales y regeneración de 39 diagramas | Done |
 | Diagrama de paquetes y colaboraciones numeradas | Done |
+| Arquitectura en capas y flujos alternos del diseño | Done |
 
 ## Sprints futuros (por definir)
 - Sprint 1: implementación del backend Spring Boot y del frontend React.
