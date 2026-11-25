@@ -19,19 +19,19 @@ Documentar qué debe hacer la web de Mely Faciales (requisitos funcionales) y c�
 - **Entrevistas** con Mely (voz del negocio): servicios que ofrece, estilo visual, forma de contacto.
 - **Observación** del flujo actual: las citas se gestionan manualmente por WhatsApp.
 - **Revisión documental:** prácticas de modelado UML y decisiones del Product Owner.
-- **Prototipado conceptual:** una sola identidad visual, rosa/skincare, alineada con los tratamientos faciales.
+- **Prototipado conceptual:** una sola identidad visual rosa/skincare, alineada con los tratamientos faciales.
 
 ## 3. Interesados y actores
 | Rol | Interés |
 |---|---|
 | Cliente | Ver servicios, opinar, contactar rápido |
-| Mely | Publicidad de limpiezas faciales y tratamientos; borrar reseñas |
+| Melissa | Publicidad de limpiezas faciales y tratamientos; borrar reseñas |
 | Erin Nodarse | Entregar, mantener y mostrar el proyecto en su portafolio |
 
 Actores del sistema: **Cliente** (primario), **Administradora** = Mely (secundario), **WhatsApp** (sistema externo).
 
 ## 4. Supuestos y datos pendientes
-- WhatsApp: número confirmado de Mely, `+5355795510`; deep link `https://wa.me/5355795510?text=...`.
+- WhatsApp: número confirmado de Mely, +5355795510; deep link https://wa.me/5355795510?text=...
 - Logo y paleta exacta pendientes: rosa/skincare como línea base.
 - Lista definitiva de servicios y precios pendiente de confirmación.
 - Idioma: español neutro. Sin moneda definida todavía.
@@ -51,9 +51,9 @@ Prioridad: MoSCoW (Must / Should / Could).
 | RF-02 | Mostrar detalle de servicio con micro-video de 5-10 s y descripción completa | Cliente | Must | Video en bucle y silenciado; si no hay video, se muestra imagen de portada |
 | RF-03 | Permitir publicar reseña con nombre, servicio, valoración 1-5, comentario y foto opcional | Cliente | Must | La reseña se publica de inmediato con estado PUBLICADA; datos inválidos muestran error |
 | RF-04 | Mostrar el muro de reseñas | Cliente | Must | Se ven foto, valoración, comentario y servicio; si está vacío, mensaje "Sé la primera en opinar" |
-| RF-05 | Generar enlace de WhatsApp con mensaje contextual según servicio | Cliente | Must | `https://wa.me/5355795510?text=...` con el nombre del servicio |
+| RF-05 | Generar enlace de WhatsApp con mensaje contextual según servicio | Cliente | Must | https://wa.me/5355795510?text=... con el nombre del servicio |
 | RF-06 | Permitir a la administradora eliminar reseñas | Administradora | Must | Requiere sesión; la reseña desaparece del muro tras borrarla |
-| RF-07 | Autenticar a la administradora | Administradora | Must | Usuario y clave válidos → rol ADMIN; inválidos → mensaje de error |
+| RF-07 | Autenticar a las administradoras | Administradora | Must | Usuario y clave válidos → rol ADMIN; inválidos → mensaje de error |
 | RF-08 | Permitir editar descripción y video de los servicios sin volver a desplegar | Administradora | Should | El cambio se refleja en el catálogo sin volver a desplegar |
 | RF-09 | Mostrar galería de publicaciones (fotos y videos cortos con descripción) | Cliente | Should | Grid/mosaico de publicaciones |
 
@@ -89,7 +89,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 - Pasarela de pagos.
 - Notificaciones por correo.
 - Aprobación previa de reseñas (se publican directo; solo borrado posterior).
-- Perfiles, servicios o identidades visuales de una segunda profesional (fuera de alcance).
+- Perfiles, servicios o identidades visuales de una segunda estilista (fuera de alcance).
 
 ---
 

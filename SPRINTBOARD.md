@@ -1,65 +1,69 @@
 # Sprintboard — Mely Faciales
 
-| Campo | Valor |
-|---|---|
-| Sprint actual | 0 — Documentación y modelado |
-| Estado | 12/12 completado |
-| Actualizado | 2026-11-25 |
-| Metodología | Scrum |
+## Metodología
+Se usa **Scrum** para gestionar el trabajo (sprints, backlog, ceremonias, Definition of Done).
+Los artefactos de **modelado UML** (casos de uso, clases del análisis, colaboración) se documentan en `docs/02-modelo-de-analisis.md` y constituyen la salida del flujo de análisis del proyecto.
+Duración del sprint: **1 semana**.
 
-## Visión
-Dar visibilidad al negocio de **Mely Faciales** mediante una web rápida, móvil y visual, donde las clientas puedan ver servicios con micro-videos, dejar reseñas con foto y valoración, y contactar por WhatsApp sin pasar por un sistema de citas.
+## Visión del producto
+Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde las clientas puedan ver servicios de faciales con micro-videos, dejar reseñas con foto y valoración, y contactar por WhatsApp sin pasar por un sistema de citas.
 
-## Roles Scrum
-- **Product Owner:** Mely (voz del negocio), Erin Nodarse (traducción a requisitos).
-- **Scrum Master / Development Team:** Erin Nodarse.
+## Roles
+- Product Owner: Mely (voz del negocio), Erin Nodarse (traducción a requisitos).
+- Scrum Master: Erin Nodarse.
+- Development Team: Erin Nodarse (backend Java + frontend React).
 
 ## Definition of Ready (DoR)
-Una historia está lista para el Sprint cuando:
-- Tiene criterios de aceptación verificables.
-- Estima su esfuerzo y tiene prioridad asignada.
-- Dependencias identificadas (datos, medios, accesos).
-- Se conecta con un requisito funcional y un caso de uso UML.
+- La historia tiene actor, criterios de aceptación y prioridad.
+- Está vinculada a un requisito RF o a un caso de uso CU.
+- No depende de datos pendientes (logo, colores, lista de precios) salvo que esté marcada como bloqueada.
 
-## Backlog del producto
+## Definition of Done (DoD)
+- El artefacto o código está creado y en el repositorio.
+- La documentación correspondiente está actualizada.
+- Si es un documento, ha sido revisado contra los lineamientos de análisis del proyecto.
+- Si es código, compila y pasa las pruebas básicas (aplica en sprints futuros).
 
-| ID | Historia | RF / CU | Prioridad | Sprint | Estado |
-|---|---|---|---|---|---|
-| S-01 | Como cliente quiero ver el catálogo de faciales | RF-01 / CU-01 | Must | 1 | Ready |
-| S-02 | Como cliente quiero ver el detalle con micro-video | RF-02 / CU-02 | Must | 1 | Ready |
-| S-03 | Como cliente quiero publicar una reseña | RF-03 / CU-03 | Must | 1 | Ready |
-| S-04 | Como cliente quiero ver el muro de reseñas | RF-04 / CU-04 | Must | 1 | Ready |
-| S-05 | Como cliente quiero contactar por WhatsApp | RF-05 / CU-05 | Must | 1 | Ready |
-| S-06 | Como administradora quiero eliminar reseñas | RF-06 / CU-06 | Must | 1 | Ready |
-| S-07 | Como administradora quiero iniciar sesión | RF-07 / CU-07 | Must | 1 | Ready |
-| S-08 | Como administradora quiero editar servicios | RF-08 / CU-08 | Should | 2 | Ready |
-| S-09 | Como cliente quiero ver la galería | RF-09 / CU-09 | Should | 2 | Ready |
-| S-10 | Como cliente quiero una web rápida y accesible | RNF-01/02/03 | Must | 1 | Ready |
-| S-11 | Como dueña quiero SEO local | RNF-04 | Should | 2 | Ready |
-| S-12 | Como desarrollador quiero contenido en base de datos | RNF-06/09 | Should | 2 | Ready |
+## Backlog del producto (priorizado)
+| ID | Historia / tarea | Prioridad | Estimación | Sprint |
+|---|---|---|---|---|
+| DOC-01 | Documentar requisitos funcionales y no funcionales | Alta | 3 | 0 |
+| DOC-02 | Documentar modelo de análisis y generar diagramas | Alta | 5 | 0 |
+| DOC-03 | Crear README, CHANGELOG y Sprintboard | Media | 2 | 0 |
+| DOC-04 | Documentar modelo de diseño y generar diagramas | Alta | 8 | 0 |
+| DOC-05 | Reorientar la documentación a Mely Faciales y regenerar diagramas | Alta | 8 | 0 |
+| RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
+| RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
+| CU-01 a CU-08 | Realizaciones documentadas para Mely Faciales (análisis y diseño) | Alta | 8 | 0 |
 
-## Sprint 0 — Progreso
+## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
+**Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
+
+Progreso del Sprint 0: `██████████ 100%` (12/12 tareas Done).
 
 | Tarea | Estado |
 |---|---|
-| Reunión de producto y alcance | ✅ |
-| Extracción de requisitos | ✅ |
-| Modelo de casos de uso | ✅ |
-| Modelo de clases de análisis | ✅ |
-| Modelos de colaboración | ✅ |
-| Modelos de estados, actividad y secuencia | ✅ |
-| Modelo de diseño y stack | ✅ |
-| Subsistemas, paquetes e interfaces | ✅ |
-| Generación de los 37 diagramas | ✅ |
-| Documentación oficial actualizada | ✅ |
-| Actualización del remote local del repositorio | ✅ |
-| Verificación final | ✅ |
+| Crear repositorio y estructura de carpetas | Done |
+| README.md | Done |
+| CHANGELOG.md | Done |
+| SPRINTBOARD.md | Done |
+| Extracción de requisitos funcionales y no funcionales | Done |
+| Modelo de análisis con referencias a diagramas | Done |
+| Exportar 17 diagramas de análisis | Done |
+| Documento del Modelo de Diseño | Done |
+| 20 diagramas exportados a PNG | Done |
+| Actualización de README y CHANGELOG | Done |
+| Actualización del Sprintboard | Done |
+| Reorientación a Mely Faciales y regeneración de 37 diagramas | Done |
 
-**Progreso:** 12/12 ████████████████████ 100%
+## Sprints futuros (por definir)
+- Sprint 1: implementación del backend Spring Boot y del frontend React.
+- Sprint 2: despliegue y ADRs operativos.
 
-## Próximos sprints
-- Sprint 1: MVP (catálogo, detalle, reseñas, WhatsApp, auth y borrado).
-- Sprint 2: edición de servicios, galería y SEO.
+## Ceremonias
+- **Daily:** asíncrono, registro breve de avances en este archivo.
+- **Sprint Review:** al cierre del sprint, revisar DoD y actualizar el CHANGELOG.
+- **Retrospectiva:** ajustar estimaciones y DoR para el sprint siguiente.
 
 ---
 
