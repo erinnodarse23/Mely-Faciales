@@ -7,7 +7,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 
 ### Added
 - Documento del Modelo de Diseño del Sistema con paquetes, subsistemas, interfaces y realizaciones de caso de uso.
-- Estructura `docs/images/modelo-de-diseno/` con 29 diagramas exportados.
+- Estructura de carpetas de imágenes con 29 diagramas de diseño exportados.
 - Actualización de README.md y SPRINTBOARD.md con la documentación cerrada en Sprint 0.
 - Reorientación del proyecto a Mely Faciales con catálogo exclusivo de tratamientos faciales.
 - Número de WhatsApp confirmado: `+5355795510`, con deep link `https://wa.me/5355795510?text=...`.
