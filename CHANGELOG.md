@@ -5,10 +5,16 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 
 ## [Unreleased]
 
+### Added
+- Documento del Modelo de Diseño del Sistema con paquetes, subsistemas, interfaces y realizaciones de caso de uso.
+- Estructura `docs/images/modelo-de-diseno/` con 20 diagramas exportados.
+- Actualización de README.md y SPRINTBOARD.md con el estado del Sprint 1.
+
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.
 - Se unificó la metodología del proyecto en Scrum; el modelado UML se usa únicamente como notación de análisis.
 - Se aplicó una plantilla visual consistente: metadatos, resumen ejecutivo, índice y pie de documento.
+- Se actualizó el Sprintboard con el Sprint 1 de diseño y se reprogramaron los sprints futuros.
 
 ## [0.1.0] - 2026-11-25
 

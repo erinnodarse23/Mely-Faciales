@@ -7,7 +7,7 @@
 Web publicitaria para el negocio de estética de **Melissa** y **Dary**: catálogo de servicios, galería con micro-videos, muro de reseñas de clientas y contacto directo por WhatsApp. Sin sistema de citas: las citas se gestionan manualmente por WhatsApp.
 
 ## Estado del proyecto
-En fase de análisis y documentación (Sprint 0). Código pendiente.
+Fase de diseño completada (Sprint 1). Implementación pendiente.
 
 ## Equipo
 - **Product Owner:** Melissa y Dary (dueñas del negocio) + Erin Nodarse (responsable técnico).
@@ -22,7 +22,9 @@ En fase de análisis y documentación (Sprint 0). Código pendiente.
 ## Estructura del repositorio
 - `docs/01-requisitos-funcionales-y-no-funcionales.md` — extracción de requisitos.
 - `docs/02-modelo-de-analisis.md` — modelo de análisis UML y referencia a diagramas.
+- `docs/03-modelo-de-diseno.md` — modelo de diseño UML y referencia a diagramas.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
+- `docs/images/modelo-de-diseno/` — imágenes del diseño (paquetes, subsistemas, interfaces, clases y colaboración).
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 
