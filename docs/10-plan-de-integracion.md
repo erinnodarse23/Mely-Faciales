@@ -15,7 +15,7 @@
 Navegación: [Modelo de implementación](09-modelo-de-implementacion.md) · [Realizaciones](04-realizaciones-de-caso-de-uso.md) · [Modelo de diseño](03-modelo-de-diseno.md)
 
 ## 1. Principio de integración
-Integrar es sumar partes manejables en un orden explícito. Cada construcción deja el sistema en estado ejecutable y adds solo los componentes necesarios para observar el caso de uso correspondiente. El orden respeta las dependencias de import: primero las capas inferiores y después las que las consumen.
+Integrar es sumar partes manejables en un orden explícito. Cada construcción deja el sistema en estado ejecutable y adiciona solo los componentes necesarios para observar el caso de uso correspondiente. El orden respeta las dependencias de import: primero las capas inferiores y después las que las consumen.
 
 ## 2. Casos de uso de la iteración
 | Caso de uso | Nombre | Subsistema de diseño |

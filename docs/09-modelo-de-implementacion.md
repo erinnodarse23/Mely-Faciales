@@ -53,7 +53,7 @@ Un subsistema de implementación es el análogo físico de un paquete de diseño
 | Negocio | Infraestructura | Los servicios usan repositorios y almacenamiento de medios. |
 | Infraestructura | Dominio | Los repositorios persisten entidades del dominio. |
 
-En Java这些 dependencias se expresan con directivas `import`. Todas son unidireccionales, por lo que no hace falta extraer elementos a una capa inferior para romper ciclos.
+En Java estas dependencias se expresan con directivas `import`. Todas son unidireccionales, por lo que no hace falta extraer elementos a una capa inferior para romper ciclos.
 
 ## 5. Elementos de implementación y objetos derivados
 | Estereotipo | Elementos | Tratamiento |
