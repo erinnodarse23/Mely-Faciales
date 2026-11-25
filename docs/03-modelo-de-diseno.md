@@ -5,12 +5,12 @@
 | Campo | Valor |
 |---|---|
 | Versión | 1.0 |
-| Estado | Aprobado para Sprint 1 |
+| Estado | Aprobado para Sprint 0 |
 | Actualizado | 2026-11-25 |
 | Autor | Erin Nodarse |
 | Gestión | Scrum |
 | Modelado | UML |
-| Sprint | 1 |
+| Sprint | 0 |
 
 **Índice de secciones:** 1. Contexto · 2. Análisis a diseño · 3. Jerarquía · 4. Paquetes · 5. Subsistemas · 6. Interfaces · 7. Clases del diseño · 8. Realizaciones · 9. Trazabilidad · 10. Cobertura · 11. Conclusiones.
 
@@ -182,4 +182,4 @@ Permite cambiar texto y/o video sin volver a desplegar; el video se sube vía `M
 
 ---
 
-*Estética M&D · Documentación oficial · Sprint 1 · Actualizado: 2026-11-25*
+*Estética M&D · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*

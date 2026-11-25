@@ -1,13 +1,13 @@
 # Estética M&D
 [![Repo](https://img.shields.io/badge/GitHub-Est--tica_M--D-181717?logo=github)](https://github.com/erinnodarse23/Est-tica_M-D)
 [![Portafolio](https://img.shields.io/badge/Portafolio-erinnodarse.vercel.app-3b82f6?logo=vercel)](https://erinnodarse.vercel.app)
-[![Estado](https://img.shields.io/badge/Estado-En%20an%C3%A1lisis-f59e0b)](#estado-del-proyecto)
+[![Estado](https://img.shields.io/badge/Estado-Documentaci%C3%B3n%20Sprint%200-0ea5e9)](#estado-del-proyecto)
 [![Stack](https://img.shields.io/badge/Stack-Java%20%2B%20React-0ea5e9)](#stack-previsto)
 
 Web publicitaria para el negocio de estética de **Melissa** y **Dary**: catálogo de servicios, galería con micro-videos, muro de reseñas de clientas y contacto directo por WhatsApp. Sin sistema de citas: las citas se gestionan manualmente por WhatsApp.
 
 ## Estado del proyecto
-Fase de diseño completada (Sprint 1). Implementación pendiente.
+Documentación de definición completada en Sprint 0 (requisitos, análisis y diseño). Implementación pendiente.
 
 ## Equipo
 - **Product Owner:** Melissa y Dary (dueñas del negocio) + Erin Nodarse (responsable técnico).

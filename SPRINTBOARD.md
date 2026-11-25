@@ -30,15 +30,15 @@ Dar visibilidad al negocio de Melissa y Dary mediante una web rápida, móvil y 
 | DOC-01 | Documentar requisitos funcionales y no funcionales | Alta | 3 | 0 |
 | DOC-02 | Documentar modelo de análisis y generar diagramas | Alta | 5 | 0 |
 | DOC-03 | Crear README, CHANGELOG y Sprintboard | Media | 2 | 0 |
-| DOC-04 | Documentar modelo de diseño y generar diagramas | Alta | 8 | 1 |
+| DOC-04 | Documentar modelo de diseño y generar diagramas | Alta | 8 | 0 |
 | RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
 | RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
-| CU-01 a CU-08 | Realizaciones de casos de uso (análisis y diseño) | Alta | 8 | 1 |
+| CU-01 a CU-08 | Realizaciones documentadas (análisis y diseño) | Alta | 8 | 0 |
 
-## Sprint 0 — Fundamentos y documentación (2026-11-25 → 2026-12-01)
-**Objetivo:** dejar la base documental profesional del proyecto antes de escribir código.
+## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
+**Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (7/7 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (11/11 tareas Done).
 
 | Tarea | Estado |
 |---|---|
@@ -48,23 +48,15 @@ Progreso del Sprint 0: `██████████ 100%` (7/7 tareas Done).
 | SPRINTBOARD.md | Done |
 | Extracción de requisitos funcionales y no funcionales | Done |
 | Modelo de análisis con referencias a diagramas | Done |
-| Exportar 17 diagramas a PNG | Done |
-
-## Sprint 1 — Modelo de diseño (2026-11-25 → 2026-12-08)
-**Objetivo:** convertir el modelo de análisis en un modelo de diseño físico para Java/Spring Boot y React.
-
-Progreso del Sprint 1: `██████████ 100%` (4/4 tareas Done).
-
-| Tarea | Estado |
-|---|---|
+| Exportar 17 diagramas de análisis | Done |
 | Documento del Modelo de Diseño | Done |
 | 20 diagramas exportados a PNG | Done |
 | Actualización de README y CHANGELOG | Done |
 | Actualización del Sprintboard | Done |
 
 ## Sprints futuros (por definir)
-- Sprint 2: arquitectura en capas y modelo de despliegue.
-- Sprint 3: implementación del backend Spring Boot y del frontend React.
+- Sprint 1: implementación del backend Spring Boot y del frontend React.
+- Sprint 2: despliegue y ADRs operativos.
 
 ## Ceremonias
 - **Daily:** asíncrono, registro breve de avances en este archivo.
