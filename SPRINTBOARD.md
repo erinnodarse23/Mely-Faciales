@@ -38,6 +38,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 | DOC-09 | Separar la documentación de diseño en cuatro documentos | Media | 3 | 0 |
 | DOC-10 | Documentar patrones de diseño aplicados | Media | 3 | 0 |
 | DOC-11 | Documentar diseño de la base de datos | Alta | 5 | 0 |
+| DOC-12 | Reorganizar imágenes por documento | Media | 2 | 0 |
 | RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
 | RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
 | CU-01 a CU-08 | Realizaciones documentadas para Mely Faciales (análisis y diseño) | Alta | 8 | 0 |
@@ -45,7 +46,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 ## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (19/19 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (20/20 tareas Done).
 
 | Tarea | Estado |
 |---|---|
@@ -68,6 +69,7 @@ Progreso del Sprint 0: `██████████ 100%` (19/19 tareas Done)
 | Separación de la documentación de diseño | Done |
 | Patrones de diseño aplicados | Done |
 | Diseño de la base de datos | Done |
+| Carpetas de imágenes organizadas por documento | Done |
 
 ## Sprints futuros (por definir)
 - Sprint 1: implementación del backend Spring Boot y del frontend React.

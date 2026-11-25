@@ -15,7 +15,7 @@
 Navegación: [Modelo de diseño](03-modelo-de-diseno.md) · [Patrones](07-patrones-de-diseno.md) · [Arquitectura](05-descripcion-de-la-arquitectura.md)
 
 ## 1. Clases persistentes y temporales
-![Clases persistentes](<images/modelo-de-diseno/base-de-datos/clases-persistentes.png>)
+![Clases persistentes](<images/base-de-datos/clases-persistentes.png>)
 
 | Persistentes | Temporales |
 |---|---|
@@ -34,7 +34,7 @@ Una clase compuesta por otras persistentes también lo es; por eso `Publicacion`
 `String` se convierte a `VARCHAR` o `TEXT` según longitud, `boolean` a `BOOLEAN`, `int` a `INTEGER` y los enumerados a `VARCHAR` con restricción `CHECK`.
 
 ## 3. Modelo relacional
-![Modelo relacional](<images/modelo-de-diseno/base-de-datos/modelo-relacional.png>)
+![Modelo relacional](<images/base-de-datos/modelo-relacional.png>)
 
 ## 4. Restricciones de integridad
 - `publicaciones.servicio_id` es `NOT NULL` con `ON DELETE CASCADE`: una publicación no existe sin su servicio.

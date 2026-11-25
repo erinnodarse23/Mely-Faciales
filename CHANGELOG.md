@@ -18,6 +18,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Modelado de aplicaciones web con mapa de navegación, guía de estilos y realización web de CU-07 mediante estereotipos UML.
 - Documentación de diseño separada en cuatro documentos: modelo central, realizaciones de CU, arquitectura y modelado web.
 - Patrones de diseño aplicados y modelo relacional documentados con tres diagramas propios.
+- Imágenes de diseño reorganizadas en una carpeta por documento; `modelo-de-diseno/` queda limitado a los 5 diagramas del documento 03.
 
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.

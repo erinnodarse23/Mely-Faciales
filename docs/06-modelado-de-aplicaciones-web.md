@@ -18,7 +18,7 @@
 La web de Mely Faciales se modela con la extensión UML para aplicaciones web. Las clases interfaz, control y entidad del análisis se refinan como páginas cliente, páginas servidor y entidades proveedoras de información.
 
 ### 1.1 Mapa de navegación
-![Mapa de navegación](<images/modelo-de-diseno/web/mapa-navegacion-web.png>)
+![Mapa de navegación](<images/modelado-de-aplicaciones-web/mapa-navegacion-web.png>)
 
 El mapa muestra cuatro niveles de profundidad: Inicio; Catálogo, Muro y Login; Detalle, Formulario de reseña y Panel; y Editor de servicio. El detalle de servicio enlaza con WhatsApp mediante un deep link HTTPS.
 
@@ -48,9 +48,9 @@ Las marcas «Build», «submit» y «redirect» en los diagramas son la forma te
 ### 1.4 Realización web de CU-07 — Iniciar sesión
 Esta vista web complementa, sin sustituir, la realización tecnológica de CU-07 en `docs/04-realizaciones-de-caso-de-uso.md`.
 
-**Clases del diseño web:** ![Clases web CU-07](<images/modelo-de-diseno/web/CU-07-clases-web.png>)
+**Clases del diseño web:** ![Clases web CU-07](<images/modelado-de-aplicaciones-web/CU-07-clases-web.png>)
 
-**Secuencia web:** ![Secuencia web CU-07](<images/modelo-de-diseno/web/CU-07-colaboracion-web.png>)
+**Secuencia web:** ![Secuencia web CU-07](<images/modelado-de-aplicaciones-web/CU-07-colaboracion-web.png>)
 
 - `cl_Inicio` enlaza por hipervínculo con `cl_Login`; `sp_Login` construye la página cliente con `<<Build>>`; `Form_Login` envía sus campos a `sp_Auth` con `<<submit>>`; `sp_Auth` delega en `AuthService` y redirige a `sp_PanelAdmin` con `<<redirect>>`, que construye `cl_PanelAdmin`.
 - Flujos alternos: credenciales inválidas devuelven 401 y sesión ya activa muestra el mensaje correspondiente.

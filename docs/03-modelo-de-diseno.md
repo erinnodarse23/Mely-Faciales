@@ -47,7 +47,7 @@ La arquitectura se organiza en cuatro capas. Una capa solo puede emplear funcion
 | 3. Acceso a datos e infraestructura | `com.melyfaciales.infraestructura` | Repositorios JPA, `MediaStorage`, configuración |
 | 4. Dominio | `com.melyfaciales.dominio` | Entidades, enums y reglas |
 
-![Arquitectura en capas](<images/modelo-de-diseno/capas/capas-diseno.png>)
+![Arquitectura en capas](<images/modelo-de-diseno/capas-diseno.png>)
 
 ## 4. Paquetes de diseño
 
@@ -58,7 +58,7 @@ La arquitectura se organiza en cuatro capas. Una capa solo puede emplear funcion
 | `com.melyfaciales.dominio` | Entidades, enums y reglas | Representar Mely Faciales |
 | `com.melyfaciales.infraestructura` | Repositorios, almacenamiento de medios y configuración | Aislar detalles técnicos |
 
-![Paquetes del diseño](<images/modelo-de-diseno/paquetes/paquetes-diseno.png>)
+![Paquetes del diseño](<images/modelo-de-diseno/paquetes-diseno.png>)
 
 ## 5. Subsistemas de diseño
 
@@ -72,7 +72,7 @@ La arquitectura se organiza en cuatro capas. Una capa solo puede emplear funcion
 
 **Propuesta detallada — SubsistemaResenas.** Proporciona `GestionResenas` al resto del sistema. Contiene el controlador, el servicio, el repositorio y la entidad. Depende de `MediaStorage` del `SubsistemaMedios` para guardar la foto opcional, sin que el controlador conozca detalles de almacenamiento.
 
-![Subsistema de reseñas](<images/modelo-de-diseno/subsistemas/subsistema-resenas.png>)
+![Subsistema de reseñas](<images/modelo-de-diseno/subsistema-resenas.png>)
 
 ## 6. Interfaces de aplicación
 
@@ -86,7 +86,7 @@ La arquitectura se organiza en cuatro capas. Una capa solo puede emplear funcion
 
 No son interfaces gráficas: son contratos de aplicación entre subsistemas. La clase que proporciona una interfaz implementa sus operaciones con métodos concretos.
 
-![Interfaces de aplicación](<images/modelo-de-diseno/interfaces/interfaces-aplicacion.png>)
+![Interfaces de aplicación](<images/modelo-de-diseno/interfaces-aplicacion.png>)
 
 ## 7. Clases del diseño
 
@@ -104,7 +104,7 @@ No son interfaces gráficas: son contratos de aplicación entre subsistemas. La 
 
 Las clases del diseño especifican visibilidad, atributos, tipos y operaciones con sintaxis del lenguaje elegido.
 
-![Modelo de diseño global](<images/modelo-de-diseno/clases-de-diseno/modelo-diseno-clases.png>)
+![Modelo de diseño global](<images/modelo-de-diseno/modelo-diseno-clases.png>)
 
 ## 8. Trazabilidad análisis → diseño → implementación prevista
 

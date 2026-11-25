@@ -27,7 +27,7 @@ Un patrón es una solución probada y reutilizable a un problema frecuente. Su u
 | Repository | Arquitectónico | Desacoplar el acceso a datos de JPA | `ServicioRepository`, `ResenaRepository`, `PublicacionRepository` | RNF-06 |
 
 ## 3. Diagrama de clases con los patrones aplicados
-![Patrones aplicados](<images/modelo-de-diseno/patrones/patrones-aplicados.png>)
+![Patrones aplicados](<images/patrones-de-diseno/patrones-aplicados.png>)
 
 ## 4. Conclusión
 Los patrones refuerzan la arquitectura en capas y el mecanismo de almacenamiento de medios sin añadir abstracciones innecesarias.

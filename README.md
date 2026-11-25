@@ -30,7 +30,12 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/07-patrones-de-diseno.md` — patrones aplicados y criterio de selección.
 - `docs/08-diseno-de-la-base-de-datos.md` — mapeo objeto-relacional y modelo relacional.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
-- `docs/images/modelo-de-diseno/` — imágenes del diseño (paquetes, subsistemas, interfaces, clases, capas, despliegue, modelado web, patrones, base de datos y colaboración).
+- `docs/images/modelo-de-diseno/` — 5 diagramas del documento 03.
+- `docs/images/realizaciones-de-caso-de-uso/` — 16 diagramas del documento 04.
+- `docs/images/descripcion-de-la-arquitectura/` — 2 diagramas del documento 05.
+- `docs/images/modelado-de-aplicaciones-web/` — 3 diagramas del documento 06.
+- `docs/images/patrones-de-diseno/` — 1 diagrama del documento 07.
+- `docs/images/base-de-datos/` — 2 diagramas del documento 08.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 

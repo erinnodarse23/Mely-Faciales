@@ -26,7 +26,7 @@ La vista de arquitectura describe el modelo de despliegue, la asignación de los
 - No se justifican enlaces redundantes en la configuración actual; su incorporación queda registrada para el ADR de despliegue.
 
 ### 1.2 Modelo de despliegue
-![Modelo de despliegue](<images/modelo-de-diseno/despliegue/modelo-despliegue-diseno.png>)
+![Modelo de despliegue](<images/descripcion-de-la-arquitectura/modelo-despliegue-diseno.png>)
 
 | Nodo | Propósito | Software | Hardware orientativo |
 |---|---|---|---|
@@ -39,7 +39,7 @@ La vista de arquitectura describe el modelo de despliegue, la asignación de los
 Los protocolos entre nodos son HTTPS para cliente-servidor y para el deep link a WhatsApp, y JDBC sobre TCP 5432 entre la API y PostgreSQL.
 
 ### 1.3 Asignación de componentes a nodos
-![Asignación de componentes](<images/modelo-de-diseno/despliegue/asignacion-componentes-diseno.png>)
+![Asignación de componentes](<images/descripcion-de-la-arquitectura/asignacion-componentes-diseno.png>)
 
 | Nodo | Elementos lógicos asignados | Artefacto físico |
 |---|---|---|
