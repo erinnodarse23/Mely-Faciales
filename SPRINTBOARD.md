@@ -2,7 +2,7 @@
 
 ## Metodología
 Se usa **Scrum** para gestionar el trabajo (sprints, backlog, ceremonias, Definition of Done).
-Los artefactos de **RUP/UML** (casos de uso, clases del análisis, colaboración) se documentan en `docs/02-modelo-de-analisis.md` y constituyen la salida del flujo de análisis del proyecto.
+Los artefactos de **modelado UML** (casos de uso, clases del análisis, colaboración) se documentan en `docs/02-modelo-de-analisis.md` y constituyen la salida del flujo de análisis del proyecto.
 Duración del sprint: **1 semana**.
 
 ## Visión del producto

@@ -6,10 +6,10 @@ Documentar qué debe hacer la web de Estética M&D (requisitos funcionales) y c�
 ## 2. Técnicas de extracción utilizadas
 - **Entrevistas** con Melissa y Dary (voz del negocio): servicios que ofrecen, estilo visual, forma de contacto.
 - **Observación** del flujo actual: las citas se gestionan manualmente por WhatsApp.
-- **Revisión documental:** prácticas de ingeniería de software (RUP/UML) y decisiones del Product Owner.
+- **Revisión documental:** prácticas de modelado UML y decisiones del Product Owner.
 - **Prototipado conceptual:** división en dos "mundos" visuales (Melissa / Dary).
 
-## 3. stakeholders e actores
+## 3. Interesados y actores
 | Rol | Interés |
 |---|---|
 | Cliente | Ver servicios, opinar, contactar rápido |
@@ -37,7 +37,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 | RF-05 | Generar enlace de WhatsApp con mensaje contextual según servicio y estilista | Cliente | Must | wa.me/[telefono]?text=... con el nombre del servicio y la estilista |
 | RF-06 | Permitir a la administradora eliminar reseñas | Administradora | Must | Requiere sesión; la reseña desaparece del muro tras borrarla |
 | RF-07 | Autenticar a las administradoras | Administradora | Must | Usuario y clave válidos → rol ADMIN; inválidos → mensaje de error |
-| RF-08 | Permitir editar descripción y video de los servicios sin redeploy | Administradora | Should | El cambio se refleja en el catálogo sin volver a desplegar |
+| RF-08 | Permitir editar descripción y video de los servicios sin volver a desplegar | Administradora | Should | El cambio se refleja en el catálogo sin volver a desplegar |
 | RF-09 | Mostrar galería de publicaciones (fotos y videos cortos con descripción) | Cliente | Should | Grid/mosaico filtrable por estilista |
 
 ## 6. Requisitos no funcionales (RNF)
@@ -48,7 +48,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 | RNF-03 | Accesibilidad | Contraste AA, textos alternativos en imágenes, navegación por teclado |
 | RNF-04 | SEO local | Títulos, meta descripción y Open Graph; palabras clave por estilista y servicio |
 | RNF-05 | Seguridad | HTTPS, validación de entradas, anti-spam básico, endpoints de admin protegidos |
-| RNF-06 | Escalabilidad y cambio | El contenido vive en base de datos; cambiar texto/video no requiere redeploy |
+| RNF-06 | Escalabilidad y cambio | El contenido vive en base de datos; cambiar texto/video no requiere volver a desplegar |
 | RNF-07 | Disponibilidad | Sin cold starts visibles en la web (decisión de despliegue en ADR posterior) |
 | RNF-08 | Mantenibilidad | Arquitectura en capas y documentación oficial actualizada |
 | RNF-09 | Almacenamiento de medios | Interfaz abstracta de almacenamiento para fotos/videos, sustituible sin tocar el resto |

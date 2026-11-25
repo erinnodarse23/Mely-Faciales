@@ -1,7 +1,7 @@
 # Modelo de Análisis del Sistema
 
 ## 1. Contexto
-Este documento recoge el análisis del sistema aplicando RUP (guiado por casos de uso, iterativo e incremental, centrado en arquitectura) y notaciones UML. Incluye el Modelo de Casos de Uso del Sistema, las clases del análisis (interfaz, control y entidad) y las realizaciones de caso de uso con sus diagramas de clases y de colaboración.
+Este documento recoge el análisis del sistema del proyecto mediante modelado UML: Modelo de Casos de Uso del Sistema, clases del análisis (interfaz, control y entidad) y realizaciones de caso de uso con sus diagramas de clases y de colaboración. Estos artefactos se producen dentro del flujo de análisis planificado en SPRINTBOARD.md, bajo el marco de trabajo Scrum.
 
 **Importante:** este archivo no contiene los diagramas. Todos los diagramas están exportados como imágenes en:
 `images/diagramas de clases del analisis/clases/` (diagramas de clases del análisis)
@@ -19,7 +19,7 @@ Actores: Cliente (primario), Administradora = Melissa/Dary (secundario), WhatsAp
 | CU-05 | Contactar por WhatsApp según servicio/estilista | Cliente | Alta |
 | CU-06 | Eliminar reseña | Administradora | Alta |
 | CU-07 | Iniciar sesión | Administradora | Alta |
-| CU-08 | Gestionar contenido del catálogo sin redeploy | Administradora | Media |
+| CU-08 | Gestionar contenido del catálogo sin volver a desplegar | Administradora | Media |
 
 ## 3. Paquetes y clases del análisis
 Paquetes: `Paquete_Interfaz` (Boundary), `Paquete_Negocio` (Control), `Paquete_Dominio` (Entity).
@@ -92,8 +92,8 @@ Actor: Administradora. Postcondición: sesión con rol ADMIN. Alternos: inválid
 - Diagrama de colaboración: ![Colaboración CU-07](<images/diagramas de clases del analisis/colaboracion/CU-07-colaboracion.png>)
 - Mensajes principales: 1. Entrar a /admin · 2. Mostrar formulario · 3. Credenciales · 4. autenticar · 5. buscarPorUsuario · 6. resultado · 7. sesión ADMIN / 7a. error · 8. Panel / 8a. Mensaje de error.
 
-### CU-08 — Gestionar contenido del catálogo sin redeploy
-Actor: Administradora. Postcondición: catálogo actualizado sin redeploy. Alternos: solo texto, nuevo video, video inválido.
+### CU-08 — Gestionar contenido del catálogo sin volver a desplegar
+Actor: Administradora. Postcondición: catálogo actualizado sin volver a desplegar. Alternos: solo texto, nuevo video, video inválido.
 - Diagrama de clases: ![Diagrama de clases CU-08](<images/diagramas de clases del analisis/clases/CU-08-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-08](<images/diagramas de clases del analisis/colaboracion/CU-08-colaboracion.png>)
 - Mensajes principales: 1. Editar servicio · 2. obtener · 3. buscar · 4-5. Mostrar formulario · 6. Modificar · 7-8. guardarVideo (opcional) · 9. actualizar · 10. guardar · 11. actualizado · 12. Confirmación · 13. Catálogo actualizado.
@@ -123,4 +123,4 @@ Actor: Administradora. Postcondición: catálogo actualizado sin redeploy. Alter
 ## 7. Conclusiones
 - El Modelo de Análisis es un modelo de objetos conceptual que analiza los requisitos mediante su refinamiento y estructuración.
 - Las clases del análisis son una abstracción de una o varias clases y/o subsistemas del diseño del sistema y se identifican como clase interfaz, control o entidad.
-- La Realización de Caso de Uso de Análisis refleja cómo las clases de análisis colaboran entre sí para dar cobertura a TODOS los escenarios de los casos de uso.
+- Cada realización de caso de uso refleja cómo las clases de análisis colaboran entre sí para dar cobertura a TODOS los escenarios del caso de uso.

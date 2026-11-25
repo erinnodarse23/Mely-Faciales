@@ -17,7 +17,7 @@ En fase de análisis y documentación (Sprint 0). Código pendiente.
 
 ## Estructura del repositorio
 - `docs/01-requisitos-funcionales-y-no-funcionales.md` — extracción de requisitos.
-- `docs/02-modelo-de-analisis.md` — modelo de análisis RUP y referencia a diagramas.
+- `docs/02-modelo-de-analisis.md` — modelo de análisis UML y referencia a diagramas.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
