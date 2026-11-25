@@ -16,6 +16,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Arquitectura en capas documentada con diagrama propio; realizaciones de CU-Diseño con flujos alternos mediante bloques `alt`.
 - Modelo de despliegue y mecanismos de diseño documentados con dos diagramas propios y tablas de nodos, asignación y mecanismos.
 - Modelado de aplicaciones web con mapa de navegación, guía de estilos y realización web de CU-07 mediante estereotipos UML.
+- Documentación de diseño separada en cuatro documentos: modelo central, realizaciones de CU, arquitectura y modelado web.
 
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.

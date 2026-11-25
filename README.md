@@ -24,6 +24,9 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/01-requisitos-funcionales-y-no-funcionales.md` — extracción de requisitos.
 - `docs/02-modelo-de-analisis.md` — modelo de análisis UML y referencia a diagramas.
 - `docs/03-modelo-de-diseno.md` — modelo de diseño UML y referencia a diagramas.
+- `docs/04-realizaciones-de-caso-de-uso.md` — las 8 realizaciones de caso de uso del diseño.
+- `docs/05-descripcion-de-la-arquitectura.md` — modelo de despliegue y mecanismos de diseño.
+- `docs/06-modelado-de-aplicaciones-web.md` — estereotipos web y realización web de CU-07.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `docs/images/modelo-de-diseno/` — imágenes del diseño (paquetes, subsistemas, interfaces, clases, capas, despliegue, modelado web y colaboración).
 - `SPRINTBOARD.md` — planificación Scrum.
