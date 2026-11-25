@@ -1,6 +1,6 @@
 # Modelo de Diseño del Sistema
 
-> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 29 diagramas de diseño distribuidos entre este documento y los documentos 04, 05, 06, 07 y 08.
+> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 31 diagramas de diseño distribuidos entre este documento y los documentos 04, 05, 06, 07, 08 y 09.
 
 | Campo | Valor |
 |---|---|
@@ -140,7 +140,7 @@ Las clases del diseño especifican visibilidad, atributos, tipos y operaciones c
 - El modelo de despliegue describe los nodos, sus conexiones y la ubicación física de los componentes.
 - Los mecanismos de diseño hacen homogénea y controlada la implementación de requisitos comunes.
 - El modelado web concreta las páginas cliente, las páginas servidor y los formularios con relaciones `<<Build>>`, `<<submit>>` y `<<redirect>>`.
-- Con los 18 diagramas de análisis, el proyecto reúne 47 diagramas UML (29 de diseño).
+- Con los 18 diagramas de análisis, el proyecto reúne 49 diagramas UML (31 de diseño).
 
 ---
 

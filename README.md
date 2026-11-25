@@ -29,6 +29,8 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/06-modelado-de-aplicaciones-web.md` — estereotipos web y realización web de CU-07.
 - `docs/07-patrones-de-diseno.md` — patrones aplicados y criterio de selección.
 - `docs/08-diseno-de-la-base-de-datos.md` — mapeo objeto-relacional y modelo relacional.
+- `docs/09-modelo-de-implementacion.md` — modelo de implementación, subsistemas y componentes.
+- `docs/10-plan-de-integracion.md` — plan de construcciones de los ocho casos de uso.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `docs/images/modelo-de-diseno/` — 5 diagramas del documento 03.
 - `docs/images/realizaciones-de-caso-de-uso/` — 16 diagramas del documento 04.
@@ -36,6 +38,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/images/modelado-de-aplicaciones-web/` — 3 diagramas del documento 06.
 - `docs/images/patrones-de-diseno/` — 1 diagrama del documento 07.
 - `docs/images/base-de-datos/` — 2 diagramas del documento 08.
+- `docs/images/modelo-de-implementacion/` — 2 diagramas del documento 09.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 
