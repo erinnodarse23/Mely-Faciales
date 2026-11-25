@@ -1,10 +1,10 @@
 # Modelo de Diseño del Sistema
 
-> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 17/21 + Spring Boot 3 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 20 diagramas referenciados desde `images/modelo-de-diseno/`.
+> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 20 diagramas referenciados desde `images/modelo-de-diseno/`.
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.1 |
+| Versión | 1.2 |
 | Estado | Aprobado para Sprint 0 |
 | Actualizado | 2026-11-25 |
 | Autor | Erin Nodarse |
@@ -101,56 +101,56 @@ Las clases del diseño especifican visibilidad, atributos, tipos y operaciones c
 
 - Clases: ![Clases CU-01](<images/modelo-de-diseno/clases-de-diseno/CU-01-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-01](<images/modelo-de-diseno/colaboracion-diseno/CU-01-colaboracion-diseno.png>)
-- Mensajes: 1. GET · 2. listarActivos · 3. delegación al servicio · 4. findByActivoTrue · 5-7. entidades · 8-9. DTO · 10. 200 OK / 10a. Próximamente.
+- Mensajes: 1. GET /api/servicios · 2. listarActivos() · 3. findByActivoTrue() · 4. consulta JPA (PostgreSQL) · 5. entidades · 6. lista · 7. DTO · 8. 200 OK / 8a. Próximamente.
 
 ### CU-02 — Ver detalle de servicio
 Incluye `Publicacion` como fuente del micro-video o la imagen de portada; si no hay video, se devuelve `imagenUrl`.
 
 - Clases: ![Clases CU-02](<images/modelo-de-diseno/clases-de-diseno/CU-02-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-02](<images/modelo-de-diseno/colaboracion-diseno/CU-02-colaboracion-diseno.png>)
-- Mensajes: 1. GET detalle · 2-3. obtenerDetalle · 4-5. repositorios · 6-7. entidades · 8. DTO con videoUrl / 8a. con imagenUrl · 9. 200 OK.
+- Mensajes: 1. GET /api/servicios/{id} · 2. obtenerDetalle(id) · 3. findById(id) · 4. findByServicio(id) · 5. Servicio · 6. Publicacion · 7. DTO con videoUrl · 8. 200 OK / 8a. imagenUrl.
 
 ### CU-03 — Publicar reseña
 `ResenaService` usa `MediaStorage` antes de persistir; la reseña nace con `estado=PUBLICADA`.
 
 - Clases: ![Clases CU-03](<images/modelo-de-diseno/clases-de-diseno/CU-03-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-03](<images/modelo-de-diseno/colaboracion-diseno/CU-03-colaboracion-diseno.png>)
-- Mensajes: 1. POST · 2-3. publicar · 4-5. guardarFoto (opcional) · 6. nueva Resena · 7-8. save · 9-10. DTO · 11. 201 Created.
+- Mensajes: 1. POST /api/resenas · 2. publicar(datos) · 3. guardarFoto(opcional) · 4. fotoUrl · 5. guardar(Resena) · 6. Resena PUBLICADA · 7. DTO · 8. 201 Created.
 
 ### CU-04 — Consultar muro de reseñas
 Filtra por `EstadoResena.PUBLICADA`.
 
 - Clases: ![Clases CU-04](<images/modelo-de-diseno/clases-de-diseno/CU-04-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-04](<images/modelo-de-diseno/colaboracion-diseno/CU-04-colaboracion-diseno.png>)
-- Mensajes: 1. GET filtro · 2-3. listarPublicadas · 4. findByEstado · 5-7. entidades y DTO · 8. 200 OK / 8a. estado vacío.
+- Mensajes: 1. GET /api/resenas · 2. listarPublicadas() · 3. findByEstado(PUBLICADA) · 4. entidades · 5. DTO · 6. 200 OK / 6a. estado vacío.
 
 ### CU-05 — Contactar por WhatsApp
 `WhatsAppLinkGenerator` construye el deep link con el número único de Mely y mensaje contextual según el servicio.
 
 - Clases: ![Clases CU-05](<images/modelo-de-diseno/clases-de-diseno/CU-05-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-05](<images/modelo-de-diseno/colaboracion-diseno/CU-05-colaboracion-diseno.png>)
-- Mensajes: 1. GET link · 2-3. construir · 4. mensaje con +5355795510 · 5. https://wa.me/5355795510?text=... · 6. 200 OK · 7. apertura del chat.
+- Mensajes: 1. Pulsar CTA · 2. construir(servicio) · 3. https://wa.me/5355795510?text=... · 4. URL · 5. Abrir conversación.
 
 ### CU-06 — Eliminar reseña
 Requiere sesión ADMIN; el borrado se confirma antes de llamar al repositorio.
 
 - Clases: ![Clases CU-06](<images/modelo-de-diseno/clases-de-diseno/CU-06-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-06](<images/modelo-de-diseno/colaboracion-diseno/CU-06-colaboracion-diseno.png>)
-- Mensajes: 1. credenciales · 2-3. autenticar · 4. DELETE · 5-6. eliminar · 7. deleteById · 8. confirmación · 9. 204 No Content.
+- Mensajes: 1. credenciales · 2. Sesion ADMIN · 3. Seleccionar reseña · 4. confirmarEliminacion() · 5. DELETE /api/resenas/{id} · 6. eliminar(id) · 7. deleteById(id) · 8. confirmación · 9. 204 No Content · 10. Muro actualizado / 10a. error al borrar.
 
 ### CU-07 — Iniciar sesión
 `AuthController` delega en `GestionIdentidad`; `AuthService` valida contra `Administradora`.
 
 - Clases: ![Clases CU-07](<images/modelo-de-diseno/clases-de-diseno/CU-07-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-07](<images/modelo-de-diseno/colaboracion-diseno/CU-07-colaboracion-diseno.png>)
-- Mensajes: 1. POST /api/auth/login · 2-3. autenticar · 4. búsqueda · 5. entidad · 6. SesionDTO / 6a. 401 · 7. 200 OK.
+- Mensajes: 1. /admin · 2. Mostrar formulario · 3. usuario y clave · 4. POST /api/auth/login · 5. autenticar(usuario, clave) · 6. buscarPorUsuario() · 7. resultado · 8. Sesion ADMIN / 8a. 401 · 9. 200 OK · 10. Panel.
 
 ### CU-08 — Gestionar contenido del catálogo
 Permite cambiar texto y/o video sin volver a desplegar; el video se sube vía `MediaStorage`.
 
 - Clases: ![Clases CU-08](<images/modelo-de-diseno/clases-de-diseno/CU-08-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-08](<images/modelo-de-diseno/colaboracion-diseno/CU-08-colaboracion-diseno.png>)
-- Mensajes: 1. PUT servicio · 2-3. actualizar · 4-5. guardarVideo (opcional) · 6-7. guardar · 8. ServicioDTO · 9. 200 OK.
+- Mensajes: 1. Editar servicio · 2. PUT /api/servicios/{id} · 3. actualizar(servicio) · 4. guardarVideo(opcional) · 5. videoUrl · 6. guardar(servicio) · 7. actualizado · 8. ServicioDTO · 9. 200 OK · 10. Catálogo actualizado / 10a. error al guardar.
 
 ## 9. Trazabilidad análisis → diseño → implementación prevista
 

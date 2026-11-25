@@ -23,6 +23,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Se eliminaron la segunda estilista, sus servicios y los filtros por estilista.
 - Se simplificó la interfaz a una sola identidad visual rosa/skincare.
 - Se renombró el repositorio a `Mely-Faciales` y se actualizaron los documentos 01, 02 y 03 a la versión 1.1.
+- Stack actualizado a Java 25 LTS + Spring Boot 4.1; eliminados Firebase y Firestore del modelo de diseño; nombres de controladores y mensajes alineados con los diagramas.
 
 ## [0.1.0] - 2026-11-25
 

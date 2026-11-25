@@ -15,7 +15,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - **Scrum Master / equipo de desarrollo:** Erin Nodarse.
 
 ## Stack previsto
-- Backend: Java 17/21 + Spring Boot 3 (API REST, Spring Security, Spring Data JPA).
+- Backend: Java 25 LTS + Spring Boot 4.1 (API REST, Spring Security, Spring Data JPA).
 - Frontend: React + TypeScript + Vite + Tailwind CSS (identidad visual única: rosa/skincare).
 - Persistencia: PostgreSQL.
 - Despliegue: por definir en un ADR posterior.
