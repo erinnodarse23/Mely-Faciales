@@ -1,10 +1,10 @@
 # Modelo de Diseño del Sistema
 
-> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 21 diagramas referenciados desde `images/modelo-de-diseno/`.
+> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 23 diagramas referenciados desde `images/modelo-de-diseno/`.
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.3 |
+| Versión | 1.4 |
 | Estado | Aprobado para Sprint 0 |
 | Actualizado | 2026-11-25 |
 | Autor | Erin Nodarse |
@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-**Índice de secciones:** 1. Contexto · 2. Análisis a diseño · 3. Jerarquía · 3.1 Arquitectura en capas · 4. Paquetes · 5. Subsistemas · 6. Interfaces · 7. Clases del diseño · 8. Realizaciones · 9. Trazabilidad · 10. Cobertura · 11. Conclusiones.
+**Índice de secciones:** 1. Contexto · 2. Análisis a diseño · 3. Jerarquía · 3.1 Arquitectura en capas · 4. Paquetes · 5. Subsistemas · 6. Interfaces · 7. Clases del diseño · 8. Realizaciones · 9. Trazabilidad · 10. Cobertura · 11. Descripción de la arquitectura · 12. Conclusiones.
 
 ## 1. Contexto y objetivos
 El diseño modela el sistema y define su arquitectura. La entrada esencial es el Modelo de Análisis ya documentado. Se impone una estructura que debe conservarse durante la implementación.
@@ -130,7 +130,7 @@ Incluye `Publicacion` como fuente del micro-video o la imagen de portada; si no 
 **Subsistema:** `SubsistemaResenas` + `SubsistemaMedios` · **Interfaz:** `GestionResenas` + `MediaStorage`
 - Clases: ![Clases CU-03](<images/modelo-de-diseno/clases-de-diseno/CU-03-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-03](<images/modelo-de-diseno/colaboracion-diseno/CU-03-colaboracion-diseno.png>)
-- Mensajes: 1. POST /api/resenas · 2. publicar(datos) · alt datos válidos: validar, guardarFoto(opcional) o sin foto, guardar(Resena), DTO, 201 Created · else datos inválidos: 400 Bad Request.
+- Mensajes: 1. POST /api/resenas · 2. publicar(datos) · alt datos válidos: validar; alt con foto: guardarFoto(opcional) y fotoUrl, else sin foto: omitirFoto(); guardar(Resena), DTO, 201 Created · else datos inválidos: 400 Bad Request.
 
 ### CU-04 — Consultar muro de reseñas
 Filtra por `EstadoResena.PUBLICADA`.
@@ -138,7 +138,7 @@ Filtra por `EstadoResena.PUBLICADA`.
 **Subsistema:** `SubsistemaResenas` · **Interfaz:** `GestionResenas`
 - Clases: ![Clases CU-04](<images/modelo-de-diseno/clases-de-diseno/CU-04-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-04](<images/modelo-de-diseno/colaboracion-diseno/CU-04-colaboracion-diseno.png>)
-- Mensajes: 1. GET /api/resenas · 2. listarPublicadas() · 3. findByEstado(PUBLICADA) · alt hay reseñas: entidades, DTO, 200 OK · else muro vacío: Sé la primera en opinar.
+- Mensajes: 1. GET /api/resenas · 2. listarPublicadas() · 3. findByEstado(PUBLICADA) · alt hay reseñas publicadas: entidades, DTO, 200 OK · else muro vacío: Sé la primera en opinar.
 
 ### CU-05 — Contactar por WhatsApp
 `WhatsAppLinkGenerator` construye el deep link con el número único de Mely y mensaje contextual según el servicio.
@@ -154,7 +154,7 @@ Requiere sesión ADMIN; el borrado se confirma antes de llamar al repositorio.
 **Subsistema:** `SubsistemaIdentidad` + `SubsistemaResenas` · **Interfaz:** `GestionIdentidad` + `GestionResenas`
 - Clases: ![Clases CU-06](<images/modelo-de-diseno/clases-de-diseno/CU-06-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-06](<images/modelo-de-diseno/colaboracion-diseno/CU-06-colaboracion-diseno.png>)
-- Mensajes: 1. credenciales · alt credenciales válidas: Sesion ADMIN, seleccionar, confirmar, DELETE, eliminar, deleteById, 204 No Content y muro actualizado; else cancelación: operación cancelada · else credenciales inválidas: 401 Unauthorized.
+- Mensajes: 1. credenciales · alt credenciales válidas: Sesion ADMIN, seleccionar reseña, alt confirmación aceptada: confirmar, DELETE, eliminar, deleteById, 204 No Content y muro actualizado; else cancelación: operación cancelada · else credenciales inválidas: 401 Unauthorized.
 
 ### CU-07 — Iniciar sesión
 `AuthController` delega en `GestionIdentidad`; `AuthService` valida contra `Administradora`.
@@ -170,7 +170,7 @@ Permite cambiar texto y/o video sin volver a desplegar; el video se sube vía `M
 **Subsistema:** `SubsistemaCatalogo` + `SubsistemaMedios` · **Interfaz:** `GestionServicios` + `MediaStorage`
 - Clases: ![Clases CU-08](<images/modelo-de-diseno/clases-de-diseno/CU-08-clases-diseno.png>)
 - Colaboración: ![Colaboración CU-08](<images/modelo-de-diseno/colaboracion-diseno/CU-08-colaboracion-diseno.png>)
-- Mensajes: 1. Editar servicio · 2. PUT /api/servicios/{id} · 3. actualizar · alt servicio válido: guardarVideo(opcional) o solo texto, guardar, DTO, 200 OK y catálogo actualizado · else error al guardar: 500.
+- Mensajes: 1. Editar servicio · 2. PUT /api/servicios/{id} · 3. actualizar · alt servicio válido: alt con video: guardarVideo(opcional) y videoUrl, else solo texto: mantener video anterior; guardar(servicio), ServicioDTO, 200 OK y catálogo actualizado · else error al guardar: 500.
 
 ## 9. Trazabilidad análisis → diseño → implementación prevista
 
@@ -195,12 +195,62 @@ Permite cambiar texto y/o video sin volver a desplegar; el video se sube vía `M
 - [x] CU-07: credenciales válidas e inválidas
 - [x] CU-08: texto, video y error al guardar
 - Los 8 diagramas de secuencia del diseño incluyen bloques `alt` para los flujos alternos.
+- Los 2 diagramas de la sección 11 muestran los nodos y la asignación de componentes de la arquitectura.
 
-## 11. Conclusiones
+## 11. Descripción de la arquitectura
+La vista de arquitectura describe el modelo de despliegue, la asignación de los componentes a los nodos y los mecanismos de diseño que homogeneízan la implementación.
+
+### 11.1 Requisitos de distribución y configuración de red
+- La aplicación es web pública: cliente móvil o escritorio con navegador, sin instalación.
+- El frontend se sirve como sitio estático por HTTPS; el backend se ejecuta en una VM siempre activa para evitar cold starts (RNF-07). La decisión definitiva de alojamiento se difiere a un ADR del Sprint 2.
+- PostgreSQL se despliega en el entorno del servidor de datos y solo es accesible por red interna; el puerto 5432 no se expone a Internet.
+- Las fotos y los videos se guardan en un volumen del servidor de aplicaciones mediante `DiscoMediaStorage`, detrás de la interfaz `MediaStorage` (RNF-09).
+- WhatsApp es un servicio externo: se emplea un deep link HTTPS, sin API de negocio ni credenciales.
+- No se justifican enlaces redundantes en la configuración actual; su incorporación queda registrada para el ADR de despliegue.
+
+### 11.2 Modelo de despliegue
+![Modelo de despliegue](<images/modelo-de-diseno/despliegue/modelo-despliegue-diseno.png>)
+
+| Nodo | Propósito | Software | Hardware orientativo |
+|---|---|---|---|
+| Cliente | Navegar el catálogo, enviar reseñas y abrir WhatsApp | Navegador moderno en Android, iOS, Windows o Linux | 2 GB RAM y conexión a Internet |
+| Servidor Web | Publicar el build estático del frontend | Servidor de archivos estáticos con HTTPS | Servicio gestionado, sin administración de sistema operativo |
+| Servidor de Aplicaciones | Ejecutar la API REST, la lógica de negocio y el almacenamiento de medios | Linux, Java 25 LTS, Spring Boot 4.1, `DiscoMediaStorage` | 2 vCPU, 2 GB RAM, 20 GB SSD |
+| Servidor de Datos | Almacenar servicios, reseñas, publicaciones y usuarios | Linux, PostgreSQL | 2 vCPU, 4 GB RAM, 20 GB SSD |
+| WhatsApp | Servicio externo de contacto | Aplicación WhatsApp en el dispositivo del cliente | Sin requisitos locales en el sistema |
+
+Los protocolos entre nodos son HTTPS para cliente-servidor y para el deep link a WhatsApp, y JDBC sobre TCP 5432 entre la API y PostgreSQL.
+
+### 11.3 Asignación de componentes a nodos
+![Asignación de componentes](<images/modelo-de-diseno/despliegue/asignacion-componentes-diseno.png>)
+
+| Nodo | Elementos lógicos asignados | Artefacto físico |
+|---|---|---|
+| Cliente | Componentes React y DTO de interfaz | Build del frontend en el navegador |
+| Servidor Web | Interfaz de usuario estática | HTML, CSS y JavaScript generados por Vite |
+| Servidor de Aplicaciones | `ServicioController`, `ResenaController`, `AuthController`, servicios, repositorios, `MediaStorage` | `mely-faciales.jar` más volumen de medios |
+| Servidor de Datos | Entidades `Servicio`, `Publicacion`, `Resena`, `Administradora` | Esquema `mely_faciales` en PostgreSQL |
+
+### 11.4 Mecanismos de diseño
+| Mecanismo | Elementos del proyecto | Requisito atendido |
+|---|---|---|
+| Persistencia | Spring Data JPA, `ServicioRepository`, `ResenaRepository`, `PublicacionRepository` | RF-01 a RF-08, RNF-06 |
+| Autorización | Spring Security, `AuthController`, `GestionIdentidad`, rol ADMIN | RF-06, RF-07, RNF-05 |
+| Transacciones | `@Transactional` en `ResenaService` y `ServicioService` | Consistencia entre reseña o servicio y sus medios |
+| Registro de trazas | Logging por solicitud con identificador de correlación | RNF-05, RNF-08 |
+| Almacenamiento de medios | `MediaStorage` y `DiscoMediaStorage` | RF-03, RF-08, RNF-09 |
+| Generación de enlaces | `GeneradorEnlacesWhatsApp`, `WhatsAppLinkGenerator` | RF-05 |
+
+Estos mecanismos refinan los mecanismos de análisis y se aplican de forma homogénea en todos los casos de uso.
+
+## 12. Conclusiones
 - El modelo de análisis es conceptual; el modelo de diseño es físico y conserva su estructura como esquema de implementación.
 - El diseño especifica visibilidad, tipos y operaciones usando la sintaxis del lenguaje elegido.
 - El resultado principal es el modelo de diseño, integrado por clases del diseño, paquetes, subsistemas e interfaces de aplicación.
 - La arquitectura en capas garantiza dependencias descendentes entre presentación, negocio, infraestructura y dominio.
+- El modelo de despliegue describe los nodos, sus conexiones y la ubicación física de los componentes.
+- Los mecanismos de diseño hacen homogénea y controlada la implementación de requisitos comunes.
+- Con los 18 diagramas de análisis, el proyecto reúne 41 diagramas UML (23 de diseño).
 
 ---
 
