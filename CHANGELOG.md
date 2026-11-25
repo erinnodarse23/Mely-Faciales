@@ -11,7 +11,8 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Actualización de README.md y SPRINTBOARD.md con la documentación cerrada en Sprint 0.
 - Reorientación del proyecto a Mely Faciales con catálogo exclusivo de tratamientos faciales.
 - Número de WhatsApp confirmado: `+5355795510`, con deep link `https://wa.me/5355795510?text=...`.
-- Los 37 diagramas regenerados para reflejar el nuevo alcance.
+- Los 38 diagramas regenerados para reflejar el nuevo alcance.
+- Diagramas de análisis con estereotipos Boundary/Control/Entity, paquete de análisis y colaboraciones con mensajes numerados.
 
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.
@@ -31,7 +32,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - `SPRINTBOARD.md` con la planificación Scrum del Sprint 0.
 - Documento de extracción de requisitos funcionales y no funcionales.
 - Documento del Modelo de Análisis (UML) con referencias a los diagramas.
-- 17 diagramas exportados: 1 global, 8 de clases del análisis y 8 de colaboración.
+- 18 diagramas exportados: 1 global, 1 de paquetes, 8 de clases del análisis y 8 de colaboración.
 
 ---
 

@@ -1,6 +1,6 @@
 # Modelo de Análisis del Sistema
 
-> **Resumen ejecutivo.** 8 casos de uso, 17 clases del análisis y 17 diagramas exportados para Mely Faciales (1 global, 8 de clases y 8 de colaboración). Los diagramas no se incrustan: se referencian desde `images/diagramas de clases del analisis/`.
+> **Resumen ejecutivo.** 8 casos de uso, 17 clases del análisis y 18 diagramas (1 global, 1 de paquetes, 8 de clases y 8 de colaboración). Los diagramas no se incrustan: se referencian desde `images/diagramas de clases del analisis/`.
 
 | Campo | Valor |
 |---|---|
@@ -36,11 +36,13 @@ Actores: Cliente (primario), Administradora = Mely (secundario), WhatsApp (siste
 | CU-08 | Gestionar contenido del catálogo sin volver a desplegar | Administradora | Media |
 
 ## 3. Paquetes y clases del análisis
-Paquetes: `Paquete_Interfaz` (Frontera), `Paquete_Negocio` (Control), `Paquete_Dominio` (Entity).
+Paquetes: `Paquete_Interfaz` (Boundary), `Paquete_Negocio` (Control), `Paquete_Dominio` (Entity).
+
+![Paquetes del análisis](<images/diagramas de clases del analisis/paquetes/paquetes-analisis.png>)
 
 | Estereotipo | Significado |
 |---|---|
-| Interfaz (Frontera) | Frontera con el usuario o con un sistema externo |
+| Interfaz (Boundary) | Frontera con el usuario o con un sistema externo |
 | Control | Coordina un caso de uso y a las entidades |
 | Entidad | Información del dominio del negocio |
 
@@ -67,56 +69,56 @@ Paquetes: `Paquete_Interfaz` (Frontera), `Paquete_Negocio` (Control), `Paquete_D
 **Diagrama global:** `images/diagramas de clases del analisis/clases/modelo-analisis-clases.png`
 
 ## 4. Realizaciones de los casos de uso
-Para cada caso de uso se entrega un diagrama de clases del análisis y un diagrama de colaboración con mensajes numerados, construidos a partir de su descripción literal.
+Para cada caso de uso se entrega un diagrama de clases del análisis y un diagrama de colaboración con mensajes numerados sobre enlaces; los escenarios alternos van en trazo discontinuo.
 
 ### CU-01 — Consultar catálogo de servicios
 Actor: Cliente. Precondición: web accesible. Postcondición: catálogo visible.
 Flujo principal: entra → ve el catálogo. Alterno: sin servicios activos muestra "Próximamente".
 - Diagrama de clases: ![Diagrama de clases CU-01](<images/diagramas de clases del analisis/clases/CU-01-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-01](<images/diagramas de clases del analisis/colaboracion/CU-01-colaboracion.png>)
-- Mensajes principales: 1. Entra · 2. mostrarCatalogo · 3. listarServicios · 4. buscarActivos · 5. servicios · 6. lista · 7. Mostrar catálogo / 7a. Próximamente.
+- Mensajes principales: 1: Entra · 2: mostrarCatalogo() · 3: listarServicios() · 4: buscarActivos() · 5: servicios · 6: lista · 7: Mostrar catálogo / 7a: Sin servicios activos: Próximamente.
 
 ### CU-02 — Ver detalle de servicio
 Actor: Cliente. Postcondición: detalle con video/descripción visible. Alternos: sin video → imagen de portada.
 - Diagrama de clases: ![Diagrama de clases CU-02](<images/diagramas de clases del analisis/clases/CU-02-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-02](<images/diagramas de clases del analisis/colaboracion/CU-02-colaboracion.png>)
-- Mensajes principales: 1. Selecciona tarjeta · 2. mostrarDetalle · 3. obtenerDetalle · 4. buscar · 5. buscarPorServicio · 6-7. datos y videoUrl · 8. Mostrar video / 8a. Mostrar imagen.
+- Mensajes principales: 1: Selecciona tarjeta · 2: mostrarDetalle() · 3: obtenerDetalle() · 4: buscar() · 5: buscarPorServicio() · 6: datos · 7: videoUrl · 8: Mostrar video / 8a: Sin video: mostrar imagen de portada.
 
 ### CU-03 — Publicar reseña
 Actor: Cliente. Postcondición: reseña visible con estado PUBLICADA. Alternos: sin foto, datos inválidos, foto inválida.
 - Diagrama de clases: ![Diagrama de clases CU-03](<images/diagramas de clases del analisis/clases/CU-03-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-03](<images/diagramas de clases del analisis/colaboracion/CU-03-colaboracion.png>)
-- Mensajes principales: 1. Dejar reseña · 2. listarServicios · 3-4. buscarPorServicio · 5. Mostrar formulario · 6. Ingresar datos · 7. validar · 8a/9a. Error · 8b/9b. guardarFoto · 10. crear · 11. crearReseña(PUBLICADA) · 12. reseña creada · 13. publicar · 14. Confirmación.
+- Mensajes principales: 1: Dejar reseña · 2: listarServicios() · 3: buscarPorServicio() · 4: servicios · 5: Mostrar formulario · 6: Ingresar datos · 7: validar() · 8a: Error: datos inválidos · 9a: Mostrar error de datos · 8b: guardarFoto() · 9b: fotoUrl · 8c: Error: foto inválida · 9c: Mostrar error de foto · 8d: Sin foto: omitir foto · 10: crear() · 11: crearReseña(PUBLICADA) · 12: reseña creada · 13: publicar · 14: Confirmación.
 
 ### CU-04 — Consultar muro de reseñas
 Actor: Cliente. Postcondición: muro visible. Alterno: muro vacío → "Sé la primera en opinar".
 - Diagrama de clases: ![Diagrama de clases CU-04](<images/diagramas de clases del analisis/clases/CU-04-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-04](<images/diagramas de clases del analisis/colaboracion/CU-04-colaboracion.png>)
-- Mensajes principales: 1. Ver reseñas · 2. listarPublicadas · 3. reseñas · 4. lista · 5. Mostrar muro / 5a. Estado vacío.
+- Mensajes principales: 1: Ver reseñas · 2: listarPublicadas() · 3: buscarPublicadas() · 4: reseñas · 5: lista · 6: Mostrar muro / 6a: Muro vacío: Sé la primera en opinar.
 
 ### CU-05 — Contactar por WhatsApp
 Actor: Cliente. Postcondición: chat abierto con mensaje contextual. Alterno: sin WhatsApp → número para copiar.
 - Diagrama de clases: ![Diagrama de clases CU-05](<images/diagramas de clases del analisis/clases/CU-05-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-05](<images/diagramas de clases del analisis/colaboracion/CU-05-colaboracion.png>)
-- Mensajes principales: 1. Elige servicio · 2. Mostrar detalle · 3. Pulsa CTA · 4. construirLink · 5. mensaje contextual con +5355795510 · 6. wa.me · 7. Abrir chat / 7a. Copiar número.
+- Mensajes principales: 1: Elige servicio · 2: Mostrar detalle · 3: Pulsa CTA · 4: construirLink() · 5: mensaje contextual con +5355795510 · 6: wa.me · 7: Abrir chat / 7a: Sin WhatsApp: copiar +5355795510.
 
 ### CU-06 — Eliminar reseña
 Actor: Administradora. Postcondición: reseña no visible. Alternos: credenciales inválidas, cancelación, error al borrar.
 - Diagrama de clases: ![Diagrama de clases CU-06](<images/diagramas de clases del analisis/clases/CU-06-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-06](<images/diagramas de clases del analisis/colaboracion/CU-06-colaboracion.png>)
-- Mensajes principales: 1. Credenciales · 2. autenticar · 3. sesión ADMIN / 3a. error · 4. Panel · 5. listarReseñas · 6. buscarTodas · 7. reseñas · 8. Seleccionar · 9. confirmarEliminación · 10. borrar · 11. confirmación · 12. refrescar · 13. Reseña no visible.
+- Mensajes principales: 1: Credenciales · 2: autenticar() · 3: buscarPorUsuario() · 4: administradora · 5: sesión ADMIN / 5a: Credenciales inválidas / 5b: Error de autenticación · 6: Panel · 7: listarReseñas() · 8: buscarTodas() · 9: buscarPorId() · 10: reseñas · 11: lista de reseñas · 12: Seleccionar · 13: confirmarEliminación() · 14: Aceptar / 14a: Cancelación · 15: borrar() · 16: deleteById() · 17: confirmación / 17a: Error al borrar · 18: refrescar · 19: Reseña no visible.
 
 ### CU-07 — Iniciar sesión
 Actor: Administradora. Postcondición: sesión con rol ADMIN. Alternos: inválida, sesión ya activa.
 - Diagrama de clases: ![Diagrama de clases CU-07](<images/diagramas de clases del analisis/clases/CU-07-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-07](<images/diagramas de clases del analisis/colaboracion/CU-07-colaboracion.png>)
-- Mensajes principales: 1. Entrar a /admin · 2. Mostrar formulario · 3. Credenciales · 4. autenticar · 5. buscarPorUsuario · 6. resultado · 7. sesión ADMIN / 7a. error · 8. Panel / 8a. Mensaje de error.
+- Mensajes principales: 1: Entrar a /admin · 2: Mostrar formulario · 3: Credenciales · 4: autenticar() · 5: buscarPorUsuario() · 6: resultado · 7: sesión ADMIN / 7a: Credenciales inválidas / 7b: Mensaje de error / 7c: Sesión ya activa · 8: Panel.
 
 ### CU-08 — Gestionar contenido del catálogo sin volver a desplegar
 Actor: Administradora. Postcondición: catálogo actualizado sin volver a desplegar. Alternos: solo texto, nuevo video, video inválido.
 - Diagrama de clases: ![Diagrama de clases CU-08](<images/diagramas de clases del analisis/clases/CU-08-clases.png>)
 - Diagrama de colaboración: ![Colaboración CU-08](<images/diagramas de clases del analisis/colaboracion/CU-08-colaboracion.png>)
-- Mensajes principales: 1. Editar servicio · 2. obtener · 3. buscar · 4-5. Mostrar formulario · 6. Modificar · 7-8. guardarVideo (opcional) · 9. actualizar · 10. guardar · 11. actualizado · 12. Confirmación · 13. Catálogo actualizado.
+- Mensajes principales: 1: Editar servicio · 2: obtener() · 3: buscar() · 4: servicio · 5: Mostrar formulario · 6: Formulario visible · 7: Modificar texto · 8: Solo texto: sin video · 9: guardarVideo() · 10: videoUrl / 9a: Video inválido / 10a: Error de video · 11: actualizar() · 12: guardado · 13: actualizado · 14: Confirmación / 14a: Error al guardar · 15: Catálogo actualizado.
 
 ## 5. Trazabilidad Modelo de CU → Modelo de Análisis
 | CU | Clases que lo realizan |

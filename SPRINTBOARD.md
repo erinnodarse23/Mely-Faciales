@@ -49,12 +49,13 @@ Progreso del Sprint 0: `██████████ 100%` (12/12 tareas Done)
 | SPRINTBOARD.md | Done |
 | Extracción de requisitos funcionales y no funcionales | Done |
 | Modelo de análisis con referencias a diagramas | Done |
-| Exportar 17 diagramas de análisis | Done |
+| Exportar 18 diagramas de análisis | Done |
 | Documento del Modelo de Diseño | Done |
 | 20 diagramas exportados a PNG | Done |
 | Actualización de README y CHANGELOG | Done |
 | Actualización del Sprintboard | Done |
-| Reorientación a Mely Faciales y regeneración de 37 diagramas | Done |
+| Reorientación a Mely Faciales y regeneración de 38 diagramas | Done |
+| Diagrama de paquetes y colaboraciones numeradas | Done |
 
 ## Sprints futuros (por definir)
 - Sprint 1: implementación del backend Spring Boot y del frontend React.
