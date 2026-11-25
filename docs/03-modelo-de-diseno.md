@@ -1,10 +1,10 @@
 # Modelo de Diseño del Sistema
 
-> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 23 diagramas referenciados desde `images/modelo-de-diseno/`.
+> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 26 diagramas referenciados desde `images/modelo-de-diseno/`.
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.4 |
+| Versión | 1.5 |
 | Estado | Aprobado para Sprint 0 |
 | Actualizado | 2026-11-25 |
 | Autor | Erin Nodarse |
@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-**Índice de secciones:** 1. Contexto · 2. Análisis a diseño · 3. Jerarquía · 3.1 Arquitectura en capas · 4. Paquetes · 5. Subsistemas · 6. Interfaces · 7. Clases del diseño · 8. Realizaciones · 9. Trazabilidad · 10. Cobertura · 11. Descripción de la arquitectura · 12. Conclusiones.
+**Índice de secciones:** 1. Contexto · 2. Análisis a diseño · 3. Jerarquía · 3.1 Arquitectura en capas · 4. Paquetes · 5. Subsistemas · 6. Interfaces · 7. Clases del diseño · 8. Realizaciones · 9. Trazabilidad · 10. Cobertura · 11. Descripción de la arquitectura · 12. Modelado de aplicaciones web · 13. Conclusiones.
 
 ## 1. Contexto y objetivos
 El diseño modela el sistema y define su arquitectura. La entrada esencial es el Modelo de Análisis ya documentado. Se impone una estructura que debe conservarse durante la implementación.
@@ -196,6 +196,7 @@ Permite cambiar texto y/o video sin volver a desplegar; el video se sube vía `M
 - [x] CU-08: texto, video y error al guardar
 - Los 8 diagramas de secuencia del diseño incluyen bloques `alt` para los flujos alternos.
 - Los 2 diagramas de la sección 11 muestran los nodos y la asignación de componentes de la arquitectura.
+- La sección 12 aplica los estereotipos web a la realización de CU-07 con sus flujos alternos.
 
 ## 11. Descripción de la arquitectura
 La vista de arquitectura describe el modelo de despliegue, la asignación de los componentes a los nodos y los mecanismos de diseño que homogeneízan la implementación.
@@ -243,14 +244,56 @@ Los protocolos entre nodos son HTTPS para cliente-servidor y para el deep link a
 
 Estos mecanismos refinan los mecanismos de análisis y se aplican de forma homogénea en todos los casos de uso.
 
-## 12. Conclusiones
+## 12. Modelado de aplicaciones web
+La web de Mely Faciales se modela con la extensión UML para aplicaciones web. Las clases interfaz, control y entidad del análisis se refinan como páginas cliente, páginas servidor y entidades proveedoras de información.
+
+### 12.1 Mapa de navegación
+![Mapa de navegación](<images/modelo-de-diseno/web/mapa-navegacion-web.png>)
+
+El mapa muestra cuatro niveles de profundidad: Inicio; Catálogo, Muro y Login; Detalle, Formulario de reseña y Panel; y Editor de servicio. El detalle de servicio enlaza con WhatsApp mediante un deep link HTTPS.
+
+### 12.2 Guía de estilos
+| Elemento | Definición |
+|---|---|
+| Identidad visual | Rosa/skincare cálido: primario `#F8BBD0`, superficie `#FCE4EC`, texto `#424242` |
+| Tipografía | `Inter`, con fallback `system-ui`; jerarquía clara de títulos y cuerpo |
+| Componentes | Botones redondeados, tarjetas con sombra suave y micro-videos en bucle y silenciados |
+| Diseño | Mobile-first desde 320 px, navegación por teclado y contraste AA |
+| Contenido | Español neutro; textos alternativos en todas las imágenes |
+
+### 12.3 Estereotipos y relaciones web
+| Elemento | Estereotipo | Uso en Mely Faciales | Prefijo |
+|---|---|---|---|
+| Página cliente | `<<ClientPage>>` | Pantallas React renderizadas en el navegador | `cl_` |
+| Página servidor | `<<ServerPage>>` | Recursos REST que construyen datos y redirigen | `sp_` |
+| Formulario | `<<Form>>` | Formulario de login y formulario de reseña | `Form_` |
+| Construcción | `<<Build>>` | De página servidora a página cliente | — |
+| Hipervínculo | hipervínculo | De página cliente a otra página cliente | — |
+| Envío | `<<submit>>` | De formulario a página servidora | — |
+| Redirección | `<<redirect>>` | De página servidora a página servidora | — |
+| Inclusión | `<<include>>` | Reutilización de comportamiento servidor | — |
+
+Las marcas «Build», «submit» y «redirect» en los diagramas son la forma textual de los estereotipos `<<Build>>`, `<<submit>>` y `<<redirect>>`.
+
+### 12.4 Realización web de CU-07 — Iniciar sesión
+Esta vista web complementa, sin sustituir, la realización tecnológica de CU-07 en la sección 8.
+
+**Clases del diseño web:** ![Clases web CU-07](<images/modelo-de-diseno/web/CU-07-clases-web.png>)
+
+**Secuencia web:** ![Secuencia web CU-07](<images/modelo-de-diseno/web/CU-07-colaboracion-web.png>)
+
+- `cl_Inicio` enlaza por hipervínculo con `cl_Login`; `sp_Login` construye la página cliente con `<<Build>>`; `Form_Login` envía sus campos a `sp_Auth` con `<<submit>>`; `sp_Auth` delega en `AuthService` y redirige a `sp_PanelAdmin` con `<<redirect>>`, que construye `cl_PanelAdmin`.
+- Flujos alternos: credenciales inválidas devuelven 401 y sesión ya activa muestra el mensaje correspondiente.
+
+## 13. Conclusiones
 - El modelo de análisis es conceptual; el modelo de diseño es físico y conserva su estructura como esquema de implementación.
 - El diseño especifica visibilidad, tipos y operaciones usando la sintaxis del lenguaje elegido.
 - El resultado principal es el modelo de diseño, integrado por clases del diseño, paquetes, subsistemas e interfaces de aplicación.
 - La arquitectura en capas garantiza dependencias descendentes entre presentación, negocio, infraestructura y dominio.
 - El modelo de despliegue describe los nodos, sus conexiones y la ubicación física de los componentes.
 - Los mecanismos de diseño hacen homogénea y controlada la implementación de requisitos comunes.
-- Con los 18 diagramas de análisis, el proyecto reúne 41 diagramas UML (23 de diseño).
+- El modelado web concreta las páginas cliente, las páginas servidor y los formularios con relaciones `<<Build>>`, `<<submit>>` y `<<redirect>>`.
+- Con los 18 diagramas de análisis, el proyecto reúne 44 diagramas UML (26 de diseño).
 
 ---
 
