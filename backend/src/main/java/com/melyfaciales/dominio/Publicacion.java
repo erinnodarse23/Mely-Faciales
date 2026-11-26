@@ -53,6 +53,14 @@ public class Publicacion {
         this.descripcion = descripcion;
     }
 
+    public void actualizarContenido(String url, String descripcion) {
+        if (url == null || url.isBlank()) {
+            throw new IllegalArgumentException("La URL de la publicación no puede estar vacía");
+        }
+        this.url = url;
+        this.descripcion = descripcion;
+    }
+
     public UUID getId() {
         return id;
     }

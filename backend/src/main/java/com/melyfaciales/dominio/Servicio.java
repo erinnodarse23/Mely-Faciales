@@ -38,6 +38,12 @@ public class Servicio {
         this.activo = activo;
     }
 
+    public void actualizarContenido(String descripcion, String imagenUrl, boolean activo) {
+        this.descripcion = descripcion;
+        this.imagenUrl = imagenUrl;
+        this.activo = activo;
+    }
+
     public UUID getId() {
         return id;
     }

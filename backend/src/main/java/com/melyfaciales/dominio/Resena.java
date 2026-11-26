@@ -61,6 +61,11 @@ public class Resena {
         this.estado = estado;
     }
 
+    public void publicar(String fotoUrl) {
+        this.fotoUrl = fotoUrl;
+        this.estado = EstadoResena.PUBLICADA;
+    }
+
     public UUID getId() {
         return id;
     }
