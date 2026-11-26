@@ -33,6 +33,31 @@ Una clase compuesta por otras persistentes también lo es; por eso `Publicacion`
 
 `String` se convierte a `VARCHAR` o `TEXT` según longitud, `boolean` a `BOOLEAN`, `int` a `INTEGER` y los enumerados a `VARCHAR` con restricción `CHECK`.
 
+### 2.1 Tipos y restricciones
+| Columna | Tipo PostgreSQL | Restricción |
+|---|---|---|
+| `servicios.id` | `UUID` | `NOT NULL`, clave primaria |
+| `servicios.nombre` | `VARCHAR(120)` | `NOT NULL` |
+| `servicios.descripcion` | `TEXT` | Opcional |
+| `servicios.imagen_url` | `TEXT` | Opcional |
+| `servicios.activo` | `BOOLEAN` | `NOT NULL` |
+| `publicaciones.servicio_id` | `UUID` | `NOT NULL`, clave foránea a `servicios(id)` |
+| `publicaciones.tipo` | `VARCHAR(20)` | `NOT NULL` |
+| `publicaciones.url` | `TEXT` | `NOT NULL` |
+| `publicaciones.descripcion` | `TEXT` | Opcional |
+| `resenas.servicio_id` | `UUID` | `NOT NULL`, clave foránea a `servicios(id)` |
+| `resenas.nombre_clienta` | `VARCHAR(80)` | `NOT NULL` |
+| `resenas.valoracion` | `INTEGER` | `NOT NULL`, `CHECK valoracion BETWEEN 1 AND 5` |
+| `resenas.comentario` | `TEXT` | `NOT NULL` |
+| `resenas.foto_url` | `TEXT` | Opcional |
+| `resenas.estado` | `VARCHAR(20)` | `NOT NULL`, solo `PUBLICADA` |
+| `administradoras.id` | `UUID` | `NOT NULL`, clave primaria |
+| `administradoras.usuario` | `VARCHAR(60)` | `NOT NULL`, `UNIQUE usuario` |
+| `administradoras.nombre` | `VARCHAR(80)` | `NOT NULL` |
+| `administradoras.rol` | `VARCHAR(20)` | `NOT NULL` |
+
+El esquema se versiona en Git junto al código que lo consume en Sprint 1: cada cambio de columna o restricción queda en el mismo commit y se comprueba contra la base de prueba antes de integrarse. No se introduce una herramienta de migración adicional; la evidencia es el propio historial y el modelo relacional referenciado.
+
 ## 3. Modelo relacional
 ![Modelo relacional](<images/base-de-datos/modelo-relacional.png>)
 

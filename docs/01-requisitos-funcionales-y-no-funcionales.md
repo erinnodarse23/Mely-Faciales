@@ -25,7 +25,7 @@ Documentar qué debe hacer la web de Mely Faciales (requisitos funcionales) y c�
 | Rol | Interés |
 |---|---|
 | Cliente | Ver servicios, opinar, contactar rápido |
-| Melissa | Publicidad de limpiezas faciales y tratamientos; borrar reseñas |
+| Mely | Publicidad de limpiezas faciales y tratamientos; borrar reseñas |
 | Erin Nodarse | Entregar, mantener y mostrar el proyecto en su portafolio |
 
 Actores del sistema: **Cliente** (primario), **Administradora** = Mely (secundario), **WhatsApp** (sistema externo).
@@ -42,7 +42,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 | Prioridad | Significado |
 |---|---|
 | Must | Imprescindible para el MVP |
-| Should | Importante; puede planificarse en el Sprint 2 |
+| Should | Importante; se planifica en Sprint 1 cuando la capacidad lo permite |
 | Could | Deseable si hay capacidad |
 
 | ID | Requisito | Actor | Prioridad | Criterios de aceptación |
@@ -64,7 +64,7 @@ Prioridad: MoSCoW (Must / Should / Could).
 | RNF-02 | Responsive | Diseño mobile-first, usable en 320 px de ancho |
 | RNF-03 | Accesibilidad | Contraste AA, textos alternativos en imágenes, navegación por teclado |
 | RNF-04 | SEO local | Títulos, meta descripción y Open Graph; palabras clave por servicio |
-| RNF-05 | Seguridad | HTTPS, validación de entradas, anti-spam básico, endpoints de admin protegidos |
+| RNF-05 | Seguridad | HTTPS, validación de entradas, campo señuelo (honeypot) oculto sin CAPTCHA y endpoints de admin protegidos |
 | RNF-06 | Escalabilidad y cambio | El contenido vive en base de datos; cambiar texto/video no requiere volver a desplegar |
 | RNF-07 | Disponibilidad | Sin cold starts visibles en la web (decisión de despliegue en ADR posterior) |
 | RNF-08 | Mantenibilidad | Arquitectura en capas y documentación oficial actualizada |
@@ -81,8 +81,8 @@ Prioridad: MoSCoW (Must / Should / Could).
 | RF-05 | CU-05 | 1 |
 | RF-06 | CU-06 | 1 |
 | RF-07 | CU-07 | 1 |
-| RF-08 | CU-08 | 2 |
-| RF-09 | CU-01 / CU-02 | 2 |
+| RF-08 | CU-08 | 1 |
+| RF-09 | CU-01 / CU-02 | 1 |
 
 ## 8. Requisitos excluidos explícitamente
 - Sistema de agenda o reserva de citas (fuera de alcance en esta fase).

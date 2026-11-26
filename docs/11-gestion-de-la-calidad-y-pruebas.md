@@ -1,6 +1,6 @@
 # Gestión de la calidad y pruebas
 
-> **Resumen ejecutivo.** Se consolida en un solo documento la gestión de la calidad y la fase de prueba de Mely Faciales. Scrum es la metodología única; PMBOK y CMMI se usan solo como marcos de referencia y UML como notación única. Se cubren los atributos de calidad mapeados a RNF-01..10, el costo de la calidad, PPQA, la verificación y la validación, el ciclo de pruebas, los niveles y tipos, el diseño de casos desde CU-03 y la prueba del camino básico de `ResenaService.publicar`. Los catorce casos diseñados están listos para Sprint 1; hoy no hay código ni ejecución, y los estados se declaran sin anticipar resultados.
+> **Resumen ejecutivo.** Se consolida en un solo documento la gestión de la calidad y la fase de prueba de Mely Faciales. Scrum es la metodología única; PMBOK y CMMI se usan solo como marcos de referencia y UML como notación única. Se cubren los atributos de calidad mapeados a RNF-01 a RNF-10, el costo de la calidad, PPQA, la verificación y la validación, el ciclo de pruebas, los niveles y tipos, el diseño de casos desde CU-03 y la prueba del camino básico de `ResenaService.publicar`. Los quince casos diseñados están listos para Sprint 1; hoy no hay código ni ejecución, y los estados se declaran sin anticipar resultados.
 
 | Campo | Valor |
 |---|---|
@@ -35,7 +35,7 @@ La calidad de software es el grado en que un producto, componente o proceso cump
 | Usabilidad | RNF-02 | Diseño mobile-first usable a 320 px de ancho | Preparado para Sprint 1 |
 | Usabilidad | RNF-03 | Contraste AA, textos alternativos y navegación por teclado | Preparado para Sprint 1 |
 | Funcionalidad | RNF-04 | Títulos, meta descripción, Open Graph y palabras clave por servicio | Preparado para Sprint 1 |
-| Seguridad | RNF-05 | HTTPS, validación de entradas, anti-spam y endpoints de administración protegidos | Preparado para Sprint 1 |
+| Seguridad | RNF-05 | HTTPS, validación de entradas, honeypot sin CAPTCHA y endpoints de administración protegidos | Preparado para Sprint 1 |
 | Mantenibilidad | RNF-06 | El contenido vive en base de datos; cambiar texto o video no exige redespliegue | Preparado para Sprint 1 |
 | Confiabilidad | RNF-07 | Sin cold starts visibles; decisión de despliegue pendiente en el ADR | Referencia para Sprint 1 |
 | Mantenibilidad | RNF-08 | Arquitectura en capas y documentación oficial actualizada | Aplicado en la documentación |
@@ -114,6 +114,7 @@ La generación sigue tres pasos: identificar escenarios, derivar al menos un cas
 | Comentario ausente | Comentario vacío | CP-03-06 |
 | Servicio no reconocido | Servicio inexistente | CP-03-07 |
 | Texto especial | Acentos y caracteres especiales | CP-03-09 |
+| Campo señuelo relleno | Robot rellena el campo oculto | CP-03-10 |
 
 La matriz de casos recoge objetivo, precondición, entrada, pasos, resultado esperado y trazabilidad. Los valores se eligen dentro del rango, por debajo y por encima del intervalo, y según las reglas de negocio: la valoración va de 1 a 5, el nombre y el comentario no pueden estar vacíos y el servicio debe existir. Estos últimos son los valores límite y de regla de negocio que alimentan la matriz de la sección 8.
 
@@ -168,7 +169,7 @@ El grafo tiene 11 nodos y 14 aristas, con cuatro nodos predicado en las líneas 
 | CP-B-05 | C5 | Datos válidos sin foto | No se invoca `guardarFoto`; `fotoUrl` queda null y se ejecuta `save` |
 
 ## 8. Casos de prueba y ejecución prevista
-Los nueve casos de caja negra conservan su resultado esperado y su trazabilidad. Todos están diseñados; ninguno tiene resultado real registrado.
+Los diez casos de caja negra conservan su resultado esperado y su trazabilidad. Todos están diseñados; ninguno tiene resultado real registrado.
 
 | Id | Entrada | Pasos | Resultado esperado | Trazabilidad |
 |---|---|---|---|---|
@@ -181,27 +182,28 @@ Los nueve casos de caja negra conservan su resultado esperado y su trazabilidad.
 | CP-03-07 | Servicio inexistente; resto válido | Enviar `POST /api/resenas` | `400 Bad Request`; servicio no reconocido | RF-03, CU-03 |
 | CP-03-08 | Nombre con solo espacios en blanco | Enviar `POST /api/resenas` | `400 Bad Request`; validación de entradas | RNF-05, CU-03 |
 | CP-03-09 | Comentario con acentos y caracteres especiales | Enviar `POST /api/resenas` y consultar el muro | `201 Created`; el texto se muestra sin alterar | RNF-10, RF-04, CU-03 |
+| CP-03-10 | Campo señuelo rellenado; resto válido | Enviar `POST /api/resenas` | `400 Bad Request`; no se guarda la reseña | RNF-05, CU-03 |
 
 | Capa | Herramienta | Qué cubre | Estado |
 |---|---|---|---|
 | Backend · unidad | JUnit 5 + Mockito | `ResenaService.publicar` con `MediaStorage` y `ResenaRepository` aislados; caminos CP-B | Preparado para Sprint 1 |
-| Backend · integración | JUnit 5 sobre la API REST | `POST /api/resenas` con los 9 casos CP-03 | Preparado para Sprint 1 |
+| Backend · integración | JUnit 5 sobre la API REST | `POST /api/resenas` con los 10 casos CP-03 | Preparado para Sprint 1 |
 | Backend · humo E2E | Prueba de humo de extremo a extremo | Flujo crítico catálogo → reseña → WhatsApp `+5355795510` | Referencia para Sprint 1 |
 | Frontend · React | Vitest | Lógica y componentes del catálogo, galería, muro de reseñas y enlaces de WhatsApp | Preparado para Sprint 1 |
 
 Hoy no hay código ni pruebas ejecutadas; las herramientas están previstas para Sprint 1 y la regresión se ejecutará ante cada cambio, sin integración continua activa.
 
 ## 9. Criterios de cierre y trazabilidad
-Los catorce casos están diseñados pero **NO ejecutados**. El cierre de Sprint 1 exigirá ejecutarlos, registrar el resultado real de cada uno, conservar la evidencia en Git y no dejar defectos abiertos de severidad alta en CU-03.
+Los quince casos están diseñados pero **NO ejecutados**. El cierre de Sprint 1 exigirá ejecutarlos, registrar el resultado real de cada uno, conservar la evidencia en Git y no dejar defectos abiertos de severidad alta en CU-03.
 
 | Evidencia de origen | Cubierta por | Estado |
 |---|---|---|
-| RF-03 Publicar reseña | CP-03-01 a CP-03-09 y CP-B-01 a CP-B-05 | Diseñado, no ejecutado |
+| RF-03 Publicar reseña | CP-03-01 a CP-03-10 y CP-B-01 a CP-B-05 | Diseñado, no ejecutado |
 | RF-04 Mostrar reseñas | CP-03-04 y CP-03-09 | Diseñado, no ejecutado |
-| RNF-05 Seguridad | CP-03-08 | Diseñado, no ejecutado |
+| RNF-05 Seguridad | CP-03-08 y CP-03-10 | Diseñado, no ejecutado |
 | RNF-09 Almacenamiento de medios | CP-03-05 y CP-B-04 | Diseñado, no ejecutado |
 | RNF-10 Idioma | CP-03-09 | Diseñado, no ejecutado |
-| CU-03 Publicar reseña | Los catorce casos | Diseñado, no ejecutado |
+| CU-03 Publicar reseña | Los quince casos | Diseñado, no ejecutado |
 | Construcción 5 del documento 10 | CP-B-01 a CP-B-05 | Diseñado, no ejecutado |
 
 La trazabilidad se apoya en el documento 01 para los requisitos, en el documento 04 para la realización de CU-03, en el documento 10 para la construcción 5, en `SPRINTBOARD.md` para el progreso y en `CHANGELOG.md` para cada cierre. Las revisiones de calidad y las no conformidades se registran con el mismo criterio que el resto de la documentación, sin introducir fuentes externas.

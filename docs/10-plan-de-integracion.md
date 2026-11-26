@@ -40,14 +40,14 @@ Integrar es sumar partes manejables en un orden explícito. Cada construcción d
 El cliente React se integra al final como componente desplegable del nodo web; no forma parte de los subsistemas de implementación del backend.
 
 ## 4. Plan de construcciones
-| Construcción | Casos de uso | Componentes que se suman | Verificación |
-|---|---|---|---|
-| 1 | Ninguno (base técnica) | Entidades, enumerados, repositorios, `DiscoMediaStorage`, esquema de PostgreSQL | Pruebas unitarias de repositorios contra base de prueba |
-| 2 | CU-05 | `ServicioService`, `ResenaService`, `WhatsAppLinkGenerator` y `application.properties` | Prueba unitaria del deep link con el número `+5355795510` y mensaje por servicio |
-| 3 | CU-07 | `AuthService`, `Administradora` y regla de rol `ADMIN` | Inicio de sesión válido e inválido con respuesta esperada |
-| 4 | CU-01, CU-02, CU-04 | Controladores REST, DTO y `MelyFacialesApplication.java` | La API responde catálogo, detalle y muro de reseñas |
-| 5 | CU-03, CU-06, CU-08 | Foto opcional, borrado correctivo y edición de servicios | Flujo publicar → listar → eliminar y edición sin redesepliegue |
-| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `dist/` | Smoke test de los ocho recorridos contra la API desplegada |
+| Construcción | Casos de uso | Componentes que se suman | Verificación | Caso de prueba / evidencia |
+|---|---|---|---|---|
+| 1 | Ninguno (base técnica) | Entidades, enumerados, repositorios, `DiscoMediaStorage`, esquema de PostgreSQL | Pruebas unitarias de repositorios contra base de prueba | CP-B-01 a CP-B-05 y CP-03-04 con JUnit 5 + Mockito |
+| 2 | CU-05 | `ServicioService`, `ResenaService`, `WhatsAppLinkGenerator` y `application.properties` | Prueba unitaria del deep link con el número `+5355795510` y mensaje por servicio | CP-03-01 a CP-03-03 con JUnit 5 + Mockito, más el enlace verificado en la construcción 6 |
+| 3 | CU-07 | `AuthService`, `Administradora` y regla de rol `ADMIN` | Inicio de sesión válido e inválido con respuesta esperada | CP-03-07 y CP-03-08 con JUnit 5 + Mockito |
+| 4 | CU-01, CU-02, CU-04 | Controladores REST, DTO y `MelyFacialesApplication.java` | La API responde catálogo, detalle y muro de reseñas | CP-03-04, CP-03-05 y CP-03-09 con JUnit 5 sobre la API REST y Vitest en el cliente |
+| 5 | CU-03, CU-06, CU-08 | Foto opcional, borrado correctivo y edición de servicios | Flujo publicar → listar → eliminar y edición sin redesepliegue | CP-03-06 y CP-03-10 con JUnit 5 sobre la API REST; registro de la construcción 5 en el documento 11 |
+| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `dist/` | Smoke test de los ocho recorridos contra la API desplegada | Diez casos CP-03 y cinco CP-B con humo E2E y Vitest; evidencia en Git |
 
 Cada construcción adiciona sus componentes a la anterior; ninguna incorpora un componente sin su prueba unitaria correspondiente.
 

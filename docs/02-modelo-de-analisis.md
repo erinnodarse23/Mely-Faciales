@@ -66,7 +66,7 @@ Paquetes: `Paquete_Interfaz` (Boundary), `Paquete_Negocio` (Control), `Paquete_D
 | Entidad | CE_Publicacion | Dominio | Galería: tipo FOTO/VIDEO, url, descripción |
 | Entidad | CE_Administradora | Dominio | usuario, nombre, rol |
 
-**Diagrama global:** `images/diagramas de clases del analisis/clases/modelo-analisis-clases.png`
+**Diagrama global:** ![Modelo global de clases del análisis](<images/diagramas de clases del analisis/clases/modelo-analisis-clases.png>)
 
 ## 4. Realizaciones de los casos de uso
 Para cada caso de uso se entrega un diagrama de clases del análisis y un diagrama de colaboración con mensajes numerados sobre enlaces; los escenarios alternos van en trazo discontinuo.

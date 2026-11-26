@@ -26,6 +26,18 @@ Un patrón es una solución probada y reutilizable a un problema frecuente. Su u
 | Singleton | Creación | Mantener una sola instancia de servicios y repositorios | Beans de Spring con alcance singleton | RNF-06 |
 | Repository | Arquitectónico | Desacoplar el acceso a datos de JPA | `ServicioRepository`, `ResenaRepository`, `PublicacionRepository` | RNF-06 |
 
+**Strategy.** Publicar con foto o sin foto condicionaría al servicio si el almacenamiento estuviera cableado; al declarar `MediaStorage` y situar a `DiscoMediaStorage` detrás de esa interfaz, el cambio de soporte no altera las reglas de `ResenaService`. Se descarta una fábrica de proveedores porque hoy solo existe uno y añadirla no resuelve un problema real; aterriza en `MediaStorage` y `DiscoMediaStorage` del `SubsistemaMedios` del documento 03.
+
+**Facade.** Los controladores tendrían que coordinar repositorios, medios y validaciones si expusieran esos detalles; `ServicioService` y `ResenaService` concentran cada caso de uso en una operación comprensible para la interfaz. Se descarta añadir otra fachada encima de servicios que ya cumplen ese papel; aterriza en `ServicioService` y `ResenaService` del documento 03.
+
+**Builder.** El enlace de WhatsApp debe combinar un número único con un mensaje distinto según el servicio; `WhatsAppLinkGenerator.construir(servicio)` reúne esas piezas sin repartir la lógica entre pantallas. Se descarta concatenar cadenas en cada componente de interfaz porque duplicaría la regla y facilitaría enlaces mal formados; aterriza en `GeneradorEnlacesWhatsApp` y `WhatsAppLinkGenerator` del documento 03.
+
+**Singleton.** Reinstanciar servicios y repositorios en cada petición desperdiciaría recursos y podría duplicar estado innecesario; los beans de Spring con alcance singleton garantizan una instancia compartida. Se descarta crear instancias manualmente con `new` porque rompería la inversión de dependencias ya documentada; aterriza en `ServicioService`, `ResenaService` y los repositorios del documento 03.
+
+**Repository.** Si la lógica de negocio consultara JPA directamente, cambiar la fuente de datos obligaría a modificar los servicios; los repositorios encapsulan esa consulta. Se descarta escribir los accesos dentro de los servicios porque mezclaría reglas de negocio con detalles de persistencia; aterriza en `ServicioRepository`, `ResenaRepository` y `PublicacionRepository` del documento 03.
+
+Estos cinco patrones se usan porque explican decisiones ya tomadas, no por obligación: si una abstracción no resolviera un problema concreto, se dejaría fuera.
+
 ## 3. Diagrama de clases con los patrones aplicados
 ![Patrones aplicados](<images/patrones-de-diseno/patrones-aplicados.png>)
 

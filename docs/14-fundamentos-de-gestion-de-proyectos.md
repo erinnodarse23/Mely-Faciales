@@ -44,7 +44,7 @@ Se detectan en etapas tempranas, se mantienen informados y se gestionan sus expe
 | Contenido editable sin redespliegue | Cambio de texto o video reflejado desde PostgreSQL | RF-08, planificado |
 | Contacto directo | Deep link `https://wa.me/5355795510?text=...` con mensaje por servicio | RF-05, planificado |
 | Experiencia móvil | Carga inicial menor a 2 s y usable a 320 px | RNF-01 y RNF-02 |
-| Calidad documental | 52 diagramas UML referenciados y 0 imágenes rotas | Cumplido en Sprint 0 |
+| Calidad documental | 68 diagramas UML referenciados (18 de análisis y 50 de diseño) y 0 imágenes rotas | Cumplido en Sprint 0 |
 | Sin citas online | Ningún componente de agenda en el alcance | Cumplido por diseño |
 
 Los criterios se revisan con la dueña del negocio, porque el cumplimiento de alcance, plazo y costo no garantiza por sí solo el éxito del negocio.
