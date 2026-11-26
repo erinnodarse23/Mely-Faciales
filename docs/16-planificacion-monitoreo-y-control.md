@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md)
+Navegación: [Gestión de la configuración](17-gestion-de-la-configuracion.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md)
 
 ## 1. Propósito y alcance
 Este documento completa la disciplina de gestión ya registrada en los documentos 13 a 15. No sustituye a Scrum: le añade disciplina de estimación, línea base, seguimiento y control de cambios. Los marcos se emplean solo como referencia de prácticas aplicables al proyecto.
@@ -69,7 +69,7 @@ La integración coordina documentación, backend, frontend y despliegue. El cont
 | Monitorear el trabajo | Progreso de tareas en `SPRINTBOARD.md` | Aplicado |
 | Control integrado de cambios | Cada cambio se documenta con mensaje de commit y entrada de changelog | Aplicado |
 | CCC | Comité formal aún no constituido; las decisiones las toman Erin y Mely | Referencia para Sprint 1 |
-| Control de configuración | Git, nombres sin acentos, carpetas por documento y líneas base | Aplicado |
+| Control de configuración | Git, nombres sin acentos, carpetas por documento y líneas base; detalle en el documento 17 | Aplicado |
 | Cierre de proyecto o fase | Fin de sprint con revisión del incremento; ADR operativo previsto para Sprint 2 | Preparado para el cierre de Sprint 0 |
 
 | Control de configuración | Control de cambios |

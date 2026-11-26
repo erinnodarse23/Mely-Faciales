@@ -37,6 +37,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/14-fundamentos-de-gestion-de-proyectos.md` — Interesados, grupos de proceso y áreas de conocimiento.
 - `docs/15-modelos-de-mejora-de-proceso.md` — CMMI, PSP, TSP y MCDAI aplicados al proyecto.
 - `docs/16-planificacion-monitoreo-y-control.md` — planeación, integración, monitoreo y control aplicados al proyecto.
+- `docs/17-gestion-de-la-configuracion.md` — gestión de la configuración, líneas base y control de cambios.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `docs/images/modelo-de-diseno/` — 5 diagramas del documento 03.
 - `docs/images/realizaciones-de-caso-de-uso/` — 16 diagramas del documento 04.
@@ -49,6 +50,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/images/fundamentos-de-gestion-de-proyectos/` — 1 diagrama del documento 14.
 - `docs/images/modelos-de-mejora-de-proceso/` — 1 diagrama del documento 15.
 - `docs/images/planificacion-y-control/` — 4 diagramas del documento 16.
+- `docs/images/gestion-de-la-configuracion/` — 3 diagramas del documento 17.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 

@@ -47,6 +47,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 | DOC-18 | Documentar fundamentos de gestión de proyectos | Alta | 5 | 0 |
 | DOC-19 | Documentar modelos de mejora de proceso | Media | 5 | 0 |
 | DOC-20 | Documentar planificación, integración, monitoreo y control | Media | 5 | 0 |
+| DOC-21 | Documentar la gestión de la configuración | Media | 5 | 0 |
 | RF-01 a RF-09 | Funcionalidades del catálogo, reseñas, WhatsApp y admin | Alta | Por estimar | 1 |
 | RNF-01 a RNF-10 | Rendimiento, responsive, seguridad, SEO, escalabilidad | Alta | Por estimar | 1 |
 | CU-01 a CU-08 | Realizaciones documentadas para Mely Faciales (análisis y diseño) | Alta | 8 | 0 |
@@ -54,9 +55,9 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 ## Sprint 0 — Definición y documentación (2026-11-25 → 2026-12-08)
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
-Progreso del Sprint 0: `██████████ 100%` (28/28 tareas Done).
+Progreso del Sprint 0: `██████████ 100%` (29/29 tareas Done).
 
-Conteo actual de artefactos: 38 diagramas de diseño y gestión; 56 diagramas UML en total.
+Conteo actual de artefactos: 41 diagramas de diseño y gestión; 59 diagramas UML en total.
 
 | Tarea | Estado |
 |---|---|
@@ -85,6 +86,7 @@ Conteo actual de artefactos: 38 diagramas de diseño y gestión; 56 diagramas UM
 | Casos de caja negra del CU-03 | Done |
 | Camino básico y complejidad ciclomática | Done |
 | Planificación y control documentados con cuatro diagramas propios | Done |
+| Gestión de la configuración documentada con tres diagramas propios | Done |
 | Roles de gestión mapeados al proyecto | Done |
 | Fundamentos de gestión aplicados | Done |
 | Modelos de mejora revisados | Done |
