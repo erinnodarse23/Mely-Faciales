@@ -47,7 +47,7 @@ Los tres roles de Scrum se concentran en dos personas. Mely ejerce la voz del ne
 | Scrum Master | Erin facilita el flujo de trabajo y mantiene el sprintboard y el changelog | Aplicado de forma simplificada |
 | Equipo de desarrollo | Erin ejecuta la documentación y ejecutará las construcciones de código | Preparado para Sprint 1 |
 
-Las duraciones de referencia del material son cuatro a ocho horas para la planeación, quince minutos para el diario, cuatro horas para la revisión y tres horas para la retrospectiva. Con una sola persona esos tiempos no se aplican literalmente: el diario es asíncrono y se registra en `SPRINTBOARD.md`, y las ceremonias se adaptan al cierre de cada entrega.
+Las duraciones de referencia habituales son cuatro a ocho horas para la planeación, quince minutos para el diario, cuatro horas para la revisión y tres horas para la retrospectiva. Con una sola persona esos tiempos no se aplican literalmente: el diario es asíncrono y se registra en `SPRINTBOARD.md`, y las ceremonias se adaptan al cierre de cada entrega.
 
 | Ceremonia | Duración de referencia | Aplicación real | Estado |
 |---|---|---|---|

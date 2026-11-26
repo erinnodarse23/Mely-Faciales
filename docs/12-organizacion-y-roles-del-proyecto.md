@@ -1,6 +1,6 @@
 # Organización y roles del proyecto
 
-> **Resumen ejecutivo.** Se adaptan los seis roles de gestión del proyecto a la realidad de Mely Faciales: una sola persona, Erin Nodarse, asume todas las responsabilidades a lo largo del ciclo, con Mely como voz del negocio. El temario, el calendario y la bibliografía de la asignatura no forman parte de la documentación del producto.
+> **Resumen ejecutivo.** Se adaptan los seis roles de gestión del proyecto a la realidad de Mely Faciales: una sola persona, Erin Nodarse, asume todas las responsabilidades a lo largo del ciclo, con Mely como voz del negocio. La documentación describe solo el proyecto y no incorpora contenidos ajenos a él.
 
 | Campo | Valor |
 |---|---|
