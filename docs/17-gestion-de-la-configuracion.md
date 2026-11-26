@@ -28,11 +28,11 @@ La tabla siguiente resume los tres objetivos específicos y las siete prácticas
 
 | Objetivo | Práctica | Aplicación real en Mely Faciales | Estado |
 |---|---|---|---|
-| SG1 Gestionar la configuración | SP1.1 Identificar elementos de configuración | Documentos 01 a 17, PNG, fuentes `.mmd`, `SPRINTBOARD.md`, `CHANGELOG.md` y código previsto | Aplicado |
-| SG1 Gestionar la configuración | SP1.2 Establecer el sistema de gestión de la configuración | Git y GitHub con carpetas por documento y convención de nombres | Aplicado |
-| SG1 Gestionar la configuración | SP1.3 Crear y liberar líneas base | Cada cierre de entrega se identifica con un commit y su entrada en el changelog | Aplicado |
-| SG2 Controlar los cambios | SP2.1 Seguimiento de solicitudes de cambio | Solicitudes registradas en `SPRINTBOARD.md` y `CHANGELOG.md` | Aplicado |
-| SG2 Controlar los cambios | SP2.2 Controlar cambios en elementos bajo configuración | Análisis de impacto y acuerdo con Mely y Erin antes de cada cambio | Aplicado |
+| SG1 Establecer líneas base | SP1.1 Identificar elementos de configuración | Documentos 01 a 17, PNG, `SPRINTBOARD.md` y `CHANGELOG.md`; el código queda previsto para Sprint 1 | Aplicado |
+| SG1 Establecer líneas base | SP1.2 Establecer el sistema de gestión de la configuración | Git y GitHub con carpetas por documento y convención de nombres | Aplicado |
+| SG1 Establecer líneas base | SP1.3 Crear y liberar líneas base | Cada cierre de entrega se identifica con un commit y su entrada en el changelog | Aplicado |
+| SG2 Supervisar y controlar los cambios | SP2.1 Seguimiento de solicitudes de cambio | Solicitudes registradas en `SPRINTBOARD.md` y `CHANGELOG.md` | Aplicado |
+| SG2 Supervisar y controlar los cambios | SP2.2 Controlar cambios en elementos bajo configuración | Análisis de impacto y acuerdo con Mely y Erin antes de cada cambio | Aplicado |
 | SG3 Establecer la integridad | SP3.1 Registros de configuración | Historial de Git y entradas de `CHANGELOG.md` | Aplicado |
 | SG3 Establecer la integridad | SP3.2 Auditorías de configuración | Lista de chequeo con 41 referencias de imagen vigentes y 0 rutas rotas | Aplicado |
 
@@ -51,12 +51,12 @@ La configuración del software reúne los productos de trabajo de Sprint 0 y sus
 | SCM | Gestión de la configuración del software; CMMI CM describe las prácticas de referencia |
 | CMS | Sistema de gestión de la configuración; GitHub con sus carpetas y convenciones cumple este papel |
 
-## 3. Elementos bajo control en Mely Faciales
+## 3. Elementos documentados y su control
 | Elemento | Ubicación | Situación |
 |---|---|---|
 | Documentos 01 a 17 | `docs/*.md` | Aplicado: 17 documentos versionados |
 | Diagramas exportados | `docs/images/`, una carpeta por documento | Aplicado: 59 PNG, sin regeneraciones fuera de su entrega |
-| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Aplicado: 59 fuentes `.mmd` en UTF-8 sin BOM |
+| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Referencia externa: 59 fuentes `.mmd` en el directorio temporal, UTF-8 sin BOM, fuera del repositorio |
 | Seguimiento del sprint | `SPRINTBOARD.md` | Aplicado: backlog, progreso 29/29 y conteo actual |
 | Historial de cambios | `CHANGELOG.md` | Aplicado: entradas de Added y Changed |
 | Código de la aplicación | Previsto en el documento 10 con Java 25 LTS, Spring Boot 4.1, React y TypeScript | Referencia para Sprint 1 |
@@ -127,7 +127,7 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 ## 9. Aplicación, trazabilidad y conclusiones
 | Práctica | Evidencia real | Estado |
 |---|---|---|
-| Identificación de elementos | 17 documentos, 59 PNG y 59 fuentes `.mmd` con nombres normalizados | Aplicado |
+| Identificación de elementos | 17 documentos, 59 PNG y 59 fuentes `.mmd` en directorio temporal | Referencia externa, no versionadas |
 | Sistema de gestión de la configuración | Git, GitHub y una carpeta de imágenes por documento | Aplicado |
 | Líneas base | Commits de cierre y entradas de `CHANGELOG.md` | Aplicado |
 | Control de cambios | Acuerdo de Mely y Erin registrado en el sprintboard y el changelog | Aplicado |
