@@ -204,7 +204,7 @@ Los quince casos están diseñados pero **NO ejecutados**. El cierre de Sprint 1
 | RNF-09 Almacenamiento de medios | CP-03-05 y CP-B-04 | Diseñado, no ejecutado |
 | RNF-10 Idioma | CP-03-09 | Diseñado, no ejecutado |
 | CU-03 Publicar reseña | Los quince casos | Diseñado, no ejecutado |
-| Construcción 5 del documento 10 | CP-B-01 a CP-B-05 | Diseñado, no ejecutado |
+| Construcción 5 del documento 10 | CP-03-01 a CP-03-10 y CP-B-01 a CP-B-05 | Diseñado, no ejecutado |
 
 La trazabilidad se apoya en el documento 01 para los requisitos, en el documento 04 para la realización de CU-03, en el documento 10 para la construcción 5, en `SPRINTBOARD.md` para el progreso y en `CHANGELOG.md` para cada cierre. Las revisiones de calidad y las no conformidades se registran con el mismo criterio que el resto de la documentación, sin introducir fuentes externas.
 
