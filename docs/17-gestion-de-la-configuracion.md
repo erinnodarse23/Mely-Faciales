@@ -54,9 +54,9 @@ La configuración del software reúne los productos de trabajo de Sprint 0 y sus
 ## 3. Elementos documentados y su control
 | Elemento | Ubicación | Situación |
 |---|---|---|
-| Documentos 01 a 19 | `docs/*.md` | Aplicado: 19 documentos versionados |
-| Diagramas exportados | `docs/images/`, una carpeta por documento | Aplicado: 65 PNG, sin regeneraciones fuera de su entrega |
-| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Referencia externa: 65 fuentes `.mmd` en el directorio temporal, UTF-8 sin BOM, fuera del repositorio |
+| Documentos 01 a 18 | `docs/*.md` | Aplicado: 18 documentos versionados |
+| Diagramas exportados | `docs/images/`, una carpeta por documento | Aplicado: 68 PNG, sin regeneraciones fuera de su entrega |
+| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Referencia externa: 68 fuentes `.mmd` en el directorio temporal, UTF-8 sin BOM, fuera del repositorio |
 | Seguimiento del sprint | `SPRINTBOARD.md` | Aplicado: backlog, progreso 31/31 y conteo actual |
 | Historial de cambios | `CHANGELOG.md` | Aplicado: entradas de Added y Changed |
 | Código de la aplicación | Previsto en el documento 10 con Java 25 LTS, Spring Boot 4.1, React y TypeScript | Referencia para Sprint 1 |
@@ -127,7 +127,7 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 ## 9. Aplicación, trazabilidad y conclusiones
 | Práctica | Evidencia real | Estado |
 |---|---|---|
-| Identificación de elementos | 19 documentos, 65 PNG y 65 fuentes `.mmd` en directorio temporal | Referencia externa, no versionadas |
+| Identificación de elementos | 18 documentos, 68 PNG y 68 fuentes `.mmd` en directorio temporal | Referencia externa, no versionadas |
 | Sistema de gestión de la configuración | Git, GitHub y una carpeta de imágenes por documento | Aplicado |
 | Líneas base | Commits de cierre y entradas de `CHANGELOG.md` | Aplicado |
 | Control de cambios | Acuerdo de Mely y Erin registrado en el sprintboard y el changelog | Aplicado |
@@ -136,6 +136,6 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 | Ramas `feature-*`, `release-*` y `hotfix-*` | Política documentada, sin uso real | Referencia para Sprint 1 o 2 |
 | Ejecución de código y pruebas | Construcciones previstas en el documento 10 | Referencia para Sprint 1 |
 
-La trazabilidad se apoya en los documentos 13 a 19, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y la mejora de proceso explican quién participa, la planificación define cómo se decide, y Git conserva la evidencia de cada cierre.
+La trazabilidad se apoya en los documentos 13 a 18, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y la mejora de proceso explican quién participa, la planificación define cómo se decide, y Git conserva la evidencia de cada cierre.
 
 Con esta entrega, la configuración de Sprint 0 queda identificada, registrada y verificable sin anticipar prácticas que aún no se ejecutan. Los compromisos siguientes son constituir el CCC, abrir las ramas previstas cuando exista código y mantener la lista de chequeo de integridad en cada cierre.

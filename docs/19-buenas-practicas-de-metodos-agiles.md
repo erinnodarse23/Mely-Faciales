@@ -65,7 +65,7 @@ Los artefactos de Scrum ya tienen una correspondencia concreta en el repositorio
 |---|---|---|
 | Product backlog | `SPRINTBOARD.md` con RF-01 a RF-09 y CU-01 a CU-08 | Aplicado |
 | Sprint backlog | Tareas DOC-01 a DOC-23 del sprintboard | Aplicado |
-| Incremento | Documentos 01 a 19 y su registro en `CHANGELOG.md` | Aplicado en la documentación |
+| Incremento | Documentos 01 a 18 y su registro en `CHANGELOG.md` | Aplicado en la documentación |
 | Lista de impedimentos | Decisiones pendientes de hosting y ejecución de pruebas en el sprintboard | Aplicado de forma simplificada |
 | Seguimiento por tareas | Progreso 31/31 en el sprintboard | Aplicado de forma simplificada |
 | Gráfica burndown | Sin horas reales registradas | Referencia para Sprint 1 |
@@ -99,7 +99,7 @@ XP se usa solo como lista de prácticas útiles. Cada una se evalúa con el esta
 | Estándares de codificación | Convención de nombres definida, pendiente de aplicar al código | Preparado para Sprint 1 |
 | Versiones pequeñas | Construcciones del documento 10 como entregas reducidas | Preparado para Sprint 1 |
 | Refactorización | Sin código ejecutado todavía | Referencia para Sprint 1 |
-| Desarrollo guiado por pruebas | Casos de los documentos 11 y 12, no ejecutados | Referencia para Sprint 1 |
+| Desarrollo guiado por pruebas | Casos de los documento 11, no ejecutados | Referencia para Sprint 1 |
 | Programación en pareja | Una sola desarrolladora en el proyecto | No aplicable con una sola desarrolladora |
 | Código de todos | Sin código compartido aún | Referencia para Sprint 1 |
 | Integración continua | Sin canal de integración con código | Referencia para Sprint 1 |
@@ -114,13 +114,13 @@ La calidad se sostiene con pruebas automáticas, integración continua y mini-ve
 
 | Elemento | Evidencia real | Estado |
 |---|---|---|
-| Pruebas automáticas | Casos de caja negra y caja blanca en los documentos 11 y 12 | Referencia para Sprint 1 |
+| Pruebas automáticas | Casos de caja negra y caja blanca en los documento 11 | Referencia para Sprint 1 |
 | Integración continua | Sin ejecución de código ni canal automatizado | Referencia para Sprint 1 |
 | Mini-versiones | Construcciones previstas en el documento 10 | Preparado para Sprint 1 |
 | Definition of Done | Lista de chequeo del sprintboard | Aplicado de forma simplificada |
 | Registro de cada entrega | Git y `CHANGELOG.md`, según el documento 17 | Aplicado |
 
-Cuando comience Sprint 1, las pruebas de los documentos 11 y 12 se ejecutarán antes de cerrar cada construcción y su resultado quedará en Git y en `CHANGELOG.md`. La entrega continua y la integración automática no se presentan como prácticas ya activas.
+Cuando comience Sprint 1, las pruebas de los documento 11 se ejecutarán antes de cerrar cada construcción y su resultado quedará en Git y en `CHANGELOG.md`. La entrega continua y la integración automática no se presentan como prácticas ya activas.
 
 ![Flujo de calidad y mejora continua](<images/buenas-practicas-de-metodos-agiles/flujo-calidad-y-mejora-continua.png>)
 
@@ -131,7 +131,7 @@ Los roles que XP reparte entre varias personas se concentran en Erin y Mely. No 
 |---|---|---|
 | Programador | Erin, autora de la documentación y futura implementación | Preparado para Sprint 1 |
 | Cliente | Mely, dueña del negocio y priorizadora del alcance | Aplicado de forma simplificada |
-| Pruebas | Erin, con los casos de los documentos 11 y 12 | Preparado para Sprint 1 |
+| Pruebas | Erin, con los casos de los documento 11 | Preparado para Sprint 1 |
 | Seguimiento | Erin, con progreso y estimaciones en el sprintboard | Aplicado de forma simplificada |
 | Entrenador | Sin figura asignada; acompañamiento previsto para Sprint 1 | Referencia para Sprint 1 |
 | Consultor | Mely como fuente de decisiones de producto | Aplicado de forma simplificada |

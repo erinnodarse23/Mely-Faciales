@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md) · [Pruebas](12-pruebas-de-caja-blanca.md)
+Navegación: [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md) · [Pruebas](11-gestion-de-la-calidad-y-pruebas.md)
 
 ## 1. Niveles de la mejora
 | Nivel de aplicación | Modelo | Enfoque |

@@ -111,7 +111,7 @@ Las listas de chequeo de diseño y de código se aplican antes de cerrar cada en
 | Lista de chequeo de diseño | Revisión de documentos antes de marcarlos `Done` | Aplicado de forma simplificada |
 | Lista de chequeo de código | Definición de lista para el código de Sprint 1 | Preparado para Sprint 1 |
 | Corrección en fase temprana | Cambios registrados en Git y en `CHANGELOG.md` | Aplicado en la documentación |
-| Ejecución de pruebas | Casos de los documentos 11 y 12, todavía no ejecutados | Referencia para Sprint 1 |
+| Ejecución de pruebas | Casos del documento 11, todavía no ejecutados | Referencia para Sprint 1 |
 | Análisis posterior y formulario PIP | Mejora registrada en la retrospectiva del sprintboard | Aplicado de forma simplificada |
 
 La Definition of Done del sprintboard funciona hoy como lista de chequeo vigente. Las pruebas automatizadas y su ejecución forman parte de Sprint 1.

@@ -31,8 +31,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/08-diseno-de-la-base-de-datos.md` — mapeo objeto-relacional y modelo relacional.
 - `docs/09-modelo-de-implementacion.md` — modelo de implementación, subsistemas y componentes.
 - `docs/10-plan-de-integracion.md` — plan de construcciones de los ocho casos de uso.
-- `docs/11-pruebas-de-caja-negra.md` — casos de prueba de caja negra del CU-03.
-- `docs/12-pruebas-de-caja-blanca.md` — grafo de flujo, complejidad ciclomática y caminos independientes.
+- `docs/11-gestion-de-la-calidad-y-pruebas.md` — gestión de la calidad, estrategia de pruebas, caja negra y caja blanca.
 - `docs/13-organizacion-y-roles-del-proyecto.md` — roles de gestión aplicados al proyecto.
 - `docs/14-fundamentos-de-gestion-de-proyectos.md` — Interesados, grupos de proceso y áreas de conocimiento.
 - `docs/15-modelos-de-mejora-de-proceso.md` — CMMI, PSP, TSP y MCDAI aplicados al proyecto.
@@ -48,7 +47,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/images/patrones-de-diseno/` — 1 diagrama del documento 07.
 - `docs/images/base-de-datos/` — 2 diagramas del documento 08.
 - `docs/images/modelo-de-implementacion/` — 2 diagramas del documento 09.
-- `docs/images/pruebas-de-caja-blanca/` — 1 diagrama del documento 12.
+- `docs/images/gestion-de-la-calidad-y-pruebas/` — 4 diagramas del documento 11.
 - `docs/images/fundamentos-de-gestion-de-proyectos/` — 1 diagrama del documento 14.
 - `docs/images/modelos-de-mejora-de-proceso/` — 1 diagrama del documento 15.
 - `docs/images/planificacion-y-control/` — 4 diagramas del documento 16.

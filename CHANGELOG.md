@@ -26,7 +26,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Gestión de la configuración documentada con tres diagramas de actividad propios.
 - Buenas prácticas de desarrollo personal documentadas con tres diagramas de actividad propios.
 - Buenas prácticas de métodos ágiles documentadas con tres diagramas de actividad propios.
-
+- Fase de prueba consolidada en el documento 11, con gestión de la calidad, estrategia de pruebas, caja negra y caja blanca, y tres diagramas de actividad nuevos.
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.
 - Se unificó la metodología del proyecto en Scrum; el modelado UML se usa únicamente como notación de análisis.
@@ -41,6 +41,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Unificada la terminología de desviación en el documento 16 y separado el conteo actual del progreso del sprintboard.
 - Corregida la denominación de los objetivos CMMI CM y la clasificación de las fuentes de diagramas en el documento 17.
 - Actualizados los rangos de documentos citados en los documentos 16 y 17 tras incorporar el documento 19.
+- Eliminado el documento 12 y adaptados los rangos de documentos citados a 01-18.
 
 ## [0.1.0] - 2026-11-25
 

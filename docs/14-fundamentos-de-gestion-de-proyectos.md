@@ -69,7 +69,7 @@ Los grupos de proceso no son fases: se repiten en cada sprint y se diferencian d
 | Alcance | RF-01 a RF-09 y CU-01 a CU-08; se controla la corrupción de alcance. |
 | Cronograma | Sprints de una semana y construcciones ordenadas del documento 10. |
 | Costos | Sin presupuesto formal; se registran decisiones que impactan infraestructura en un ADR posterior. |
-| Calidad | Modelo UML, listas de chequeo y casos de prueba de los documentos 11 y 12. |
+| Calidad | Modelo UML, listas de chequeo y casos de prueba del documento 11. |
 | Recursos | Un desarrollador con apoyo de la dueña del negocio para decisiones de contenido. |
 | Comunicaciones | Documentación en el repositorio, changelog y revisiones de sprint. |
 | Riesgos | Backlog priorizado, ADR operativo pendiente y continuidad del servidor para evitar cold starts. |

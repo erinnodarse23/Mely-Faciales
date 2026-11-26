@@ -59,7 +59,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 
 Progreso del Sprint 0: `██████████ 100%` (31/31 tareas Done).
 
-Conteo actual de artefactos: 47 diagramas de diseño y gestión; 65 diagramas UML en total.
+Conteo actual de artefactos: 50 diagramas de diseño y gestión; 68 diagramas UML en total.
 
 | Tarea | Estado |
 |---|---|

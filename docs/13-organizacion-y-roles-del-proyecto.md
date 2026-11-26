@@ -25,7 +25,7 @@ Los roles describen responsabilidades, no puestos adicionales. En Mely Faciales 
 | Analista-diseñador | Obtener requisitos, modelar el análisis y el diseño | `docs/01-requisitos-funcionales-y-no-funcionales.md` a `docs/09-modelo-de-implementacion.md` |
 | Gestor de configuración | Versionar, nombrar, referenciar y conservar las líneas base | Git, nombres sin acentos, carpetas de imágenes por documento y `CHANGELOG.md` |
 | Programador | Implementar backend Java 25 LTS y frontend React | `docs/09-modelo-de-implementacion.md` y construcciones del documento 10 |
-| Probador | Diseñar y ejecutar casos de caja negra y caja blanca | `docs/11-pruebas-de-caja-negra.md` y `docs/12-pruebas-de-caja-blanca.md` |
+| Probador | Diseñar y ejecutar casos de caja negra y caja blanca | `docs/11-gestion-de-la-calidad-y-pruebas.md` |
 
 ## 3. Listas de chequeo por entregable
 | Entregable | Comprobaciones antes de aceptarlo |
