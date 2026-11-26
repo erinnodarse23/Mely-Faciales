@@ -74,7 +74,7 @@ Esta vista complementa el modelo de despliegue documentado en `docs/05-descripci
 |---|---|
 | Cada clase del diseño tiene un fichero fuente correspondiente | Sí, relación 1:1 documentada en la sección 5. |
 | Dependencias de import unidireccionales | Sí, según la sección 4. |
-| Objetos derivados 1:1 excluidos del diagrama | Sí, `.class`, JAR y `dist/` no se dibujan. |
+| Objetos derivados 1:1 excluidos del diagrama | Sí, `.class`, JAR y `frontend/dist/` no se dibujan. |
 | Componentes agrupados en directorios por capa | Sí, cuatro subsistemas de implementación más el cliente. |
 | Ejecutable y tablas visibles | Sí, con estereotipos `«executable»` y `«table»`. |
 
