@@ -63,7 +63,7 @@ La integración coordina documentación, backend, frontend y despliegue. El cont
 | Práctica | Tratamiento en Mely Faciales | Estado |
 |---|---|---|
 | Acta de constitución | Visión y autorización en `README.md` y en la visión de `SPRINTBOARD.md`, con Mely como patrocinadora | Aplicado de forma simplificada |
-| Plan para la dirección | Sprintboard, plan de construcciones y documentos 01 a 16 | Aplicado |
+| Plan para la dirección | Sprintboard, plan de construcciones y documentos 01 a 19 | Aplicado |
 | Dirigir y gestionar el trabajo | Erin ejecuta la documentación en el orden previsto; las construcciones de código están previstas para Sprint 1 | Aplicado en la documentación |
 | Gestionar el conocimiento | Cambios y decisiones registrados en `CHANGELOG.md` | Aplicado |
 | Monitorear el trabajo | Progreso de tareas en `SPRINTBOARD.md` | Aplicado |
@@ -128,7 +128,7 @@ El valor ganado (EVM) usaría estas reglas para comparar valor planificado, valo
 | Práctica | Evidencia real en el proyecto | Estado |
 |---|---|---|
 | Planificación CMMI PP | `SPRINTBOARD.md` con 30 tareas Done previas y 31/31 tras incorporar DOC-23 | Aplicado |
-| EDT y línea base | Construcciones del documento 10 y documentos 01 a 16 | Aplicado |
+| EDT y línea base | Construcciones del documento 10 y documentos 01 a 19 | Aplicado |
 | Estimación | Estimaciones 3, 5 y 8 en el backlog | Aplicado |
 | Calendario | Sprint 0 del 2026-11-25 al 2026-12-08 y sprints futuros previstos | Aplicado |
 | Registro de riesgos | Matriz cualitativa de la sección 7 y ADR operativo pendiente | Aplicado |
@@ -155,7 +155,7 @@ Los estados indicados en esta tabla distinguen lo que ya está documentado de lo
 | Fallo del canal externo de WhatsApp `+5355795510` | Baja | Alta | Media | Aceptar: conservar el número documentado y prever contacto manual | Erin Nodarse |
 
 ## 8. Trazabilidad
-La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos 01 a 15, sin introducir fuentes externas.
+La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos 01 a 19, sin introducir fuentes externas.
 
 | Sección de este documento | Evidencia de origen |
 |---|---|
@@ -170,6 +170,6 @@ La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos
 | 9. Conclusiones y compromisos | `SPRINTBOARD.md` y documento 10 |
 
 ## 9. Conclusiones y compromisos
-La planificación ya existe en `SPRINTBOARD.md` y en los documentos 01 a 15; la integración y el control se apoyan en Git y en `CHANGELOG.md`. El valor añadido de este documento es hacer explícitos los puntos de monitoreo, la evaluación de impacto y las respuestas ante riesgos concretos.
+La planificación ya existe en `SPRINTBOARD.md` y en los documentos 01 a 19; la integración y el control se apoyan en Git y en `CHANGELOG.md`. El valor añadido de este documento es hacer explícitos los puntos de monitoreo, la evaluación de impacto y las respuestas ante riesgos concretos.
 
 Los compromisos para las entregas siguientes son ejecutar los casos de los documentos 11 y 12 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 31/31 tareas Done tras incorporar DOC-23.

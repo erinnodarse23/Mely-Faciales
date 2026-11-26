@@ -136,6 +136,6 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 | Ramas `feature-*`, `release-*` y `hotfix-*` | Política documentada, sin uso real | Referencia para Sprint 1 o 2 |
 | Ejecución de código y pruebas | Construcciones previstas en el documento 10 | Referencia para Sprint 1 |
 
-La trazabilidad se apoya en los documentos 13 a 16, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y la mejora de proceso explican quién participa, la planificación define cómo se decide, y Git conserva la evidencia de cada cierre.
+La trazabilidad se apoya en los documentos 13 a 19, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y la mejora de proceso explican quién participa, la planificación define cómo se decide, y Git conserva la evidencia de cada cierre.
 
 Con esta entrega, la configuración de Sprint 0 queda identificada, registrada y verificable sin anticipar prácticas que aún no se ejecutan. Los compromisos siguientes son constituir el CCC, abrir las ramas previstas cuando exista código y mantener la lista de chequeo de integridad en cada cierre.
