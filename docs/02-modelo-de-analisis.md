@@ -1,6 +1,6 @@
 # Modelo de Análisis del Sistema
 
-> **Resumen ejecutivo.** 8 casos de uso, 17 clases del análisis y 18 diagramas (1 global, 1 de paquetes, 8 de clases y 8 de colaboración). Los diagramas no se incrustan: se referencian desde `images/diagramas de clases del analisis/`.
+> **Resumen ejecutivo.** 8 casos de uso, 17 clases del análisis y 18 diagramas (1 global, 1 de paquetes, 8 de clases y 8 de colaboración). Los diagramas se referencian desde `images/diagramas de clases del analisis/`, salvo el modelo global, que se incrusta en la sección 3.
 
 | Campo | Valor |
 |---|---|

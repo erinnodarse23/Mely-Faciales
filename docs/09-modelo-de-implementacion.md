@@ -23,7 +23,7 @@ Navegación: [Modelo de diseño](03-modelo-de-diseno.md) · [Arquitectura](05-de
 | Integrar cada subsistema | Componentes implementados | Subsistema integrado y probado | Integrador |
 | Integrar el sistema | Subsistemas integrados | Sistema ejecutable | Integrador |
 
-La disciplina se planifica en Sprint 0. La escritura de código y las pruebas unitarias de componentes se dejan para Sprint 1, según la orientación de estudio independiente de la conferencia.
+La disciplina se planifica en Sprint 0. La escritura de código y las pruebas unitarias de componentes se dejan para Sprint 1, según la planificación registrada en `SPRINTBOARD.md` y las construcciones del documento 10.
 
 ## 2. Estructura del modelo de implementación
 Un subsistema de implementación es el análogo físico de un paquete de diseño, no de un subsistema de diseño: agrupa componentes y otros subsistemas para poder integrarlos y probarlos por separado. Por eso los cinco subsistemas de diseño (`SubsistemaCatalogo`, `SubsistemaResenas`, `SubsistemaMedios`, `SubsistemaIdentidad` y `SubsistemaIntegraciones`) permanecen como agrupaciones lógicas multcapa y no se replican como subsistemas de implementación.

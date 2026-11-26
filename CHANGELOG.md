@@ -43,6 +43,8 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Corregida la denominación de los objetivos CMMI CM y la clasificación de las fuentes de diagramas en el documento 17.
 - Actualizados los rangos de documentos citados en los documentos 16 y 17 tras incorporar el documento 19.
 - Eliminado el documento 12 y adaptados los rangos de documentos citados a 01-18.
+- Revisión general de alcance y evidencia: RF-08 y RF-09 pasan a Sprint 1, RNF-05 concreta el honeypot sin CAPTCHA, se añade CP-03-10 y se argumentan la arquitectura, los patrones, la base de datos, el plan de integración y los roles; el modelo global del análisis queda incrustado en el documento 02.
+- Alineada la evidencia de pruebas con las construcciones del documento 10 y con la trazabilidad de la construcción 5 del documento 11; precisada la configuración de despliegue prevista en el documento 05.
 
 ## [0.1.0] - 2026-11-25
 

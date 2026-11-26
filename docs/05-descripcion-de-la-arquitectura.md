@@ -25,7 +25,7 @@ La vista de arquitectura describe el modelo de despliegue, la asignación de los
 - WhatsApp es un servicio externo: se emplea un deep link HTTPS, sin API de negocio ni credenciales.
 - No se justifican enlaces redundantes en la configuración actual; su incorporación queda registrada para el ADR de despliegue.
 
-La configuración prevista es mantener la VM siempre activa frente a una opción serverless: así se evitan los cold starts de RNF-07 en un catálogo con reseñas que debe responder de inmediato. El coste es un cargo fijo mensual predecible, superior al de una ejecución bajo demanda, que se acepta a cambio de disponibilidad. El ADR operativo con dimensionamiento y coste queda pendiente para Sprint 2; hasta entonces esta configuración es una referencia, no un despliegue ejecutado.
+La configuración prevista es mantener la VM siempre activa frente a una opción serverless: así se evitan los cold starts de RNF-07 en un catálogo con reseñas que debe responder de inmediato. El coste es un cargo fijo mensual predecible, superior al de una ejecución bajo demanda, que se acepta a cambio de disponibilidad. El ADR operativo con la confirmación del dimensionamiento orientativo y del coste queda pendiente para Sprint 2; hasta entonces esta configuración es una referencia, no un despliegue ejecutado.
 
 ### 1.2 Modelo de despliegue
 ![Modelo de despliegue](<images/descripcion-de-la-arquitectura/modelo-despliegue-diseno.png>)
