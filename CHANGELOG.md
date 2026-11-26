@@ -24,6 +24,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Fundamentos de gestión de proyectos y modelos de mejora de proceso documentados con dos diagramas propios.
 - Planificación, integración, monitoreo y control documentados con cuatro diagramas de actividad propios.
 - Gestión de la configuración documentada con tres diagramas de actividad propios.
+- Buenas prácticas de desarrollo personal documentadas con tres diagramas de actividad propios.
 
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.
@@ -38,7 +39,6 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Precisados los estados de aplicación del documento 16 y normalizadas las tildes en sus cuatro diagramas de actividad.
 - Unificada la terminología de desviación en el documento 16 y separado el conteo actual del progreso del sprintboard.
 - Corregida la denominación de los objetivos CMMI CM y la clasificación de las fuentes de diagramas en el documento 17.
-- Buenas prácticas de desarrollo personal documentadas con tres diagramas de actividad propios.
 
 ## [0.1.0] - 2026-11-25
 

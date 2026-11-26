@@ -33,7 +33,7 @@ La disciplina personal consiste en planificar con datos reales, medir la calidad
 |---|---|---|
 | Individuo | PSP: plan personal, registro y revisión propia | Aplicado de forma simplificada en la documentación |
 | Equipo | TSP: coordinación y responsabilidad compartida | Preparado para Sprint 1; hay una sola desarrolladora y Mely como voz del negocio |
-| Organización | CMMI: processo repetible y mejorable | Referencia para Sprint 1; sin evaluación formal |
+| Organización | CMMI: proceso repetible y mejorable | Referencia para Sprint 1; sin evaluación formal |
 
 La motivación es evitar estimaciones arbitrarias y detectar problemas en la fase en que aparecen, no acumular formularios vacíos. Para lograrlo, los datos que se recojan en Sprint 1 alimentarán las estimaciones y las revisiones posteriores.
 
@@ -42,12 +42,12 @@ Los niveles se introducen de forma gradual; cada uno añade una práctica sobre 
 
 | Nivel | Práctica que introduce | Estado en Mely Faciales |
 |---|---|---|
-| PSP0 | Plan básico, registro de tiempo y registro de defectos | Referencia para Sprint 1 |
-| PSP0.1 | Estándar de codificación y medida de tamaño | Referencia para Sprint 1 |
-| PSP1 | Revisiones de diseño y de código | Aplicado de forma simplificada en la documentación |
-| PSP1.1 | Pruebas y análisis posterior del trabajo | Referencia para Sprint 1 |
-| PSP2 | Estimación con objetos y regresión sobre datos históricos | Referencia para Sprint 1 |
-| PSP2.1 | Plan de tareas, valor planeado y valor ganado | Referencia para Sprint 1 |
+| PSP0 | Registrar tiempo, registrar defectos y definir estándar de defectos | Referencia para Sprint 1 |
+| PSP0.1 | Estándar de codificación, métricas de tamaño y formulario PIP | Referencia para Sprint 1 |
+| PSP1 | Estimación de tamaño con PROBE y reporte de pruebas | Referencia para Sprint 1 |
+| PSP1.1 | Planificación de tareas y cronograma semanal | Aplicado de forma simplificada en la documentación |
+| PSP2 | Revisiones de diseño y de código con listas de chequeo | Aplicado de forma simplificada en la documentación |
+| PSP2.1 | Plantillas de diseño | Aplicado en la documentación |
 | PSP3 | Desarrollo iterativo e incremental con reintegración | Preparado para Sprint 1 |
 
 ## 4. Registro de tiempo, defectos y tamaño
