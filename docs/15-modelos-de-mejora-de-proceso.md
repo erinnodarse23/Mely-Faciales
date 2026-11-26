@@ -70,7 +70,7 @@ La evaluación valora el porcentaje de actividades realizadas como no implementa
 | Ingeniería de requisitos | RF-01 a RF-09 y trazabilidad con los 8 casos de uso | Altamente implementado |
 | Desarrollo de la solución técnica | Modelos de análisis, diseño, arquitectura e implementación | Altamente implementado |
 | Pruebas de software | Casos de caja negra y caja blanca diseñados | Parcialmente implementado: ejecución en Sprint 1 |
-| Gestión de la configuración | Git, changelog, nombres normalizados yalineados con el modelo | Altamente implementado |
+| Gestión de la configuración | Git, changelog, nombres normalizados y alineados con el modelo | Altamente implementado |
 | Planificación, monitoreo y control | Sprintboard y progreso de tareas | Altamente implementado |
 | Medición y análisis | Conteos de diagramas, criterios de éxito y lista de chequeo | Parcialmente implementado |
 | Aseguramiento de la calidad | Revisiones antes de marcar `Done` | Parcialmente implementado |
