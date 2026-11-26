@@ -1,6 +1,6 @@
 # Planificación, integración, monitoreo y control
 
-> **Resumen ejecutivo.** Se adaptan los marcos de referencia CMMI, PMBOK e ISO 31000 a la planificación, la integración, el monitoreo y el control de Mely Faciales, con Scrum como metodología única y UML como notación única. Cuatro flujos de actividad muestran cómo se estima el trabajo, se controlan los cambios, se gestionan los riesgos y se corrigen los desvíos.
+> **Resumen ejecutivo.** Se adaptan los marcos de referencia CMMI, PMBOK e ISO 31000 a la planificación, la integración, el monitoreo y el control de Mely Faciales, con Scrum como metodología única y UML como notación única. Cuatro flujos de actividad muestran cómo se estima el trabajo, se controlan los cambios, se gestionan los riesgos y se corrigen las desviaciones.
 
 | Campo | Valor |
 |---|---|
