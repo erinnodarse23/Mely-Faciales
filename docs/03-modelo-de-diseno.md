@@ -1,6 +1,6 @@
 # Modelo de Diseño del Sistema
 
-> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 50 diagramas de diseño distribuidos entre este documento y los documentos 04, 05, 06, 07, 08, 09, 11, 14, 15, 16, 17, 18 y 19.
+> **Resumen ejecutivo.** El modelo de análisis se transforma en un modelo físico aplicable a Java 25 LTS + Spring Boot 4.1 y React + TypeScript para Mely Faciales. Se definen 4 paquetes, 5 subsistemas, 5 interfaces de aplicación, las clases del diseño y 8 realizaciones de caso de uso. El resultado son 50 diagramas de diseño distribuidos entre este documento y los documentos 04, 05, 06, 07, 08, 09, 11, 13, 14, 15, 16, 17 y 18.
 
 | Campo | Valor |
 |---|---|

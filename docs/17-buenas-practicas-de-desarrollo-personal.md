@@ -12,10 +12,10 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Buenas prácticas de métodos ágiles](19-buenas-practicas-de-metodos-agiles.md) · [Gestión de la configuración](17-gestion-de-la-configuracion.md) · [Planificación, integración, monitoreo y control](16-planificacion-monitoreo-y-control.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md)
+Navegación: [Buenas prácticas de métodos ágiles](18-buenas-practicas-de-metodos-agiles.md) · [Gestión de la configuración](16-gestion-de-la-configuracion.md) · [Planificación, integración, monitoreo y control](15-planificacion-monitoreo-y-control.md) · [Modelos de mejora](14-modelos-de-mejora-de-proceso.md)
 
 ## 1. Propósito y alcance
-Este documento desarrolla las prácticas individuales que el documento 15 presenta de forma resumida y que el documento 16 deja fuera del monitoreo formal por falta de ejecución de código. El PSP se usa como marco de referencia individual: aporta disciplina personal sin sustituir a Scrum, que sigue siendo la metodología única del proyecto, y sin perseguir certificación ni evaluación formal. UML permanece como notación única, también para los tres flujos de actividad de este documento.
+Este documento desarrolla las prácticas individuales que el documento 14 presenta de forma resumida y que el documento 15 deja fuera del monitoreo formal por falta de ejecución de código. El PSP se usa como marco de referencia individual: aporta disciplina personal sin sustituir a Scrum, que sigue siendo la metodología única del proyecto, y sin perseguir certificación ni evaluación formal. UML permanece como notación única, también para los tres flujos de actividad de este documento.
 
 | Marco | Papel en Mely Faciales | Límite de aplicación |
 |---|---|---|
@@ -98,10 +98,10 @@ La planificación personal asigna valor planeado a cada tarea, ordena el cronogr
 | Tareas con valor planeado | Estimaciones 3, 5 y 8 en `SPRINTBOARD.md` | Aplicado de forma simplificada |
 | Cronograma semanal | Fechas del Sprint 0 y construcciones previstas | Aplicado en la documentación |
 | Seguimiento por tareas | Progreso 31/31 en el sprintboard | Aplicado de forma simplificada |
-| Reglas 50-50, 0-100 y 20-70-100 | Descritas en la sección 5 del documento 16, sin umbrales aprobados | Referencia para Sprint 1 |
+| Reglas 50-50, 0-100 y 20-70-100 | Descritas en la sección 5 del documento 15, sin umbrales aprobados | Referencia para Sprint 1 |
 | Valor ganado formal | Sin horas reales ni línea base cuantitativa | Referencia para Sprint 1 |
 
-La sección 5 del documento 16 ya indica que hoy no hay umbrales numéricos aprobados. Este documento mantiene esa misma posición y no introduce porcentajes de desviación que no han sido acordados.
+La sección 5 del documento 15 ya indica que hoy no hay umbrales numéricos aprobados. Este documento mantiene esa misma posición y no introduce porcentajes de desviación que no han sido acordados.
 
 ## 7. Revisiones y detección temprana
 Las listas de chequeo de diseño y de código se aplican antes de cerrar cada entrega. Cuanto más tarde se encuentra un defecto, mayor es el costo de corregirlo: por eso la revisión temprana reduce los defectos que llegan a compilación y prueba.
@@ -148,6 +148,6 @@ El desarrollo iterativo e incremental se alinea con Sprint 1, dedicado al backen
 | Desarrollo iterativo e incremental | Sprints 1 y 2 previstos | Preparado para Sprint 1 |
 | Ejecución de pruebas | Casos diseñados, no ejecutados | Referencia para Sprint 1 |
 
-La trazabilidad se apoya en el documento 15, que introduce el PSP de forma resumida; en el documento 16, que fija el monitoreo y la ausencia de umbrales; en el documento 17, que conserva la evidencia en Git y en el registro de cambios; y en `SPRINTBOARD.md` y `CHANGELOG.md`, que muestran el avance real.
+La trazabilidad se apoya en el documento 14, que introduce el PSP de forma resumida; en el documento 15, que fija el monitoreo y la ausencia de umbrales; en el documento 16, que conserva la evidencia en Git y en el registro de cambios; y en `SPRINTBOARD.md` y `CHANGELOG.md`, que muestran el avance real.
 
 Con esta entrega queda claro qué disciplina personal ya se aplica sobre la documentación y qué partes exigen datos de Sprint 1. El compromiso es registrar tiempo, defectos y tamaño desde la primera construcción, alimentar PROBE con esos datos y mantener las revisiones antes de cada cierre, sin presentar como ejecutadas prácticas que hoy solo están previstas.

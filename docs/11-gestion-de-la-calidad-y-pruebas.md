@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Modelo de implementación](09-modelo-de-implementacion.md) · [Plan de integración](10-plan-de-integracion.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md)
+Navegación: [Modelo de implementación](09-modelo-de-implementacion.md) · [Plan de integración](10-plan-de-integracion.md) · [Organización y roles](12-organizacion-y-roles-del-proyecto.md)
 
 ## 1. Propósito, alcance y marcos
 Este documento reúne la disciplina de calidad y la estrategia de pruebas del proyecto. La calidad se planifica, se gestiona y se controla desde la documentación; las pruebas se diseñan en Sprint 0 y se ejecutarán cuando exista código. No se presenta ninguna prueba como ejecutada ni ningún defecto como cerrado.

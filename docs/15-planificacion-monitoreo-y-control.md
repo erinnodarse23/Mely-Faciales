@@ -12,10 +12,10 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Gestión de la configuración](17-gestion-de-la-configuracion.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md)
+Navegación: [Gestión de la configuración](16-gestion-de-la-configuracion.md) · [Modelos de mejora](14-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](13-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](12-organizacion-y-roles-del-proyecto.md)
 
 ## 1. Propósito y alcance
-Este documento completa la disciplina de gestión ya registrada en los documentos 13 a 15. No sustituye a Scrum: le añade disciplina de estimación, línea base, seguimiento y control de cambios. Los marcos se emplean solo como referencia de prácticas aplicables al proyecto.
+Este documento completa la disciplina de gestión ya registrada en los documentos 12 a 14. No sustituye a Scrum: le añade disciplina de estimación, línea base, seguimiento y control de cambios. Los marcos se emplean solo como referencia de prácticas aplicables al proyecto.
 
 | Marco | Papel en Mely Faciales | Límite de aplicación |
 |---|---|---|
@@ -32,7 +32,7 @@ La EDT se deriva de la arquitectura en capas de `docs/03-modelo-de-diseno.md` y 
 
 | Paquete de la EDT | Contenido real | Salida verificable |
 |---|---|---|
-| Documentación | Requisitos, análisis, diseño, arquitectura, implementación, pruebas y gestión | `docs/01` a `docs/16`, con 38 diagramas de diseño y gestión referenciados |
+| Documentación | Requisitos, análisis, diseño, arquitectura, implementación, pruebas y gestión | `docs/01` a `docs/18`, con 68 diagramas UML referenciados (18 de análisis y 50 de diseño) |
 | Dominio e infraestructura | Entidades, repositorios, `DiscoMediaStorage` y esquema de PostgreSQL | Construcción 1 del documento 10 |
 | Negocio | `ServicioService`, `ResenaService` y `WhatsAppLinkGenerator` | Construcción 2 del documento 10 |
 | Interfaz y cliente | Controladores REST, DTO y cliente React | Construcciones 4 y 6 del documento 10 |
@@ -69,7 +69,7 @@ La integración coordina documentación, backend, frontend y despliegue. El cont
 | Monitorear el trabajo | Progreso de tareas en `SPRINTBOARD.md` | Aplicado |
 | Control integrado de cambios | Cada cambio se documenta con mensaje de commit y entrada de changelog | Aplicado |
 | CCC | Comité formal aún no constituido; las decisiones las toman Erin y Mely | Referencia para Sprint 1 |
-| Control de configuración | Git, nombres sin acentos, carpetas por documento y líneas base; detalle en el documento 17 | Aplicado |
+| Control de configuración | Git, nombres sin acentos, carpetas por documento y líneas base; detalle en el documento 16 | Aplicado |
 | Cierre de proyecto o fase | Fin de sprint con revisión del incremento; ADR operativo previsto para Sprint 2 | Preparado para el cierre de Sprint 0 |
 
 | Control de configuración | Control de cambios |
@@ -85,7 +85,7 @@ La integración coordina documentación, backend, frontend y despliegue. El cont
 |---|---|---|
 | Cronograma | Gantt y ruta crítica como técnicas de referencia; estimación y control por sprint | Sprint 0 fechado y construcciones 1 a 6 del documento 10 |
 | Alcance | EDT y línea base de RF y CU | RF-01 a RF-09, CU-01 a CU-08 y documento 03 |
-| Interesados | Identificación, expectativas y atención por rol | Tabla de interesados del documento 14 |
+| Interesados | Identificación, expectativas y atención por rol | Tabla de interesados del documento 13 |
 | Riesgos | Matriz probabilidad-impacto y estrategias evitar, transferir, mitigar y aceptar | Sección 7 de este documento |
 | Comunicaciones | Documentación en el repositorio, changelog y revisiones de sprint | `README.md`, `CHANGELOG.md` y `SPRINTBOARD.md` |
 | Costos | Registro de decisiones con impacto de infraestructura | Sin presupuesto formal; ADR posterior |
@@ -159,13 +159,13 @@ La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos
 
 | Sección de este documento | Evidencia de origen |
 |---|---|
-| 1. Propósito y alcance | Documentos 13, 14 y 15; RF-01 a RF-09 y CU-01 a CU-08 en el documento 01 |
+| 1. Propósito y alcance | Documentos 12, 13 y 14; RF-01 a RF-09 y CU-01 a CU-08 en el documento 01 |
 | 2. La planeación y el WBS | `SPRINTBOARD.md` y construcciones del documento 10 |
-| 3. Integración y control de cambios | `CHANGELOG.md`, Git y documentos 03 y 14 |
-| 4. Planificación por áreas | Documentos 01, 02, 05 y 14 |
+| 3. Integración y control de cambios | `CHANGELOG.md`, Git y documentos 03 y 13 |
+| 4. Planificación por áreas | Documentos 01, 02, 05 y 13 |
 | 5. Monitoreo y control | `SPRINTBOARD.md` y documento 11 |
-| 6. Aplicación en Mely Faciales | Documentos 01 a 15, `CHANGELOG.md` y Git |
-| 7. Matriz de riesgos | Documentos 05, 10, 11 y 14 |
+| 6. Aplicación en Mely Faciales | Documentos 01 a 14, `CHANGELOG.md` y Git |
+| 7. Matriz de riesgos | Documentos 05, 10, 11 y 13 |
 | 8. Trazabilidad | Este propio mapa |
 | 9. Conclusiones y compromisos | `SPRINTBOARD.md` y documento 10 |
 

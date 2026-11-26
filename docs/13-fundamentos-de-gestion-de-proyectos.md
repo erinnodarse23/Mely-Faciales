@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Organización y roles](13-organizacion-y-roles-del-proyecto.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Modelo de diseño](03-modelo-de-diseno.md)
+Navegación: [Organización y roles](12-organizacion-y-roles-del-proyecto.md) · [Modelos de mejora](14-modelos-de-mejora-de-proceso.md) · [Modelo de diseño](03-modelo-de-diseno.md)
 
 ## 1. Proyecto y operación
 | Trabajo | Naturaleza | Tratamiento en Mely Faciales |

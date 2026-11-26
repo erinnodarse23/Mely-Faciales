@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](13-organizacion-y-roles-del-proyecto.md) · [Pruebas](11-gestion-de-la-calidad-y-pruebas.md)
+Navegación: [Fundamentos de gestión](13-fundamentos-de-gestion-de-proyectos.md) · [Organización y roles](12-organizacion-y-roles-del-proyecto.md) · [Pruebas](11-gestion-de-la-calidad-y-pruebas.md)
 
 ## 1. Niveles de la mejora
 | Nivel de aplicación | Modelo | Enfoque |
@@ -42,7 +42,7 @@ CMMI es un modelo de referencia con 22 áreas de proceso agrupadas en cuatro cat
 La evaluación SCAMPI comprueba si se cumplen las metas y si las prácticas están implantadas; en este proyecto no hay evaluación formal, solo autocomprobación con listas de chequeo.
 
 ## 3. PSP y TSP
-PSP aporta disciplina personal: estimación, registro de defectos y revisión del trabajo propio. TSP traslada esa disciplina al equipo. En Mely Faciales se aplican de forma ligera mediante estimaciones en el sprintboard, registro de cambios en el changelog y revisión de entregables con lista de chequeo antes de marcarlos `Done`. El detalle de estas prácticas individuales se documenta en el [documento 18](18-buenas-practicas-de-desarrollo-personal.md).
+PSP aporta disciplina personal: estimación, registro de defectos y revisión del trabajo propio. TSP traslada esa disciplina al equipo. En Mely Faciales se aplican de forma ligera mediante estimaciones en el sprintboard, registro de cambios en el changelog y revisión de entregables con lista de chequeo antes de marcarlos `Done`. El detalle de estas prácticas individuales se documenta en el [documento 17](17-buenas-practicas-de-desarrollo-personal.md).
 
 ## 4. MCDAI
 MCDAI es un modelo cubano de calidad para el desarrollo de aplicaciones informáticas, construido a partir de buenas prácticas internacionales y regulaciones nacionales. Organiza 12 procesos base en cuatro categorías y define tres niveles de madurez.

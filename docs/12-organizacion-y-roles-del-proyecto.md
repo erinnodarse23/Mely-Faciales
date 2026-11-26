@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Plan de integración](10-plan-de-integracion.md)
+Navegación: [Fundamentos de gestión](13-fundamentos-de-gestion-de-proyectos.md) · [Modelos de mejora](14-modelos-de-mejora-de-proceso.md) · [Plan de integración](10-plan-de-integracion.md)
 
 ## 1. Criterio de aplicación
 Los roles describen responsabilidades, no puestos adicionales. En Mely Faciales se mantienen los roles de Scrum —Product Owner, Scrum Master y equipo de desarrollo— y se les asocian las tareas de los seis roles de gestión. Mely participa como Product Owner en las decisiones de negocio; Erin ejecuta el resto de los roles. Cada entregable se revisa con su lista de chequeo antes de marcar la tarea como `Done` en `SPRINTBOARD.md`.

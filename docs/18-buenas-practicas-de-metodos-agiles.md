@@ -12,10 +12,10 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Buenas prácticas de desarrollo personal](18-buenas-practicas-de-desarrollo-personal.md) · [Gestión de la configuración](17-gestion-de-la-configuracion.md) · [Planificación, integración, monitoreo y control](16-planificacion-monitoreo-y-control.md)
+Navegación: [Buenas prácticas de desarrollo personal](17-buenas-practicas-de-desarrollo-personal.md) · [Gestión de la configuración](16-gestion-de-la-configuracion.md) · [Planificación, integración, monitoreo y control](15-planificacion-monitoreo-y-control.md)
 
 ## 1. Propósito y alcance
-Este documento recoge prácticas ágiles ya visibles en los documentos 15 a 18 y las organiza para su aplicación en los sprints con código. El documento 15 sitúa a Scrum en el contexto de los modelos de mejora, el 16 fija la planificación y el monitoreo, el 17 conserva la evidencia en Git y el cambio, y el 18 describe la disciplina individual del PSP.
+Este documento recoge prácticas ágiles ya visibles en los documentos 14 a 17 y las organiza para su aplicación en los sprints con código. El documento 14 sitúa a Scrum en el contexto de los modelos de mejora, el 15 fija la planificación y el monitoreo, el 16 conserva la evidencia en Git y el cambio, y el 17 describe la disciplina individual del PSP.
 
 | Marco | Papel en Mely Faciales | Límite de aplicación |
 |---|---|---|
@@ -118,7 +118,7 @@ La calidad se sostiene con pruebas automáticas, integración continua y mini-ve
 | Integración continua | Sin ejecución de código ni canal automatizado | Referencia para Sprint 1 |
 | Mini-versiones | Construcciones previstas en el documento 10 | Preparado para Sprint 1 |
 | Definition of Done | Lista de chequeo del sprintboard | Aplicado de forma simplificada |
-| Registro de cada entrega | Git y `CHANGELOG.md`, según el documento 17 | Aplicado |
+| Registro de cada entrega | Git y `CHANGELOG.md`, según el documento 16 | Aplicado |
 
 Cuando comience Sprint 1, las pruebas del documento 11 se ejecutarán antes de cerrar cada construcción y su resultado quedará en Git y en `CHANGELOG.md`. La entrega continua y la integración automática no se presentan como prácticas ya activas.
 
@@ -154,6 +154,6 @@ La concentración de roles reduce la coordinación, pero también concentra el r
 | Pruebas automatizadas e integración continua | Sin ejecución de código | Referencia para Sprint 1 |
 | Definition of Done | Lista de chequeo del sprintboard y registro en Git | Aplicado de forma simplificada |
 
-La trazabilidad se apoya en los documentos 13 a 18, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y el monitoreo explican quién decide y cómo se mide, la gestión de la configuración conserva la evidencia, y el PSP aporta la disciplina individual que complementa a Scrum sin sustituirlo.
+La trazabilidad se apoya en los documentos 12 a 17, en `SPRINTBOARD.md` y en `CHANGELOG.md`: los roles y el monitoreo explican quién decide y cómo se mide, la gestión de la configuración conserva la evidencia, y el PSP aporta la disciplina individual que complementa a Scrum sin sustituirlo.
 
 Con esta entrega, las prácticas ágiles quedan descritas con la misma honestidad que el resto de la documentación: lo que ya se aplica sobre entregables, lo que está preparado para Sprint 1 y lo que no tiene sentido con una sola desarrolladora. El compromiso es mantener Scrum como metodología única y usar el manifiesto y XP solo como referencia de prácticas.
