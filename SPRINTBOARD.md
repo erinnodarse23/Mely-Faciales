@@ -55,6 +55,7 @@ Dar visibilidad a Mely Faciales mediante una web rápida, móvil y visual, donde
 **Objetivo:** definir por completo el sistema (requisitos, análisis y diseño) antes de escribir código.
 
 Progreso del Sprint 0: `██████████ 100%` (28/28 tareas Done).
+Conteo actual de artefactos: 38 diagramas de diseño y gestión; 56 diagramas UML en total.
 
 | Tarea | Estado |
 |---|---|

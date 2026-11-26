@@ -1,6 +1,6 @@
 # Planificación, integración, monitoreo y control
 
-> **Resumen ejecutivo.** Se adaptan los marcos de referencia CMMI, PMBOK e ISO 31000 a la planificación, la integración, el monitoreo y el control de Mely Faciales, con Scrum como metodología única y UML como notación única. Cuatro flujos de actividad muestran cómo se estima el trabajo, se controlan los cambios, se gestionan los riesgos y se corrigen las desviaciones.
+> **Resumen ejecutivo.** Se adaptan los marcos de referencia CMMI, PMBOK e ISO 31000 a la planificación, la integración, el monitoreo y el control de Mely Faciales, con Scrum como metodología única y UML como notación única. Cuatro flujos de actividad muestran cómo se estima el trabajo, se controlan los cambios, se gestionan los riesgos y se corrigen los desvíos.
 
 | Campo | Valor |
 |---|---|
@@ -44,7 +44,7 @@ La estimación se alimenta de entradas ya presentes en el proyecto. CMMI PP orga
 | Entrada de estimación y plan | Evidencia real | Tratamiento |
 |---|---|---|
 | Alcance | RF-01 a RF-09 y CU-01 a CU-08 | SG1: estimar el trabajo y los atributos de los productos |
-| Esfuerzo | Estimaciones 3, 5 y 8 en el backlog de `SPRINTBOARD.md` | SG1 y SG2: effort y calendario por tarea |
+| Esfuerzo | Estimaciones 3, 5 y 8 en el backlog de `SPRINTBOARD.md` | SG1 y SG2: esfuerzo y calendario por tarea |
 | Costo | Sin presupuesto formal; decisión de infraestructura diferida | Se registrará en el ADR operativo |
 | Calendario | Sprint 0 del 2026-11-25 al 2026-12-08; sprints 1 y 2 previstos | SG2: presupuesto y cronograma |
 | Riesgos | Matriz de la sección 7 | SG2: identificación y análisis |
@@ -62,15 +62,15 @@ La integración coordina documentación, backend, frontend y despliegue. El cont
 
 | Práctica | Tratamiento en Mely Faciales | Estado |
 |---|---|---|
-| Acta de constitución | Visión y autorización en `README.md` y en la visión de `SPRINTBOARD.md`, con Mely como patrocinadora | Aplicado |
-| Plan para la dirección | Sprintboard, plan de construcciones y documentos 01 a 15 | Aplicado |
-| Dirigir y gestionar el trabajo | Erin ejecuta las construcciones en el orden previsto | Aplicado |
+| Acta de constitución | Visión y autorización en `README.md` y en la visión de `SPRINTBOARD.md`, con Mely como patrocinadora | Aplicado de forma simplificada |
+| Plan para la dirección | Sprintboard, plan de construcciones y documentos 01 a 16 | Aplicado |
+| Dirigir y gestionar el trabajo | Erin ejecuta la documentación en el orden previsto; las construcciones de código están previstas para Sprint 1 | Aplicado en la documentación |
 | Gestionar el conocimiento | Cambios y decisiones registrados en `CHANGELOG.md` | Aplicado |
 | Monitorear el trabajo | Progreso de tareas en `SPRINTBOARD.md` | Aplicado |
 | Control integrado de cambios | Cada cambio se documenta con mensaje de commit y entrada de changelog | Aplicado |
 | CCC | Comité formal aún no constituido; las decisiones las toman Erin y Mely | Referencia para Sprint 1 |
 | Control de configuración | Git, nombres sin acentos, carpetas por documento y líneas base | Aplicado |
-| Cierre de proyecto o fase | Fin de sprint con revisión del incremento; ADR operativo previsto para Sprint 2 | Aplicado en Sprint 0 |
+| Cierre de proyecto o fase | Fin de sprint con revisión del incremento; ADR operativo previsto para Sprint 2 | Preparado para el cierre de Sprint 0 |
 
 | Control de configuración | Control de cambios |
 |---|---|
@@ -128,7 +128,7 @@ El valor ganado (EVM) usaría estas reglas para comparar valor planificado, valo
 | Práctica | Evidencia real en el proyecto | Estado |
 |---|---|---|
 | Planificación CMMI PP | `SPRINTBOARD.md` con 27 tareas Done previas y 28/28 tras incorporar DOC-20 | Aplicado |
-| EDT y línea base | Construcciones del documento 10 y documentos 01 a 15 | Aplicado |
+| EDT y línea base | Construcciones del documento 10 y documentos 01 a 16 | Aplicado |
 | Estimación | Estimaciones 3, 5 y 8 en el backlog | Aplicado |
 | Calendario | Sprint 0 del 2026-11-25 al 2026-12-08 y sprints futuros previstos | Aplicado |
 | Registro de riesgos | Matriz cualitativa de la sección 7 y ADR operativo pendiente | Aplicado |
@@ -173,7 +173,3 @@ La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos
 La planificación ya existe en `SPRINTBOARD.md` y en los documentos 01 a 15; la integración y el control se apoyan en Git y en `CHANGELOG.md`. El valor añadido de este documento es hacer explícitos los puntos de monitoreo, la evaluación de impacto y las respuestas ante riesgos concretos.
 
 Los compromisos para las entregas siguientes son ejecutar los casos de los documentos 11 y 12 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 28/28 tareas Done tras incorporar DOC-20.
-
----
-
-Mely Faciales · Documento 16 · Sprint 0 · Erin Nodarse
