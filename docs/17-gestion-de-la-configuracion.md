@@ -28,7 +28,7 @@ La tabla siguiente resume los tres objetivos específicos y las siete prácticas
 
 | Objetivo | Práctica | Aplicación real en Mely Faciales | Estado |
 |---|---|---|---|
-| SG1 Establecer líneas base | SP1.1 Identificar elementos de configuración | Documentos 01 a 17, PNG, `SPRINTBOARD.md` y `CHANGELOG.md`; el código queda previsto para Sprint 1 | Aplicado |
+| SG1 Establecer líneas base | SP1.1 Identificar elementos de configuración | Documentos 01 a 18, PNG, `SPRINTBOARD.md` y `CHANGELOG.md`; el código queda previsto para Sprint 1 | Aplicado |
 | SG1 Establecer líneas base | SP1.2 Establecer el sistema de gestión de la configuración | Git y GitHub con carpetas por documento y convención de nombres | Aplicado |
 | SG1 Establecer líneas base | SP1.3 Crear y liberar líneas base | Cada cierre de entrega se identifica con un commit y su entrada en el changelog | Aplicado |
 | SG2 Supervisar y controlar los cambios | SP2.1 Seguimiento de solicitudes de cambio | Solicitudes registradas en `SPRINTBOARD.md` y `CHANGELOG.md` | Aplicado |
