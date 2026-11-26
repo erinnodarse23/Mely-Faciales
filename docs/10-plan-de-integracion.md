@@ -47,7 +47,7 @@ El cliente React se integra al final como componente desplegable del nodo web; n
 | 3 | CU-07 | `AuthService`, `Administradora` y regla de rol `ADMIN` | Inicio de sesión válido e inválido con respuesta esperada | Sin CP numerado; prueba unitaria de inicio de sesión válido e inválido con JUnit 5 |
 | 4 | CU-01, CU-02, CU-04 | Controladores REST, DTO y `MelyFacialesApplication.java` | La API responde catálogo, detalle y muro de reseñas | CP-03-04 y CP-03-09 cubren el muro tras publicar; catálogo y detalle sin CP numerado, con JUnit 5 sobre la API REST y Vitest en el cliente |
 | 5 | CU-03, CU-06, CU-08 | Foto opcional, borrado correctivo y edición de servicios | Flujo publicar → listar → eliminar y edición sin redesepliegue | CP-03-01 a CP-03-10 con JUnit 5 sobre la API REST y CP-B-01 a CP-B-05 con JUnit 5 + Mockito; borrado y edición sin CP numerado, verificados en el flujo de esta construcción |
-| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `dist/` | Smoke test del flujo crítico catálogo → reseña → WhatsApp contra la API desplegada | Humo E2E del flujo crítico; Vitest en el cliente; los 15 CP se ejecutan con JUnit 5 en las construcciones 4 y 5; evidencia en Git |
+| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `frontend/dist/` | Smoke test del flujo crítico catálogo → reseña → WhatsApp contra la API desplegada | Humo E2E del flujo crítico; Vitest en el cliente; los 15 CP se ejecutan con JUnit 5 en las construcciones 4 y 5; evidencia en Git |
 
 Cada construcción adiciona sus componentes a la anterior; ninguna incorpora un componente sin su prueba unitaria correspondiente.
 

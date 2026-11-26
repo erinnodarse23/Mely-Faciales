@@ -48,6 +48,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Alineada la evidencia de pruebas con las construcciones del documento 10 y con la trazabilidad de la construcción 5 del documento 11; precisada la configuración de despliegue prevista en el documento 05.
 - Renumerados los documentos 13 a 19 como 12 a 18 para cerrar el hueco dejado por la integración del antiguo documento 12 en el documento 11; el contenido de ese antiguo documento 12 sigue en el 11 y las entradas históricas conservan la numeración vigente en su fecha.
 - Corregidos los conteos vigentes: 68 referencias de imagen en el documento 16 y 68 diagramas UML referenciados (18 de análisis y 50 de diseño) en el documento 15.
+- Reestructurado el repositorio en `backend/` (proyecto Maven) y `frontend/` (cliente React previsto), con el código Java bajo `backend/src/` y las rutas de fuentes y del build actualizadas en los documentos 09 y 10, el README y el SPRINTBOARD.
 
 ## [0.1.0] - 2026-11-25
 

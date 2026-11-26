@@ -61,9 +61,9 @@ En Java estas dependencias se expresan con directivas `import`. Todas son unidir
 | `«executable»` | `MelyFacialesApplication.java` | Se muestra: es el punto de arranque de la aplicación. |
 | `«file»` | Controladores, DTO, servicios, entidades, repositorios, `DiscoMediaStorage.java`, `application.properties` | Se muestran los significativos; no se dibuja un fichero por cada clase del modelo de diseño porque la correspondencia es 1:1. |
 | `«table»` | `servicios`, `publicaciones`, `resenas`, `administradoras` | Se muestran porque son artefactos desplegables definidos en `docs/08-diseno-de-la-base-de-datos.md`. |
-| Derivados | Ficheros `.class`, JAR de Spring Boot y `dist/` de Vite | No se muestran: se regeneran desde el código fuente y no aportan información arquitectónica. |
+| Derivados | Ficheros `.class`, JAR de Spring Boot y `frontend/dist/` de Vite | No se muestran: se regeneran desde el código fuente y no aportan información arquitectónica. |
 
-Los ficheros se organizan en directorios por capa bajo `src/main/java/com/melyfaciales/`, con el cliente React en `frontend/src/` y los medios subidos en un volumen externo.
+Los ficheros se organizan en directorios por capa bajo `backend/src/main/java/com/melyfaciales/`, con el cliente React en `frontend/src/` y los medios subidos en un volumen externo.
 
 ![Componentes de implementación](<images/modelo-de-implementacion/componentes-implementacion.png>)
 

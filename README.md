@@ -2,13 +2,13 @@
 
 [![Repo](https://img.shields.io/badge/GitHub-Mely--Faciales-181717?logo=github)](https://github.com/erinnodarse23/Mely-Faciales)
 [![Portafolio](https://img.shields.io/badge/Portafolio-erinnodarse.vercel.app-3b82f6?logo=vercel)](https://erinnodarse.vercel.app)
-[![Estado](https://img.shields.io/badge/Estado-Documentaci%C3%B3n%20Sprint%200-0ea5e9)](#estado-del-proyecto)
+[![Estado](https://img.shields.io/badge/Estado-Sprint%201%20en%20curso-0ea5e9)](#estado-del-proyecto)
 [![Stack](https://img.shields.io/badge/Stack-Java%20%2B%20React-0ea5e9)](#stack-previsto)
 
 Web publicitaria para **Mely Faciales**: catálogo de tratamientos faciales con micro-videos, galería, muro de reseñas de clientas y contacto directo por WhatsApp. Sin sistema de citas: las citas se gestionan manualmente por WhatsApp.
 
 ## Estado del proyecto
-Documentación de definición de Mely Faciales completada en Sprint 0 (requisitos, análisis y diseño). Implementación pendiente.
+Documentación de definición completada en Sprint 0 (requisitos, análisis y diseño). Sprint 1 en curso: construcción 1 completada (base técnica del backend, sin casos de uso).
 
 ## Equipo
 - **Product Owner:** Mely (dueña del negocio) + Erin Nodarse (responsable técnico).
@@ -21,6 +21,8 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - Despliegue: por definir en un ADR posterior.
 
 ## Estructura del repositorio
+- `backend/` — proyecto Maven del servidor (Java 25 LTS + Spring Boot 4.1).
+- `frontend/` — cliente React previsto para la construcción 6.
 - `docs/01-requisitos-funcionales-y-no-funcionales.md` — extracción de requisitos.
 - `docs/02-modelo-de-analisis.md` — modelo de análisis UML y referencia a diagramas.
 - `docs/03-modelo-de-diseno.md` — modelo de diseño UML y referencia a diagramas.
@@ -57,6 +59,13 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 
+## Ejecución local del backend
+```bash
+cd backend
+mvn spring-boot:run -Dspring-boot.run.profiles=local
+```
+Requiere PostgreSQL en `localhost:5432` con la base `mely_faciales`. El perfil `local` aporta la conexión de desarrollo; las pruebas usan H2 y no necesitan PostgreSQL.
+
 ## Enlaces
 - Repositorio: https://github.com/erinnodarse23/Mely-Faciales.git
 - Portafolio del autor: https://erinnodarse.vercel.app
@@ -64,4 +73,4 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 
 ---
 
-*Mely Faciales · Documentación oficial · Sprint 0 · Actualizado: 2026-11-25*
+*Mely Faciales · Documentación oficial · Sprint 1 · Actualizado: 2026-11-26*

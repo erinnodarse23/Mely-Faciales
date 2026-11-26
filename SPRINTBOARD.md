@@ -105,8 +105,9 @@ Conteo actual de artefactos: 50 diagramas de diseño y gestión; 68 diagramas UM
 | 3 | CU-07 | `AuthService` y regla de rol `ADMIN` | Por hacer |
 | 4 | CU-01, CU-02, CU-04 | Controladores REST, DTO y API del catálogo y del muro | Por hacer |
 | 5 | CU-03, CU-06, CU-08 | Foto opcional, borrado correctivo y edición de servicios | Por hacer |
-| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `dist/` | Por hacer |
+| 6 | Los ocho casos de uso | Cliente React, `npm run build` y despliegue del `frontend/dist/` | Por hacer |
 
+## Sprint 2 — Planificado
 - Sprint 2: despliegue y ADRs operativos.
 
 ## Ceremonias
