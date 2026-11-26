@@ -39,6 +39,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/16-planificacion-monitoreo-y-control.md` — planeación, integración, monitoreo y control aplicados al proyecto.
 - `docs/17-gestion-de-la-configuracion.md` — gestión de la configuración, líneas base y control de cambios.
 - `docs/18-buenas-practicas-de-desarrollo-personal.md` — prácticas individuales de registro, estimación, revisión y mejora continua.
+- `docs/19-buenas-practicas-de-metodos-agiles.md` — prácticas ágiles, ceremonias, historias de usuario y mejora continua.
 - `docs/images/diagramas de clases del analisis/` — imágenes de los diagramas.
 - `docs/images/modelo-de-diseno/` — 5 diagramas del documento 03.
 - `docs/images/realizaciones-de-caso-de-uso/` — 16 diagramas del documento 04.
@@ -53,6 +54,7 @@ Documentación de definición de Mely Faciales completada en Sprint 0 (requisito
 - `docs/images/planificacion-y-control/` — 4 diagramas del documento 16.
 - `docs/images/gestion-de-la-configuracion/` — 3 diagramas del documento 17.
 - `docs/images/buenas-practicas-de-desarrollo-personal/` — 3 diagramas del documento 18.
+- `docs/images/buenas-practicas-de-metodos-agiles/` — 3 diagramas del documento 19.
 - `SPRINTBOARD.md` — planificación Scrum.
 - `CHANGELOG.md` — historial de cambios.
 

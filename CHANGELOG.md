@@ -7,11 +7,11 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 
 ### Added
 - Documento del Modelo de Diseño del Sistema con paquetes, subsistemas, interfaces y realizaciones de caso de uso.
-- Estructura de carpetas de imágenes con 44 diagramas de diseño exportados.
+- Estructura de carpetas de imágenes con 47 diagramas de diseño exportados.
 - Actualización de README.md y SPRINTBOARD.md con la documentación cerrada en Sprint 0.
 - Reorientación del proyecto a Mely Faciales con catálogo exclusivo de tratamientos faciales.
 - Número de WhatsApp confirmado: `+5355795510`, con deep link `https://wa.me/5355795510?text=...`.
-- Los 62 diagramas regenerados para reflejar el nuevo alcance.
+- Los 65 diagramas regenerados para reflejar el nuevo alcance.
 - Diagramas de análisis con estereotipos Boundary/Control/Entity, paquete de análisis y colaboraciones con mensajes numerados.
 - Arquitectura en capas documentada con diagrama propio; realizaciones de CU-Diseño con flujos alternos mediante bloques `alt`.
 - Modelo de despliegue y mecanismos de diseño documentados con dos diagramas propios y tablas de nodos, asignación y mecanismos.
@@ -25,6 +25,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Planificación, integración, monitoreo y control documentados con cuatro diagramas de actividad propios.
 - Gestión de la configuración documentada con tres diagramas de actividad propios.
 - Buenas prácticas de desarrollo personal documentadas con tres diagramas de actividad propios.
+- Buenas prácticas de métodos ágiles documentadas con tres diagramas de actividad propios.
 
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.

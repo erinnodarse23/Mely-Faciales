@@ -127,7 +127,7 @@ El valor ganado (EVM) usaría estas reglas para comparar valor planificado, valo
 ## 6. Aplicación en Mely Faciales
 | Práctica | Evidencia real en el proyecto | Estado |
 |---|---|---|
-| Planificación CMMI PP | `SPRINTBOARD.md` con 27 tareas Done previas y 28/28 tras incorporar DOC-20 | Aplicado |
+| Planificación CMMI PP | `SPRINTBOARD.md` con 30 tareas Done previas y 31/31 tras incorporar DOC-23 | Aplicado |
 | EDT y línea base | Construcciones del documento 10 y documentos 01 a 16 | Aplicado |
 | Estimación | Estimaciones 3, 5 y 8 en el backlog | Aplicado |
 | Calendario | Sprint 0 del 2026-11-25 al 2026-12-08 y sprints futuros previstos | Aplicado |
@@ -172,4 +172,4 @@ La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos
 ## 9. Conclusiones y compromisos
 La planificación ya existe en `SPRINTBOARD.md` y en los documentos 01 a 15; la integración y el control se apoyan en Git y en `CHANGELOG.md`. El valor añadido de este documento es hacer explícitos los puntos de monitoreo, la evaluación de impacto y las respuestas ante riesgos concretos.
 
-Los compromisos para las entregas siguientes son ejecutar los casos de los documentos 11 y 12 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 28/28 tareas Done tras incorporar DOC-20.
+Los compromisos para las entregas siguientes son ejecutar los casos de los documentos 11 y 12 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 31/31 tareas Done tras incorporar DOC-23.

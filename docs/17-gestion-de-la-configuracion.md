@@ -54,10 +54,10 @@ La configuración del software reúne los productos de trabajo de Sprint 0 y sus
 ## 3. Elementos documentados y su control
 | Elemento | Ubicación | Situación |
 |---|---|---|
-| Documentos 01 a 17 | `docs/*.md` | Aplicado: 17 documentos versionados |
-| Diagramas exportados | `docs/images/`, una carpeta por documento | Aplicado: 59 PNG, sin regeneraciones fuera de su entrega |
-| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Referencia externa: 59 fuentes `.mmd` en el directorio temporal, UTF-8 sin BOM, fuera del repositorio |
-| Seguimiento del sprint | `SPRINTBOARD.md` | Aplicado: backlog, progreso 29/29 y conteo actual |
+| Documentos 01 a 19 | `docs/*.md` | Aplicado: 19 documentos versionados |
+| Diagramas exportados | `docs/images/`, una carpeta por documento | Aplicado: 65 PNG, sin regeneraciones fuera de su entrega |
+| Fuentes de diagramas | Directorio temporal `mely-mmd`, fuera del repositorio | Referencia externa: 65 fuentes `.mmd` en el directorio temporal, UTF-8 sin BOM, fuera del repositorio |
+| Seguimiento del sprint | `SPRINTBOARD.md` | Aplicado: backlog, progreso 31/31 y conteo actual |
 | Historial de cambios | `CHANGELOG.md` | Aplicado: entradas de Added y Changed |
 | Código de la aplicación | Previsto en el documento 10 con Java 25 LTS, Spring Boot 4.1, React y TypeScript | Referencia para Sprint 1 |
 | Fotos y micro-videos del catálogo | Almacenamiento externo previsto, fuera del repositorio | Se controla la referencia documental, no el binario |
@@ -127,7 +127,7 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 ## 9. Aplicación, trazabilidad y conclusiones
 | Práctica | Evidencia real | Estado |
 |---|---|---|
-| Identificación de elementos | 17 documentos, 59 PNG y 59 fuentes `.mmd` en directorio temporal | Referencia externa, no versionadas |
+| Identificación de elementos | 19 documentos, 65 PNG y 65 fuentes `.mmd` en directorio temporal | Referencia externa, no versionadas |
 | Sistema de gestión de la configuración | Git, GitHub y una carpeta de imágenes por documento | Aplicado |
 | Líneas base | Commits de cierre y entradas de `CHANGELOG.md` | Aplicado |
 | Control de cambios | Acuerdo de Mely y Erin registrado en el sprintboard y el changelog | Aplicado |
