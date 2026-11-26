@@ -34,7 +34,7 @@ La tabla siguiente resume los tres objetivos específicos y las siete prácticas
 | SG2 Supervisar y controlar los cambios | SP2.1 Seguimiento de solicitudes de cambio | Solicitudes registradas en `SPRINTBOARD.md` y `CHANGELOG.md` | Aplicado |
 | SG2 Supervisar y controlar los cambios | SP2.2 Controlar cambios en elementos bajo configuración | Análisis de impacto y acuerdo con Mely y Erin antes de cada cambio | Aplicado |
 | SG3 Establecer la integridad | SP3.1 Registros de configuración | Historial de Git y entradas de `CHANGELOG.md` | Aplicado |
-| SG3 Establecer la integridad | SP3.2 Auditorías de configuración | Lista de chequeo con 41 referencias de imagen vigentes y 0 rutas rotas | Aplicado |
+| SG3 Establecer la integridad | SP3.2 Auditorías de configuración | Lista de chequeo con 67 referencias de imagen vigentes y 0 rutas rotas | Aplicado |
 
 ## 2. Motivación y conceptos
 La configuración del software reúne los productos de trabajo de Sprint 0 y sus descripciones, de modo que cada entrega pueda reconstruirse y explicarse. El proyecto todavía no tiene código en ejecución: hoy se controla la documentación y queda prevista la incorporación del código de Sprint 1.
@@ -108,7 +108,7 @@ Los registros permiten recuperar cualquier versión desde Git y explicar su cont
 | Recuperación de versiones | Cada entrega tiene un commit identificable | Historial de Git |
 | Estado de cada elemento | Documento, PNG o registro vigente en su carpeta correspondiente | `README.md` y `SPRINTBOARD.md` |
 | Diferencias entre líneas base | Comparación del conjunto anterior con el actual | `git diff` y `CHANGELOG.md` |
-| Referencias de imagen | 41 referencias únicas, 0 rotas y 0 duplicadas | Enlaces de imagen de los documentos 03 a 17 |
+| Referencias de imagen | 67 referencias únicas, 0 rotas y 0 duplicadas | Enlaces de imagen de los documentos 02 a 19 |
 | Convención de nombres | Ningún nombre de archivo con acentos | Árbol de `docs/` |
 | Control de términos | 0 apariciones de términos vetados en los documentos nuevos | Comprobación con grep |
 

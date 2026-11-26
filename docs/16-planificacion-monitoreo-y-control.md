@@ -138,7 +138,7 @@ El valor ganado (EVM) usaría estas reglas para comparar valor planificado, valo
 | CCC formal | Decisiones registradas por Erin y Mely, sin comité constituido | Referencia para Sprint 1 |
 | Control de configuración | Git, nombres normalizados y carpetas por documento | Aplicado |
 | Valor ganado (EVM) | Reglas 50-50, 0-100 y 20-70-100 descritas, sin ejecución real | Referencia para Sprint 1 |
-| Ejecución de pruebas | Casos diseñados en los documento 11 | Referencia para Sprint 1 |
+| Ejecución de pruebas | Casos diseñados en el documento 11 | Referencia para Sprint 1 |
 | Canal de WhatsApp | Número `+5355795510` y deep link en RF-05 | Aplicado |
 | Stack definido | Java 25 LTS con Spring Boot 4.1 y React con TypeScript en los documentos 03 y 09 | Aplicado |
 
@@ -151,7 +151,7 @@ Los estados indicados en esta tabla distinguen lo que ya está documentado de lo
 | Mely no puede validar reseñas y contenido a tiempo | Media | Alta | Alta | Mitigar: revisiones al cierre de cada sprint y priorización como dueña del negocio | Mely, con Erin como traductora de requisitos |
 | Despliegue pendiente y *cold starts* visibles (RNF-07) | Alta | Media | Alta | Transferir: decidir proveedor de hosting y condiciones en el ADR operativo | Proveedor de hosting, con Erin como responsable de la decisión |
 | Corrupción de alcance por nuevas peticiones al catálogo | Media | Alta | Alta | Evitar: evaluar impacto antes de aceptar y mantener fuera de alcance las citas online | Erin Nodarse y Mely |
-| Casos de prueba diseñados pero no ejecutados en Sprint 1 | Alta | Media | Alta | Mitigar: ejecutar los casos de los documento 11 en cada construcción | Erin Nodarse |
+| Casos de prueba diseñados pero no ejecutados en Sprint 1 | Alta | Media | Alta | Mitigar: ejecutar los casos de el documento 11 en cada construcción | Erin Nodarse |
 | Fallo del canal externo de WhatsApp `+5355795510` | Baja | Alta | Media | Aceptar: conservar el número documentado y prever contacto manual | Erin Nodarse |
 
 ## 8. Trazabilidad
@@ -165,11 +165,11 @@ La trazabilidad se apoya en `SPRINTBOARD.md`, `CHANGELOG.md` y en los documentos
 | 4. Planificación por áreas | Documentos 01, 02, 05 y 14 |
 | 5. Monitoreo y control | `SPRINTBOARD.md` y documento 11 |
 | 6. Aplicación en Mely Faciales | Documentos 01 a 15, `CHANGELOG.md` y Git |
-| 7. Matriz de riesgos | Documentos 05, 10, 11, 12 y 14 |
+| 7. Matriz de riesgos | Documentos 05, 10, 11 y 14 |
 | 8. Trazabilidad | Este propio mapa |
 | 9. Conclusiones y compromisos | `SPRINTBOARD.md` y documento 10 |
 
 ## 9. Conclusiones y compromisos
 La planificación ya existe en `SPRINTBOARD.md` y en los documentos 01 a 18; la integración y el control se apoyan en Git y en `CHANGELOG.md`. El valor añadido de este documento es hacer explícitos los puntos de monitoreo, la evaluación de impacto y las respuestas ante riesgos concretos.
 
-Los compromisos para las entregas siguientes son ejecutar los casos de los documento 11 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 31/31 tareas Done tras incorporar DOC-23.
+Los compromisos para las entregas siguientes son ejecutar los casos de el documento 11 en Sprint 1, formalizar el CCC y el valor ganado cuando exista ejecución real, cerrar el ADR de hosting en Sprint 2, mantener la línea base sin citas online y conservar el número de WhatsApp `+5355795510`. El avance registrado es 31/31 tareas Done tras incorporar DOC-23.

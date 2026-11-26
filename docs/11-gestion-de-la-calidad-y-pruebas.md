@@ -22,9 +22,9 @@ Este documento reúne la disciplina de calidad y la estrategia de pruebas del pr
 | Scrum | Metodología única: roles, artefactos, ceremonias y sprints | No se combina con otra metodología |
 | PMBOK | Referencia de Planificar, Gestionar y Controlar la calidad | Sin declaración de certificación ni sustitución de Scrum |
 | CMMI | Referencia de PPQA, verificación y validación | Solo como prácticas aplicables al proyecto |
-| UML | Notación única de los modelos y de los cuatro flujos de actividad | Un solo lenguaje de modelado |
+| UML | Notación única de los modelos, de los tres flujos de actividad y del grafo de flujo | Un solo lenguaje de modelado |
 
-El alcance cubre los requisitos funcionales RF-03 y RF-04, los no funcionales RNF-01 a RNF-10, el caso de uso CU-03 y la construcción 5 del documento 10. Los estados son honestos: lo documentado está **Aplicado**, lo que requiere código está **Preparado para Sprint 1** o **Referencia para Sprint 1**, y lo que no corresponde al producto se marca **No aplicable**.
+El alcance cubre los requisitos funcionales RF-03 y RF-04, los no funcionales RNF-01 a RNF-10, el caso de uso CU-03 y la construcción 5 del documento 10. Los estados son honestos: lo documentado está **Aplicado**, lo que requiere código está **Preparado para Sprint 1** o **Referencia para Sprint 1** o **Referencia para Sprint 2**, y lo que no corresponde al producto se marca **No aplicable**.
 
 ## 2. Calidad de software
 La calidad de software es el grado en que un producto, componente o proceso cumple las necesidades y expectativas de las interesadas. Se mide sobre los requisitos explícitos y sobre las características implícitas esperadas en un producto profesional: menos defectos, mejor situación económica y clientas satisfechas.
@@ -90,9 +90,9 @@ Una buena prueba tiene alta probabilidad de encontrar un defecto, no es redundan
 | Integración | Verificar la comunicación entre componentes y subsistemas | Sprint 1 | Preparado para Sprint 1 |
 | Regresión | Repetir un subconjunto de pruebas ante cada cambio | Sprint 1 | Preparado para Sprint 1 |
 | Humo | Revisar rápido el flujo crítico de extremo a extremo | Sprint 1 | Referencia para Sprint 1 |
-| Sistema | Ejercitar el sistema ensamblado por completo | Sprint 2 | Referencia para Sprint 1 |
-| Validación | Comprobar acciones visibles y salidas reconocibles por la usuaria | Sprint 2 | Referencia para Sprint 1 |
-| Aceptación | Confirmar los requisitos con Mely como dueña del negocio | Sprint 2 | Referencia para Sprint 1 |
+| Sistema | Ejercitar el sistema ensamblado por completo | Sprint 2 | Referencia para Sprint 2 |
+| Validación | Comprobar acciones visibles y salidas reconocibles por la usuaria | Sprint 2 | Referencia para Sprint 2 |
+| Aceptación | Confirmar los requisitos con Mely como dueña del negocio | Sprint 2 | Referencia para Sprint 2 |
 | Alfa | Usuarios representativos en el sitio del desarrollador | No planificado | No aplicable: producto a medida con una sola dueña del negocio |
 | Beta | Clientes seleccionados en entornos no controlados | No planificado | No aplicable: producto a medida con una sola dueña del negocio |
 

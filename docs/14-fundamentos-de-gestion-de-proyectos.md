@@ -77,7 +77,7 @@ Los grupos de proceso no son fases: se repiten en cada sprint y se diferencian d
 | Interesados | Identificados y atendidos según la tabla de la sección 3. |
 
 ## 7. Acta de constitución y plan para la dirección
-En un proyecto pequeño el acta se simplifica: la visión y la autorización quedan en `README.md` y en la sección de visión del `SPRINTBOARD.md`, con Mely como patrocinadora. El plan para la dirección lo forman el propio sprintboard, el plan de construcciones y la documentación técnica de los documentos 01 a 12.
+En un proyecto pequeño el acta se simplifica: la visión y la autorización quedan en `README.md` y en la sección de visión del `SPRINTBOARD.md`, con Mely como patrocinadora. El plan para la dirección lo forman el propio sprintboard, el plan de construcciones y la documentación técnica de los documentos 01 a 11.
 
 ## 8. Conclusión
 La dirección de proyectos aporta predictibilidad y control sin sustituir a Scrum: delimita el alcance, hace visibles los interesados y convierte el éxito en criterios medibles.

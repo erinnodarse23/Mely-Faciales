@@ -27,6 +27,7 @@ El formato sigue *Keep a Changelog* y la versión sigue *Semantic Versioning*.
 - Buenas prácticas de desarrollo personal documentadas con tres diagramas de actividad propios.
 - Buenas prácticas de métodos ágiles documentadas con tres diagramas de actividad propios.
 - Fase de prueba consolidada en el documento 11, con gestión de la calidad, estrategia de pruebas, caja negra y caja blanca, y tres diagramas de actividad nuevos.
+
 ### Changed
 - Se eliminaron las referencias académicas de la documentación para presentarla como documentación profesional del proyecto.
 - Se unificó la metodología del proyecto en Scrum; el modelado UML se usa únicamente como notación de análisis.
