@@ -12,7 +12,7 @@
 | Modelado | UML |
 | Sprint | 0 |
 
-Navegación: [Planificación, integración, monitoreo y control](16-planificacion-monitoreo-y-control.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md)
+Navegación: [Buenas prácticas de desarrollo personal](18-buenas-practicas-de-desarrollo-personal.md) · [Planificación, integración, monitoreo y control](16-planificacion-monitoreo-y-control.md) · [Modelos de mejora](15-modelos-de-mejora-de-proceso.md) · [Fundamentos de gestión](14-fundamentos-de-gestion-de-proyectos.md)
 
 ## 1. Propósito y alcance
 Este documento complementa el documento 16, donde el control de configuración aparece como práctica aplicada y el comité de control de cambios (CCC) como referencia futura. CMMI CM se emplea como marco de referencia de proceso; no implica evaluación formal ni certificación. Scrum es la metodología única de trabajo y UML la notación única de los modelos, incluidos los tres flujos de actividad de este documento.

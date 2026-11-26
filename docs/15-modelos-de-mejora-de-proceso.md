@@ -42,7 +42,7 @@ CMMI es un modelo de referencia con 22 áreas de proceso agrupadas en cuatro cat
 La evaluación SCAMPI comprueba si se cumplen las metas y si las prácticas están implantadas; en este proyecto no hay evaluación formal, solo autocomprobación con listas de chequeo.
 
 ## 3. PSP y TSP
-PSP aporta disciplina personal: estimación, registro de defectos y revisión del trabajo propio. TSP traslada esa disciplina al equipo. En Mely Faciales se aplican de forma ligera mediante estimaciones en el sprintboard, registro de cambios en el changelog y revisión de entregables con lista de chequeo antes de marcarlos `Done`.
+PSP aporta disciplina personal: estimación, registro de defectos y revisión del trabajo propio. TSP traslada esa disciplina al equipo. En Mely Faciales se aplican de forma ligera mediante estimaciones en el sprintboard, registro de cambios en el changelog y revisión de entregables con lista de chequeo antes de marcarlos `Done`. El detalle de estas prácticas individuales se documenta en el [documento 18](18-buenas-practicas-de-desarrollo-personal.md).
 
 ## 4. MCDAI
 MCDAI es un modelo cubano de calidad para el desarrollo de aplicaciones informáticas, construido a partir de buenas prácticas internacionales y regulaciones nacionales. Organiza 12 procesos base en cuatro categorías y define tres niveles de madurez.
